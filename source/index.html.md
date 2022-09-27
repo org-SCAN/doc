@@ -2,15 +2,12 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - php
-  - apache
-  - bash
+
 
 toc_footers:
   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
 
 includes:
-  - errors
 
 search: true
 
@@ -115,7 +112,6 @@ Make sure the `.env.example` file is present and run this from the application c
 
 ```
 cp .env.example .env
-# config .env file (check SQL connexion, default user, default password and default team)
 npm update
 cd /var/www/html
 composer update
