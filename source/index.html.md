@@ -70,7 +70,7 @@ Then deploy the stack.
 
 #### Apache configuration file
 
-Here is an appache configuration file example:
+Here is an appache `docker_config.conf` configuration file example:
 
 ```apache
       # conf/vhost.conf
