@@ -45,7 +45,7 @@ To do so:
   - Choose *Edge Agent* and enter a name, choose the group *Local Machine* and leave the other parameters as default
   - Click on *Add environment*.
 
-<%= add_edge "images/portainer_add_edge.png" %>
+<!-- <%= add_edge "images/portainer_add_edge.png" %> -->
 
 Depending on your configuration, choose the right deployment script. For mac and wsl, it is possible to choose Linux and docker standalone.
 
@@ -54,7 +54,7 @@ Depending on your configuration, choose the right deployment script. For mac and
 
 You should find your machine in *Home*.
 
-<%= portainer_home "images/portainer_home.png" %>
+<!-- <%= portainer_home "images/portainer_home.png" %> -->
 
 ### How to deploy the project?
 
