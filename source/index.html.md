@@ -3,6 +3,8 @@ title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - php
+  - apache
+  - bash
 
 toc_footers:
   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
@@ -43,7 +45,7 @@ To do so:
   - Choose *Edge Agent* and enter a name, choose the group *Local Machine* and leave the other parameters as default
   - Click on *Add environment*.
 
-![Add edge](images/portainer_add_add_edge.png)
+![Add edge](source/images/portainer_add_add_edge.png)
 
 Depending on your configuration, choose the right deployment script. For mac and wsl, it is possible to choose Linux and docker standalone.
 
@@ -52,7 +54,7 @@ Depending on your configuration, choose the right deployment script. For mac and
 
 You should find your machine in *Home*.
 
-![portainer home](images/portainer_home.png)
+![portainer home](source/images/portainer_home.png)
 
 ### How to deploy the project?
 
@@ -73,6 +75,8 @@ You should find your machine in *Home*.
 Then deploy the stack.
 
 #### Apache configuration file
+
+Here is an appache configuration file example:
 
 ```
 # conf/vhost.conf
@@ -109,7 +113,7 @@ Then deploy the stack.
 
 Make sure the `.env.example` file is present and run this from the application container.
 
-```bash
+```
 cp .env.example .env
 # config .env file (check SQL connexion, default user, default password and default team)
 npm update
@@ -120,7 +124,7 @@ composer dump-autoload
 php artisan key:generate
 chmod -R 777 storage/
 php artisan migrate:refresh --seed
-```
+```bash
 
 
 #### `.env.example` file
