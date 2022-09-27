@@ -25,6 +25,8 @@ lorem ipsum dolor sit ...
 
 ## Serveur
 
+⚠️Stable install only working with latest PR on branch 125-website-ressource-teams⚠️
+
 ## Using docker
 
 ### Using portainer on your machine
@@ -54,7 +56,7 @@ You should find your machine in *Home*.
 
 - Clone the github project
 - With portainer, create a new *stack*. 
-- Choose *custom template* and choose the *n4p-website* template
+- Choose *custom template* and choose the *n4p-website* template (or windows ws2 if it's your case)
 - Adapt the compose according to the deployment environment
 
 **IMPORTANT** :
