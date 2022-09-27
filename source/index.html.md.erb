@@ -2,6 +2,9 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
+  - shell
+  - apache
+
 
 
 toc_footers:
@@ -32,7 +35,7 @@ lorem ipsum dolor sit ...
 
 ### Using portainer on your machine
 
-You can go to https://portainer.netw4ppl.tech to manage the docker server but also your machine locally, provided you register your machine.
+You can go to [https://portainer.netw4ppl.tech](https://portainer.netw4ppl.tech) to manage the docker server but also your machine locally, provided you register your machine.
 
 To do so: 
 
@@ -42,7 +45,7 @@ To do so:
   - Choose *Edge Agent* and enter a name, choose the group *Local Machine* and leave the other parameters as default
   - Click on *Add environment*.
 
-![Add edge](source/images/portainer_add_add_edge.png)
+<%= add_edge "images/portainer_add_edge.png" %>
 
 Depending on your configuration, choose the right deployment script. For mac and wsl, it is possible to choose Linux and docker standalone.
 
@@ -51,7 +54,7 @@ Depending on your configuration, choose the right deployment script. For mac and
 
 You should find your machine in *Home*.
 
-![portainer home](source/images/portainer_home.png)
+<%= portainer_home "images/portainer_home.png" %>
 
 ### How to deploy the project?
 
@@ -75,7 +78,7 @@ Then deploy the stack.
 
 Here is an appache configuration file example:
 
-```
+```apache
 # conf/vhost.conf
 <VirtualHost *:80>
     DocumentRoot /var/www/html/public
@@ -104,13 +107,13 @@ Here is an appache configuration file example:
     SSLEngine on
 </VirtualHost>
 </IfModule>
-```apache
+```
 
 ### Finalize the configuration:
 
 Make sure the `.env.example` file is present and run this from the application container.
 
-```
+```bash
 cp .env.example .env
 npm update
 cd /var/www/html
@@ -120,7 +123,7 @@ composer dump-autoload
 php artisan key:generate
 chmod -R 777 storage/
 php artisan migrate:refresh --seed
-```bash
+```
 
 
 #### `.env.example` file
