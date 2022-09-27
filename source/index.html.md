@@ -1,12 +1,6 @@
 ---
 title: API Reference
 
-language_tabs: # must be one of https://git.io/vQNgJ
-  - bash
-  - apache
-
-
-
 toc_footers:
   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
 
@@ -79,34 +73,34 @@ Then deploy the stack.
 Here is an appache configuration file example:
 
 ```apache
-# conf/vhost.conf
-<VirtualHost *:80>
-    DocumentRoot /var/www/html/public
+      # conf/vhost.conf
+      <VirtualHost *:80>
+          DocumentRoot /var/www/html/public
 
-    <Directory "/var/www/html">
-        AllowOverride all
-        Require all granted
-    </Directory>
+          <Directory "/var/www/html">
+              AllowOverride all
+              Require all granted
+          </Directory>
 
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
+          ErrorLog ${APACHE_LOG_DIR}/error.log
+          CustomLog ${APACHE_LOG_DIR}/access.log combined
+      </VirtualHost>
 
-# Delete the lines below if you don't use ssl 
-<IfModule mod_ssl.c>
-<VirtualHost *:443>
-    DocumentRoot /var/www/html/public
+      # Delete the lines below if you don't use ssl 
+      <IfModule mod_ssl.c>
+      <VirtualHost *:443>
+          DocumentRoot /var/www/html/public
 
-    <Directory "/var/www/html">
-        AllowOverride all
-        Require all granted
-    </Directory>
+          <Directory "/var/www/html">
+              AllowOverride all
+              Require all granted
+          </Directory>
 
-    SSLCertificateFile /var/imported/ssl/fullchain.pem
-    SSLCertificateKeyFile /var/imported/ssl/privkey.pem
-    SSLEngine on
-</VirtualHost>
-</IfModule>
+          SSLCertificateFile /var/imported/ssl/fullchain.pem
+          SSLCertificateKeyFile /var/imported/ssl/privkey.pem
+          SSLEngine on
+      </VirtualHost>
+      </IfModule>
 ```
 
 ### Finalize the configuration:
@@ -114,17 +108,16 @@ Here is an appache configuration file example:
 Make sure the `.env.example` file is present and run this from the application container.
 
 ```bash
-cp .env.example .env
-npm update
-cd /var/www/html
-composer update
-php artisan cache:clear
-composer dump-autoload
-php artisan key:generate
-chmod -R 777 storage/
-php artisan migrate:refresh --seed
+      cp .env.example .env
+      npm update
+      cd /var/www/html
+      composer update
+      php artisan cache:clear
+      composer dump-autoload
+      php artisan key:generate
+      chmod -R 777 storage/
+      php artisan migrate:refresh --seed
 ```
-
 
 #### `.env.example` file
 
@@ -134,59 +127,59 @@ Here is a .env.example file. Make sure you edit the database information (`DB_HO
 Note that during development it is recommended to have `APP_DEBUG=true`. In case of production, `APP_DEBUG` should be `false`.
 
 ```
-APP_NAME=Laravel
-APP_ENV=local
-APP_KEY=
-APP_DEBUG=true
-APP_URL=
+      APP_NAME=Laravel
+      APP_ENV=local
+      APP_KEY=
+      APP_DEBUG=true
+      APP_URL=
 
-LOG_CHANNEL=stack
-LOG_LEVEL=debug
+      LOG_CHANNEL=stack
+      LOG_LEVEL=debug
 
-DB_CONNECTION=mysql
-DB_HOST=sql_container_name
-DB_PORT=3306
-DB_DATABASE='database_name'
-DB_USERNAME=USER
-DB_PASSWORD='PASSWORD'
+      DB_CONNECTION=mysql
+      DB_HOST=sql_container_name
+      DB_PORT=3306
+      DB_DATABASE='database_name'
+      DB_USERNAME=USER
+      DB_PASSWORD='PASSWORD'
 
-BROADCAST_DRIVER=log
-CACHE_DRIVER=file
-QUEUE_CONNECTION=sync
-SESSION_DRIVER=database
-SESSION_LIFETIME=120
+      BROADCAST_DRIVER=log
+      CACHE_DRIVER=file
+      QUEUE_CONNECTION=sync
+      SESSION_DRIVER=database
+      SESSION_LIFETIME=120
 
-MEMCACHED_HOST=127.0.0.1
+      MEMCACHED_HOST=127.0.0.1
 
-REDIS_HOST=127.0.0.1
-REDIS_PASSWORD=null
-REDIS_PORT=6379
+      REDIS_HOST=127.0.0.1
+      REDIS_PASSWORD=null
+      REDIS_PORT=6379
 
-MAIL_MAILER=smtp
-MAIL_HOST=mailhog
-MAIL_PORT=1025
-MAIL_USERNAME=null
-MAIL_PASSWORD=null
-MAIL_ENCRYPTION=null
-MAIL_FROM_ADDRESS=null
-MAIL_FROM_NAME="${APP_NAME}"
+      MAIL_MAILER=smtp
+      MAIL_HOST=mailhog
+      MAIL_PORT=1025
+      MAIL_USERNAME=null
+      MAIL_PASSWORD=null
+      MAIL_ENCRYPTION=null
+      MAIL_FROM_ADDRESS=null
+      MAIL_FROM_NAME="${APP_NAME}"
 
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_DEFAULT_REGION=us-east-1
-AWS_BUCKET=
+      AWS_ACCESS_KEY_ID=
+      AWS_SECRET_ACCESS_KEY=
+      AWS_DEFAULT_REGION=us-east-1
+      AWS_BUCKET=
 
-PUSHER_APP_ID=
-PUSHER_APP_KEY=
-PUSHER_APP_SECRET=
-PUSHER_APP_CLUSTER=mt1
+      PUSHER_APP_ID=
+      PUSHER_APP_KEY=
+      PUSHER_APP_SECRET=
+      PUSHER_APP_CLUSTER=mt1
 
-MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
-MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+      MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+      MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
-DEFAULT_EMAIL="default user email"
-DEFAULT_PASSWORD="default user password"
-DEFAULT_TEAM="default user team"
+      DEFAULT_EMAIL="default user email"
+      DEFAULT_PASSWORD="default user password"
+      DEFAULT_TEAM="default user team"
 ```
 
 # N4P - Documentation
