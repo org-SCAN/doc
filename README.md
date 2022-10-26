@@ -14,10 +14,12 @@ Feeling like an eager beaver? Jump in to the quick start docs and get making you
 
 ## Want to use our API?
 
+{% hint style="info" %}
 SCAN provides an API that allows you to fully interact with our application. You can create your own software to synchronize your data with SCAN!
+{% endhint %}
 
-Dive a little deeper and start exploring our API reference to get an idea of everything that's possible with the API:
+Dive a little deeper and start exploring our API :
 
-{% content-ref url="reference/api-reference/" %}
-[api-reference](reference/api-reference/)
+{% content-ref url="reference/api.md" %}
+[api.md](reference/api.md)
 {% endcontent-ref %}

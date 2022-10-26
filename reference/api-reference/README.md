@@ -2,22 +2,85 @@
 
 Dive into the specifics of each API endpoint by checking out our complete documentation.
 
-## Pets
+## Fields
 
-All the methods associated with `CRUD`ing some pets. Which isn't as weird as it sounds:
-
-{% content-ref url="pets.md" %}
-[pets.md](pets.md)
-{% endcontent-ref %}
-
-## Users
-
-Everything related to users:
-
-{% content-ref url="users.md" %}
-[users.md](users.md)
-{% endcontent-ref %}
+All the methods associated with `CRUD`ing some fields.&#x20;
 
 {% hint style="info" %}
-**Good to know:** Using the 'Page Link' block lets you link directly to a page. If this page's name, URL or parent location changes, the reference will be kept up to date. You can also mention a page – like [pets.md](pets.md "mention") – if you don't want a block-level link.
+For now, you can only get fields
 {% endhint %}
+
+{% content-ref url="fields.md" %}
+[fields.md](fields.md)
+{% endcontent-ref %}
+
+## Persons
+
+Everything related to persons:
+
+{% content-ref url="person.md" %}
+[person.md](person.md)
+{% endcontent-ref %}
+
+## Relations
+
+Everything related to relations :
+
+{% content-ref url="relations.md" %}
+[relations.md](relations.md)
+{% endcontent-ref %}
+
+
+
+## User
+
+Everything related to users :&#x20;
+
+{% content-ref url="user.md" %}
+[user.md](user.md)
+{% endcontent-ref %}
+
+## _Future API options_
+
+<details>
+
+<summary>Fields</summary>
+
+* [ ] Create new fields
+* [ ] Update fields
+
+</details>
+
+<details>
+
+<summary>Lists</summary>
+
+* [ ] Create a list
+* [ ] Update a list
+* [ ] Delete a list
+* [ ] Get a list
+* [ ] Add element to the list
+
+
+
+</details>
+
+<details>
+
+<summary>Teams</summary>
+
+* [ ] Get team users
+* [ ] Create a team
+
+
+
+</details>
+
+<details>
+
+<summary>User</summary>
+
+* [ ] Change the user's team
+* [ ] Change the user's role
+
+</details>

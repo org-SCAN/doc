@@ -1,24 +1,6 @@
-# API
+# User
 
-{% hint style="info" %}
-**Good to know:** SCAN provides an API that allows you to fully interact with our application. You can create your own software to synchronize your data with SCAN!
-{% endhint %}
-
-## Get your personnal API keys
-
-Your API requests are authenticated using API keys. Any request that doesn't include an API key will return an error.
-
-You can generate get your API Token from your profile at any time.
-
-## Application ID
-
-The application ID is a unique token created by your application that identifies the application pushing the data. Each application ID must be different.
-
-## Make your first request
-
-{% hint style="info" %}
-All requests given in this documentation use the endpoint _https://app.netw4ppl.tech_, make sure to replace the URL with your installation
-{% endhint %}
+## Get
 
 To make your first request, send an authenticated request to the pets endpoint. You will get informations about the user you're logged with.
 

@@ -1,0 +1,2929 @@
+openapi: 3.0.0
+info:
+  title: N4P-website
+  description: >-
+    This documentation covers the basics of the N4P API.  
+
+    It is important to include the `Application-id` header in every request. It
+    allows to dissociate the device/context from which the request was made.
+
+
+    You can get a token from your profile on the netw4ppl web application.
+  version: 1.0.0
+servers:
+  - url: http://{{url}}
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+security:
+  - bearerAuth: []
+paths:
+  /api/fields:
+    get:
+      tags:
+        - default
+      summary: Get all fields
+      description: >-
+        This query retrieves the list of fields of the application.
+
+
+        This call provides all the lists registered on the server. The fields
+        being considered as a list, they are part of the response sent by the
+        server.
+
+
+        Here is the structure returned by the server:
+
+
+        ``` json
+
+        {
+            "list_name" : {
+                "first_list_elem_id" : {
+                    "displayed_element" : {
+                        "eng" : "English content",
+                        "fra" : "Contenu en français",
+                        …
+                    }
+                },
+                "second_list_elem_id" : {
+                    "displayed_element" : {
+                        "eng" : "English content",
+                        "fra" : "Contenu en français",
+                        …
+                    }
+                }
+            },
+            "list_name2":{
+                …
+            },
+            …
+        }
+
+
+        ```
+
+
+        Please note that `displayed_value` holds the value of the list item in
+        all languages supported by the application.  
+
+        It is also possible to have additional information for each list.
+
+          
+        For example, the list `fields`:
+
+
+        ``` json
+
+        "fields": {
+                "unique_id": {
+                    "placeholder": "AAA-000001",
+                    "database_type": "string",
+                    "android_type": "EditText",
+                    "linked_list": "",
+                    "required": 0,
+                    "displayed_value": {
+                        "eng": "Unique ID",
+                        "fra": "ID Unique",
+                        "spa": "Unico ID"
+                    }
+                },
+                "gender": {
+                    "placeholder": "F",
+                    "database_type": "string",
+                    "android_type": "Spinner",
+                    "linked_list": "Gender",
+                    "required": 0,
+                    "displayed_value": {
+                        "eng": "Sex",
+                        "fra": "Sexe",
+                        "spa": "Sexo"
+                    }
+                },
+                …
+        }
+
+
+        ```
+      parameters:
+        - name: Accept
+          in: header
+          schema:
+            type: string
+          example: application/json
+        - name: Application-id
+          in: header
+          schema:
+            type: string
+          example: '{{application_id}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Wed, 26 Oct 2022 11:06:05 GMT
+            Server:
+              schema:
+                type: string
+                example: Apache/2.4.54 (Debian)
+            Vary:
+              schema:
+                type: string
+                example: Authorization
+            X-Powered-By:
+              schema:
+                type: string
+                example: PHP/8.0.23
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '59'
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+                example: '*'
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5, max=100
+            Connection:
+              schema:
+                type: string
+                example: Keep-Alive
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                0d2f93bb-96a6-4472-8a08-fa82070e9db4:
+                  00138e48-55a0-407f-9ccd-13622361851a:
+                    ISO2: BI
+                    ISO3: BDI
+                    full: REPUBLIC OF BURUNDI
+                    displayed_value:
+                      eng: BURUNDI
+                      fra: Burundi
+                      spa: Burundi
+                      ita: Burundi
+                  004ee8ec-723a-4c95-9293-26c50ffed0d6:
+                    ISO2: GY
+                    ISO3: GUY
+                    full: REPUBLIC OF GUYANA
+                    displayed_value:
+                      eng: GUYANA
+                      fra: Guyana
+                      spa: Guyana
+                      ita: Guyana
+                  03e689f5-2a3e-4bed-9d66-88cb0db25a4c:
+                    ISO2: CV
+                    ISO3: CPV
+                    full: REPUBLIC OF CAPE VERDE
+                    displayed_value:
+                      eng: CAPE VERDE
+                      fra: Cap-Vert
+                      spa: Cabo Verde
+                      ita: Capo Verde
+                  05d8aa14-0ac0-423e-8a2e-9ba6b8104e4c:
+                    ISO2: PT
+                    ISO3: PRT
+                    full: PORTUGUESE REPUBLIC
+                    displayed_value:
+                      eng: PORTUGAL
+                      fra: Portugal
+                      spa: Portugal
+                      ita: Portogallo
+                  06401fb9-0e03-47d6-a8c8-a6244586b15d:
+                    ISO2: BZ
+                    ISO3: BLZ
+                    full: BELIZE
+                    displayed_value:
+                      eng: BELIZE
+                      fra: Belize
+                      spa: Belice
+                      ita: Belize
+                  06ab8c3a-84c3-401c-a5e5-b6e3e7884917:
+                    ISO2: HN
+                    ISO3: HND
+                    full: REPUBLIC OF HONDURAS
+                    displayed_value:
+                      eng: HONDURAS
+                      fra: Honduras
+                      spa: Honduras
+                      ita: Honduras
+                  08274bbe-3f0b-4052-bea1-557afe2df558:
+                    ISO2: AM
+                    ISO3: ARM
+                    full: REPUBLIC OF ARMENIA
+                    displayed_value:
+                      eng: ARMENIA
+                      fra: Arménie
+                      spa: Armenia
+                      ita: Armenia
+                  084b2f24-7125-4d62-9813-9d9ab7649c3b:
+                    ISO2: FJ
+                    ISO3: FJI
+                    full: REPUBLIC OF THE FIJI ISLANDS
+                    displayed_value:
+                      eng: FIJI
+                      fra: Fidji
+                      spa: Fiyi
+                      ita: Figi
+                  084e6ce0-758e-4c09-8d8c-f8a3a9d3bf92:
+                    ISO2: BF
+                    ISO3: BFA
+                    full: BURKINA FASO
+                    displayed_value:
+                      eng: BURKINA FASO
+                      fra: Burkina Faso
+                      spa: Burkina Faso
+                      ita: Burkina Faso
+                  089e1e12-f221-47a3-981f-d0650ca943ac:
+                    ISO2: NP
+                    ISO3: NPL
+                    full: FEDERAL DEMOCRATIC REPUBLIC OF NEPAL
+                    displayed_value:
+                      eng: NEPAL
+                      fra: Népal
+                      spa: Nepal
+                      ita: Nepal
+                  09f427e0-e26f-447f-85b1-f6362cdd54ac:
+                    ISO2: MR
+                    ISO3: MRT
+                    full: ISLAMIC REPUBLIC OF MAURITANIA
+                    displayed_value:
+                      eng: MAURITANIA
+                      fra: Mauritanie
+                      spa: Mauritania
+                      ita: Mauritania
+                  0aad32a8-33ba-4469-bdd9-9345ba4b3ba9:
+                    ISO2: XK
+                    ISO3: XXK
+                    full: REPUBLIC OF KOSOVO*
+                    displayed_value:
+                      eng: KOSOVO
+                  0b9bbf88-08f0-41f6-9a1f-00aee4e73343:
+                    ISO2: DM
+                    ISO3: DMA
+                    full: COMMONWEALTH OF DOMINICA
+                    displayed_value:
+                      eng: DOMINICA
+                      fra: Dominique
+                      spa: Dominica
+                      ita: Dominica
+                  0e067947-48fb-4bdd-8f4f-9c3e5a490452:
+                    ISO2: MV
+                    ISO3: MDV
+                    full: REPUBLIC OF MALDIVES
+                    displayed_value:
+                      eng: MALDIVES
+                      fra: Maldives
+                      spa: Maldivas
+                      ita: Maldive
+                  0e4d2327-b4fc-41e6-9bbc-ddcfa1eb929a:
+                    ISO2: IQ
+                    ISO3: IRQ
+                    full: REPUBLIC OF IRAQ
+                    displayed_value:
+                      eng: IRAQ
+                      fra: Irak
+                      spa: Irak
+                      ita: Iraq
+                  0ebf99fe-0e78-44f8-9d84-01ceb9ae66ea:
+                    ISO2: AU
+                    ISO3: AUS
+                    full: AUSTRALIA
+                    displayed_value:
+                      eng: AUSTRALIA
+                      fra: Australie
+                      spa: Australia
+                      ita: Australia
+                  0ed77289-e2a0-42eb-9fd9-c815978ab63d:
+                    ISO2: NA
+                    ISO3: NAM
+                    full: REPUBLIC OF NAMIBIA
+                    displayed_value:
+                      eng: NAMIBIA
+                      fra: Namibie
+                      spa: Namibia
+                      ita: Namibia
+                  1342b7e9-ce24-404b-b1a4-1f156df9fea0:
+                    ISO2: LR
+                    ISO3: LBR
+                    full: REPUBLIC OF LIBERIA
+                    displayed_value:
+                      eng: LIBERIA
+                      fra: Liberia
+                      spa: Liberia
+                      ita: Liberia
+                  13bc3e9f-a881-40ac-aee4-2e035e63a174:
+                    ISO2: NI
+                    ISO3: NIC
+                    full: REPUBLIC OF NICARAGUA
+                    displayed_value:
+                      eng: NICARAGUA
+                      fra: Nicaragua
+                      spa: Nicaragua
+                      ita: Nicaragua
+                  151227f6-2286-454f-a2b9-aa8d2c41f475:
+                    ISO2: TZ
+                    ISO3: TZA
+                    full: UNITED REPUBLIC OF TANZANIA
+                    displayed_value:
+                      eng: UNITED REPUBLIC OF TANZANIA (THE)
+                      fra: Tanzanie
+                      spa: Tanzania
+                      ita: Tanzania
+                  155e13f5-792b-46aa-9f11-e2dda65d7e08:
+                    ISO2: KH
+                    ISO3: KHM
+                    full: KINGDOM OF CAMBODIA
+                    displayed_value:
+                      eng: CAMBODIA
+                      fra: Cambodge
+                      spa: Camboya
+                      ita: Cambogia
+                  16033020-1823-43ec-9816-99813f9f4cba:
+                    ISO2: AD
+                    ISO3: AND
+                    full: PRINCIPALITY OF ANDORRA
+                    displayed_value:
+                      eng: ANDORRA
+                      fra: Andorre
+                      spa: Andorra
+                      ita: Andorra
+                  16148069-b128-427a-862c-f03f9543e032:
+                    ISO2: GR
+                    ISO3: GRC
+                    full: HELLENIC REPUBLIC
+                    displayed_value:
+                      eng: GREECE
+                      fra: Grèce
+                      spa: Grecia
+                      ita: Grecia
+                  16798e35-ed84-45bf-b232-e27e8f7f4b9e:
+                    ISO2: IT
+                    ISO3: ITA
+                    full: ITALIAN REPUBLIC
+                    displayed_value:
+                      eng: ITALY
+                      fra: Italie
+                      spa: Italia
+                      ita: Italia
+                  174728e7-ad96-4d0d-8b33-8a9374be30e3:
+                    ISO2: KW
+                    ISO3: KWT
+                    full: STATE OF KUWAIT
+                    displayed_value:
+                      eng: KUWAIT
+                      fra: Koweït
+                      spa: Kuwait
+                      ita: Kuwait
+                  18108fe1-681e-4c83-95f5-32dce078dfff:
+                    ISO2: AZ
+                    ISO3: AZE
+                    full: REPUBLIC OF AZERBAIJAN
+                    displayed_value:
+                      eng: AZERBAIJAN
+                      fra: Azerbaïdjan
+                      spa: Azerbaiyán
+                      ita: Azerbaigian
+                  19133bb1-e303-4543-aa8e-c73cc2325f0c:
+                    ISO2: CN
+                    ISO3: CHN
+                    full: PEOPLE'S REPUBLIC OF CHINA
+                    displayed_value:
+                      eng: CHINA
+                      fra: Chine
+                      spa: China
+                      ita: Cina
+                  19670e7b-13f1-4b1d-bc45-f2e7b5651684:
+                    ISO2: AL
+                    ISO3: ALB
+                    full: REPUBLIC OF ALBANIA
+                    displayed_value:
+                      eng: ALBANIA
+                      fra: Albanie
+                      spa: Albania
+                      ita: Albania
+                  1b2c78ff-fe4f-4547-a1da-4efb7dc24ab2:
+                    ISO2: MZ
+                    ISO3: MOZ
+                    full: REPUBLIC OF MOZAMBIQUE
+                    displayed_value:
+                      eng: MOZAMBIQUE
+                      fra: Mozambique
+                      spa: Mozambique
+                      ita: Mozambico
+                  1c2f2116-3d21-41dc-8183-49ac9f00d9de:
+                    ISO2: TG
+                    ISO3: TGO
+                    full: TOGOLESE REPUBLIC
+                    displayed_value:
+                      eng: TOGO
+                      fra: Togo
+                      spa: Togo
+                      ita: Togo
+                  1fba5091-40c7-484d-b34e-dea0a6283245:
+                    ISO2: KZ
+                    ISO3: KAZ
+                    full: REPUBLIC OF KAZAKHSTAN
+                    displayed_value:
+                      eng: KAZAKHSTAN
+                      fra: Kazakhstan
+                      spa: Kazajistán
+                      ita: Kazakistan
+                  200d3a7c-e46e-4926-9340-70aec26b2269:
+                    ISO2: GH
+                    ISO3: GHA
+                    full: REPUBLIC OF GHANA
+                    displayed_value:
+                      eng: GHANA
+                      fra: Ghana
+                      spa: Ghana
+                      ita: Ghana
+                  2031bed8-b78f-453e-b9b8-bb6293a4fd62:
+                    ISO2: RU
+                    ISO3: RUS
+                    full: RUSSIAN FEDERATION
+                    displayed_value:
+                      eng: RUSSIAN FEDERATION (THE)
+                      fra: Russie
+                      spa: Rusia
+                      ita: Russia
+                  2088bd7e-aed2-44c0-9898-df976db27d25:
+                    ISO2: SN
+                    ISO3: SEN
+                    full: REPUBLIC OF SENEGAL
+                    displayed_value:
+                      eng: SENEGAL
+                      fra: Sénégal
+                      spa: Senegal
+                      ita: Senegal
+                  21726469-3568-4740-b440-d38cf81a034e:
+                    ISO2: LU
+                    ISO3: LUX
+                    full: GRAND DUCHY OF LUXEMBOURG
+                    displayed_value:
+                      eng: LUXEMBOURG
+                      fra: Luxembourg (pays)
+                      spa: Luxemburgo
+                      ita: Lussemburgo
+                  244bf578-1692-458d-a1b1-a641bade71ba:
+                    ISO2: DO
+                    ISO3: DOM
+                    full: DOMINICAN REPUBLIC
+                    displayed_value:
+                      eng: DOMINICAN REPUBLIC (THE)
+                      fra: République dominicaine
+                      spa: República Dominicana
+                      ita: Rep. Dominicana
+                  25206e5f-998f-48c3-9563-06d6e1bb3dfe:
+                    ISO2: HU
+                    ISO3: HUN
+                    full: REPUBLIC OF HUNGARY
+                    displayed_value:
+                      eng: HUNGARY
+                      fra: Hongrie
+                      spa: Hungría
+                      ita: Ungheria
+                  25460792-9757-4832-9bd3-81bf0c9ef321:
+                    ISO2: SO
+                    ISO3: SOM
+                    full: SOMALI DEMOCRATIC REPUBLIC
+                    displayed_value:
+                      eng: SOMALIA
+                      fra: Somalie
+                      spa: Somalia
+                      ita: Somalia
+                  2a05cd1d-087e-44a1-be90-296818f72559:
+                    ISO2: UA
+                    ISO3: UKR
+                    full: UKRAINE
+                    displayed_value:
+                      eng: UKRAINE
+                      fra: Ukraine
+                      spa: Ucrania
+                      ita: Ucraina
+                  2aaa6746-172e-47fc-a8b1-83e5962f7dd3:
+                    ISO2: SE
+                    ISO3: SWE
+                    full: KINGDOM OF SWEDEN
+                    displayed_value:
+                      eng: SWEDEN
+                      fra: Suède
+                      spa: Suecia
+                      ita: Svezia
+                  2d1455a0-ebac-48e8-b862-d1dfb002b1ce:
+                    ISO2: KM
+                    ISO3: COM
+                    full: ISLAMIC FEDERAL REPUBLIC OF THE COMOROS
+                    displayed_value:
+                      eng: COMOROS (THE)
+                      fra: Comores (pays)
+                      spa: Comoras
+                      ita: Comore
+                  2ddf46e1-3a65-4d32-b2bf-d14842b38701:
+                    ISO2: GA
+                    ISO3: GAB
+                    full: GABONESE REPUBLIC
+                    displayed_value:
+                      eng: GABON
+                      fra: Gabon
+                      spa: Gabón
+                      ita: Gabon
+                  2f635bdd-3fd5-4f02-82fb-390f3b67b1b8:
+                    ISO2: PY
+                    ISO3: PRY
+                    full: REPUBLIC OF PARAGUAY
+                    displayed_value:
+                      eng: PARAGUAY
+                      fra: Paraguay
+                      spa: Paraguay
+                      ita: Paraguay
+                  30917a08-b488-473e-8301-9468e8570179:
+                    ISO2: GN
+                    ISO3: GIN
+                    full: REPUBLIC OF GUINEA
+                    displayed_value:
+                      eng: GUINEA
+                      fra: Guinée
+                      spa: Guinea
+                      ita: Guinea
+                  326da1cd-031d-4262-9b7a-5666e7871ea3:
+                    ISO2: EC
+                    ISO3: ECU
+                    full: REPUBLIC OF ECUADOR
+                    displayed_value:
+                      eng: ECUADOR
+                      fra: Équateur (pays)
+                      spa: Ecuador
+                      ita: Ecuador
+                  331d2715-7619-4e45-b1bf-9f4a740c9747:
+                    ISO2: IS
+                    ISO3: ISL
+                    full: REPUBLIC OF ICELAND
+                    displayed_value:
+                      eng: ICELAND
+                      fra: Islande
+                      spa: Islandia
+                      ita: Islanda
+                  33e17777-06c1-45bf-8072-974880a42e9a:
+                    ISO2: CU
+                    ISO3: CUB
+                    full: REPUBLIC OF CUBA
+                    displayed_value:
+                      eng: CUBA
+                      fra: Cuba
+                      spa: Cuba
+                      ita: Cuba
+                  356df00d-af45-46fb-baf6-c628d9422b0d:
+                    ISO2: VN
+                    ISO3: VNM
+                    full: SOCIALIST REPUBLIC OF VIET NAM
+                    displayed_value:
+                      eng: VIET NAM
+                      fra: Viêt Nam
+                      spa: Vietnam
+                      ita: Vietnam
+                  386b9408-b97d-4699-8653-e93d169de8dd:
+                    ISO2: TO
+                    ISO3: TON
+                    full: KINGDOM OF TONGA
+                    displayed_value:
+                      eng: TONGA
+                      fra: Tonga
+                      spa: Tonga
+                      ita: Tonga
+                  39130932-f1c1-4b3b-9f90-a16726adc212:
+                    ISO2: MD
+                    ISO3: MDA
+                    full: REPUBLIC OF MOLDOVA
+                    displayed_value:
+                      eng: REPUBLIC OF MOLDOVA (THE)
+                      fra: Moldavie
+                      spa: Moldavia
+                      ita: Moldavia
+                  3933521c-6432-4d07-af70-448453b50426:
+                    ISO2: WS
+                    ISO3: WSM
+                    full: INDEPENDENT STATE OF SAMOA
+                    displayed_value:
+                      eng: SAMOA
+                      fra: Samoa
+                      spa: Samoa
+                      ita: Samoa
+                  3a8a16e6-7f19-4c7b-8df2-a566a44f5c94:
+                    ISO2: SK
+                    ISO3: SVK
+                    full: SLOVAK REPUBLIC
+                    displayed_value:
+                      eng: SLOVAKIA
+                      fra: Slovaquie
+                      spa: Eslovaquia
+                      ita: Slovacchia
+                  3b744209-63ed-4c9b-bd8f-cec6aa8ba4c4:
+                    ISO2: CY
+                    ISO3: CYP
+                    full: REPUBLIC OF CYPRUS
+                    displayed_value:
+                      eng: CYPRUS
+                      fra: Chypre (pays)
+                      spa: Chipre
+                      ita: Cipro
+                  3b785f41-848e-4875-a7d9-1448be436419:
+                    ISO2: TD
+                    ISO3: TCD
+                    full: REPUBLIC OF CHAD
+                    displayed_value:
+                      eng: CHAD
+                      fra: Tchad
+                      spa: Chad
+                      ita: Ciad
+                  3e62bc00-1eb8-42a5-9562-0b7fe857d36e:
+                    ISO2: MH
+                    ISO3: MHL
+                    full: REPUBLIC OF THE MARSHALL ISLANDS
+                    displayed_value:
+                      eng: MARSHALL ISLANDS (THE)
+                      fra: Îles Marshall (pays)
+                      spa: Islas Marshall
+                      ita: Isole Marshall
+                  4013fb03-1e0a-4588-87d8-c3c5aa210a20:
+                    ISO2: EG
+                    ISO3: EGY
+                    full: ARAB REPUBLIC OF EGYPT
+                    displayed_value:
+                      eng: EGYPT
+                      fra: Égypte
+                      spa: Egipto
+                      ita: Egitto
+                  433d02dd-74bd-4c44-84df-3745c1b00879:
+                    ISO2: KI
+                    ISO3: KIR
+                    full: REPUBLIC OF KIRIBATI
+                    displayed_value:
+                      eng: KIRIBATI
+                      fra: Kiribati
+                      spa: Kiribati
+                      ita: Kiribati
+                  44189609-4ba4-46ed-8a53-65ecde5281a3:
+                    ISO2: CI
+                    ISO3: CIV
+                    full: REPUBLIC OF CÔTE D'IVOIRE
+                    displayed_value:
+                      eng: CÔTE D'IVOIRE
+                      fra: Côte d'Ivoire
+                      spa: Costa de Marfil
+                      ita: Costa d'Avorio
+                  46fbb434-a6f6-4705-aba4-8b436892c0eb:
+                    ISO2: BS
+                    ISO3: BHS
+                    full: COMMONWEALTH OF THE BAHAMAS
+                    displayed_value:
+                      eng: BAHAMAS (THE)
+                      fra: Bahamas
+                      spa: Bahamas
+                      ita: Bahamas
+                  471ccd33-5f39-49b6-b62d-6c2365c4f7fb:
+                    ISO2: FI
+                    ISO3: FIN
+                    full: REPUBLIC OF FINLAND
+                    displayed_value:
+                      eng: FINLAND
+                      fra: Finlande
+                      spa: Finlandia
+                      ita: Finlandia
+                  4a598414-c580-4887-a30d-62a4447cbaa8:
+                    ISO2: ST
+                    ISO3: STP
+                    full: DEMOCRATIC REPUBLIC OF SAO TOME AND PRINCIPE
+                    displayed_value:
+                      eng: SAO TOME AND PRINCIPE
+                      fra: Sao Tomé-et-Principe
+                      spa: Santo Tomé y Príncipe
+                      ita: São Tomé e Príncipe
+                  4a70efdd-ed73-4b50-927d-0eab6b64bca5:
+                    ISO2: CD
+                    ISO3: COD
+                    full: DEMOCRATIC REPUBLIC OF THE CONGO
+                    displayed_value:
+                      eng: DEMOCRATIC REPUBLIC OF THE CONGO
+                      fra: République démocratique du Congo
+                      spa: República Democrática del Congo
+                      ita: RD del Congo
+                  4ae62d7d-7013-4b4f-ad02-8eb676c6021f:
+                    ISO2: JP
+                    ISO3: JPN
+                    full: JAPAN
+                    displayed_value:
+                      eng: JAPAN
+                      fra: Japon
+                      spa: Japón
+                      ita: Giappone
+                  4afdbc11-1edb-4f21-ac73-f3eafe607e68:
+                    ISO2: PK
+                    ISO3: PAK
+                    full: ISLAMIC REPUBLIC OF PAKISTAN
+                    displayed_value:
+                      eng: PAKISTAN
+                      fra: Pakistan
+                      spa: Pakistán
+                      ita: Pakistan
+                  4b0314cc-5da5-4411-9ebb-069dcf363a6c:
+                    ISO2: BB
+                    ISO3: BRB
+                    full: BARBADOS
+                    displayed_value:
+                      eng: BARBADOS
+                      fra: Barbade
+                      spa: Barbados
+                      ita: Barbados
+                  4b5e9eab-24a5-4b02-ae82-260976dae7d2:
+                    ISO2: DZ
+                    ISO3: DZA
+                    full: PEOPLE'S DEMOCRATIC REPUBLIC OF ALGERIA
+                    displayed_value:
+                      eng: ALGERIA
+                      fra: Algérie
+                      spa: Argelia
+                      ita: Algeria
+                  4cee4b2b-625e-4a88-bc81-a9966af78e98:
+                    ISO2: CF
+                    ISO3: CAF
+                    full: CENTRAL AFRICAN REPUBLIC
+                    displayed_value:
+                      eng: CENTRAL AFRICAN REPUBLIC (THE)
+                      fra: République centrafricaine
+                      spa: República Centroafricana
+                      ita: Rep. Centrafricana
+                  4e527f73-ecf0-428b-a9d0-5d5b6b66be69:
+                    ISO2: TM
+                    ISO3: TKM
+                    full: TURKMENISTAN
+                    displayed_value:
+                      eng: TURKMENISTAN
+                      fra: Turkménistan
+                      spa: Turkmenistán
+                      ita: Turkmenistan
+                  4edd9048-d08c-4ae3-bdeb-9b648b60be4e:
+                    ISO2: LS
+                    ISO3: LSO
+                    full: KINGDOM OF LESOTHO
+                    displayed_value:
+                      eng: LESOTHO
+                      fra: Lesotho
+                      spa: Lesoto
+                      ita: Lesotho
+                  4f589093-013d-40eb-9984-879cf914a7d9:
+                    ISO2: PL
+                    ISO3: POL
+                    full: REPUBLIC OF POLAND
+                    displayed_value:
+                      eng: POLAND
+                      fra: Pologne
+                      spa: Polonia
+                      ita: Polonia
+                  4ffaa1fc-6542-4eb9-a989-9c19fe18f732:
+                    ISO2: SM
+                    ISO3: SMR
+                    full: REPUBLIC OF SAN MARINO
+                    displayed_value:
+                      eng: SAN MARINO
+                      fra: Saint-Marin
+                      spa: San Marino
+                      ita: San Marino
+                  50b4984c-94ab-40bd-b665-7f8474b9a080:
+                    ISO2: MY
+                    ISO3: MYS
+                    full: MALAYSIA
+                    displayed_value:
+                      eng: MALAYSIA
+                      fra: Malaisie
+                      spa: Malasia
+                      ita: Malaysia
+                  5124a536-0c1a-453f-bbf4-31ba5870e1df:
+                    ISO2: US
+                    ISO3: USA
+                    full: UNITED STATES OF AMERICA
+                    displayed_value:
+                      eng: UNITED STATES OF AMERICA (THE)
+                      fra: États-Unis
+                      spa: Estados Unidos
+                      ita: Stati Uniti
+                  527b2a78-6aed-4338-b5a4-594e6dfdf867:
+                    ISO2: IL
+                    ISO3: ISR
+                    full: STATE OF ISRAEL
+                    displayed_value:
+                      eng: ISRAEL
+                      fra: Israël
+                      spa: Israel
+                      ita: Israele
+                  5295c939-6d68-4c20-a595-bd8bb50f794b:
+                    ISO2: GM
+                    ISO3: GMB
+                    full: REPUBLIC OF THE GAMBIA
+                    displayed_value:
+                      eng: GAMBIA
+                      fra: Gambie
+                      spa: Gambia
+                      ita: Gambia
+                  52c9228d-246d-45f4-8ed2-bf02940ab907:
+                    ISO2: MX
+                    ISO3: MEX
+                    full: UNITED MEXICAN STATES
+                    displayed_value:
+                      eng: MEXICO
+                      fra: Mexique
+                      spa: México
+                      ita: Messico
+                  53452036-4df7-4dd3-a818-8893a96694b5:
+                    ISO2: CR
+                    ISO3: CRI
+                    full: REPUBLIC OF COSTA RICA
+                    displayed_value:
+                      eng: COSTA RICA
+                      fra: Costa Rica
+                      spa: Costa Rica
+                      ita: Costa Rica
+                  5393a3a2-f82a-4bd0-a767-6c55d004ac5f:
+                    ISO2: JM
+                    ISO3: JAM
+                    full: JAMAICA
+                    displayed_value:
+                      eng: JAMAICA
+                      fra: Jamaïque
+                      spa: Jamaica
+                      ita: Giamaica
+                  58fef8ac-d698-4ff1-9738-ec179d1816ff:
+                    ISO2: NE
+                    ISO3: NER
+                    full: REPUBLIC OF THE NIGER
+                    displayed_value:
+                      eng: NIGER
+                      fra: Niger
+                      spa: Níger
+                      ita: Niger
+                  59fde554-2ad8-43d1-b4af-ef8fcbfa3804:
+                    ISO2: GW
+                    ISO3: GNB
+                    full: REPUBLIC OF GUINEA-BISSAU
+                    displayed_value:
+                      eng: GUINEA-BISSAU
+                      fra: Guinée-Bissau
+                      spa: Guinea-Bisáu
+                      ita: Guinea-Bissau
+                  5ab60759-6bc4-4ae6-9dc6-136b61c19acd:
+                    ISO2: HT
+                    ISO3: HTI
+                    full: REPUBLIC OF HAITI
+                    displayed_value:
+                      eng: HAITI
+                      fra: Haïti
+                      spa: Haití
+                      ita: Haiti
+                  5ae9dc0f-f80c-4b33-a7dc-3af946a035f9:
+                    ISO2: CM
+                    ISO3: CMR
+                    full: REPUBLIC OF CAMEROON
+                    displayed_value:
+                      eng: CAMEROON
+                      fra: Cameroun
+                      spa: Camerún
+                      ita: Camerun
+                  5b108e97-fde1-4eb2-a0d3-2d489312dc8a:
+                    ISO2: MG
+                    ISO3: MDG
+                    full: REPUBLIC OF MADAGASCAR
+                    displayed_value:
+                      eng: MADAGASCAR
+                      fra: Madagascar
+                      spa: Madagascar
+                      ita: Madagascar
+                  5c2ad110-1b29-43be-93ea-56709a1286cb:
+                    ISO2: LC
+                    ISO3: LCA
+                    full: SAINT LUCIA
+                    displayed_value:
+                      eng: SAINT LUCIA
+                      fra: Sainte-Lucie
+                      spa: Santa Lucía
+                      ita: Saint Lucia
+                  5c60214a-d450-42c3-af54-a8e533972c94:
+                    ISO2: UZ
+                    ISO3: UZB
+                    full: REPUBLIC OF UZBEKISTAN
+                    displayed_value:
+                      eng: UZBEKISTAN
+                      fra: Ouzbékistan
+                      spa: Uzbekistán
+                      ita: Uzbekistan
+                  5cf6c210-04bb-43f1-b850-0416d5834d28:
+                    ISO2: SG
+                    ISO3: SGP
+                    full: REPUBLIC OF SINGAPORE
+                    displayed_value:
+                      eng: SINGAPORE
+                      fra: Singapour
+                      spa: Singapur
+                      ita: Singapore
+                  5d7256d2-167a-400f-bcb1-d20b7a5e6dde:
+                    ISO2: LB
+                    ISO3: LBN
+                    full: LEBANESE REPUBLIC
+                    displayed_value:
+                      eng: LEBANON
+                      fra: Liban
+                      spa: Líbano
+                      ita: Libano
+                  5f735db2-2520-4433-933e-cc6cf0e7ab9f:
+                    ISO2: EU
+                    ISO3: CEC
+                    full: EUROPEAN UNION
+                    displayed_value:
+                      eng: EUROPEAN UNION
+                  60090b91-3422-49d6-a240-b1a94811fae1:
+                    ISO2: BJ
+                    ISO3: BEN
+                    full: REPUBLIC OF BENIN
+                    displayed_value:
+                      eng: BENIN
+                      fra: Bénin
+                      spa: Benín
+                      ita: Benin
+                  6061c47a-b009-4b87-a1ac-922c0616fac5:
+                    ISO2: GB
+                    ISO3: GBR
+                    full: UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND
+                    displayed_value:
+                      eng: >-
+                        UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND
+                        (THE)
+                      fra: Royaume-Uni
+                      spa: Reino Unido
+                      ita: Regno Unito
+                  60f569c2-cee0-4f89-94c4-8b61dd3a698f:
+                    ISO2: TL
+                    ISO3: TLS
+                    full: DEMOCRATIC REPUBLIC OF TIMOR-LESTE
+                    displayed_value:
+                      eng: TIMOR-LESTE
+                      fra: Timor oriental
+                      spa: Timor Oriental
+                      ita: Timor Est
+                  622a3f4f-0d2c-4779-869d-2e9cf15f44d2:
+                    ISO2: FR
+                    ISO3: FRA
+                    full: FRENCH REPUBLIC
+                    displayed_value:
+                      eng: FRANCE
+                      fra: France
+                      spa: Francia
+                      ita: Francia
+                  62575c66-6d2a-429d-972c-3a06cb372cf0:
+                    ISO2: SR
+                    ISO3: SUR
+                    full: REPUBLIC OF SURINAME
+                    displayed_value:
+                      eng: SURINAME
+                      fra: Suriname
+                      spa: Surinam
+                      ita: Suriname
+                  644a8ad6-bb07-4428-af02-92114eef3491:
+                    ISO2: NC
+                    ISO3: NCL
+                    full: NEW CALEDONIA
+                    displayed_value:
+                      eng: FRANCE - NEW CALEDONIA
+                  64bf777c-bf6d-4b2d-9fc4-3a224c23db4c:
+                    ISO2: SZ
+                    ISO3: SWZ
+                    full: KINGDOM OF SWAZILAND
+                    displayed_value:
+                      eng: SWAZILAND
+                      fra: Eswatini
+                      spa: Suazilandia
+                      ita: Swaziland
+                  65ffc95c-7c21-4cb1-83c5-679d10744508:
+                    ISO2: KR
+                    ISO3: KOR
+                    full: REPUBLIC OF KOREA
+                    displayed_value:
+                      eng: REPUBLIC OF KOREA (THE)
+                      fra: Corée du Sud
+                      spa: Corea del Sur
+                      ita: Corea del Sud
+                  68ca7b7b-a394-45b2-8966-28189ea3014a:
+                    ISO2: BO
+                    ISO3: BOL
+                    full: REPUBLIC OF BOLIVIA
+                    displayed_value:
+                      eng: BOLIVIA
+                      fra: Bolivie
+                      spa: Bolivia
+                      ita: Bolivia
+                  69dc8bb3-7b73-4fd6-977b-08f8c0553398:
+                    ISO2: NZ
+                    ISO3: NZL
+                    full: NEW ZEALAND
+                    displayed_value:
+                      eng: NEW ZEALAND
+                      fra: Nouvelle-Zélande
+                      spa: Nueva Zelanda
+                      ita: Nuova Zelanda
+                  6a5792d9-8f39-429c-b6cb-27906d8160da:
+                    ISO2: LK
+                    ISO3: LKA
+                    full: DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA
+                    displayed_value:
+                      eng: SRI LANKA
+                      fra: Sri Lanka
+                      spa: Sri Lanka
+                      ita: Sri Lanka
+                  6ed13943-2975-4d88-aa7d-6df43e5922ad:
+                    ISO2: KN
+                    ISO3: KNA
+                    full: SAINT KITTS AND NEVIS
+                    displayed_value:
+                      eng: SAINT KITTS AND NEVIS
+                      fra: Saint-Christophe-et-Niévès
+                      spa: San Cristóbal y Nieves
+                      ita: Saint Kitts e Nevis
+                  70233ff6-c975-4766-8600-ac30de38d483:
+                    ISO2: DJ
+                    ISO3: DJI
+                    full: REPUBLIC OF DJIBOUTI
+                    displayed_value:
+                      eng: DJIBOUTI
+                      fra: Djibouti
+                      spa: Yibuti
+                      ita: Gibuti
+                  70d28004-cf7f-4a01-a3fe-f79a0686d9f1:
+                    ISO2: VE
+                    ISO3: VEN
+                    full: BOLIVARIAN REPUBLIC OF VENEZUELA
+                    displayed_value:
+                      eng: VENEZUELA
+                      fra: Venezuela
+                      spa: Venezuela
+                      ita: Venezuela
+                  71ea27ea-d103-4986-b86c-b6439446a116:
+                    ISO2: AR
+                    ISO3: ARG
+                    full: ARGENTINE REPUBLIC
+                    displayed_value:
+                      eng: ARGENTINA
+                      fra: Argentine
+                      spa: Argentina
+                      ita: Argentina
+                  756d0f13-0a34-4a23-8ad2-e4b83788d3c4:
+                    ISO2: ML
+                    ISO3: MLI
+                    full: REPUBLIC OF MALI
+                    displayed_value:
+                      eng: MALI
+                      fra: Mali
+                      spa: Malí
+                      ita: Mali
+                  7621654b-c2ce-42d8-9bbe-f8d1dc637070:
+                    ISO2: DK
+                    ISO3: DNK
+                    full: KINGDOM OF DENMARK
+                    displayed_value:
+                      eng: DENMARK
+                      fra: Danemark
+                      spa: Dinamarca
+                      ita: Danimarca
+                  7628e565-8041-498a-b48f-e72446348282:
+                    ISO2: FK
+                    ISO3: FLK
+                    full: FALKLAND ISLANDS (MALVINAS)
+                    displayed_value:
+                      eng: FALKLAND ISLANDS (MALVINAS)
+                  76995e95-c27a-4876-8bd9-9016235d66bc:
+                    ISO2: CO
+                    ISO3: COL
+                    full: REPUBLIC OF COLOMBIA
+                    displayed_value:
+                      eng: COLOMBIA
+                      fra: Colombie
+                      spa: Colombia
+                      ita: Colombia
+                  79e2731d-ce3d-4e6f-bf02-daf6244ccedd:
+                    ISO2: PW
+                    ISO3: PLW
+                    full: REPUBLIC OF PALAU
+                    displayed_value:
+                      eng: PALAU
+                      fra: Palaos
+                      spa: Palaos
+                      ita: Palau
+                  7ca0a015-6f07-43b1-886e-3833825bf2d1:
+                    ISO2: SY
+                    ISO3: SYR
+                    full: SYRIAN ARAB REPUBLIC
+                    displayed_value:
+                      eng: SYRIAN ARAB REPUBLIC (THE)
+                      fra: Syrie
+                      spa: Siria
+                      ita: Siria
+                  7fab7767-c365-4610-938c-cb0d5019835d:
+                    ISO2: AT
+                    ISO3: AUT
+                    full: REPUBLIC OF AUSTRIA
+                    displayed_value:
+                      eng: AUSTRIA
+                      fra: Autriche
+                      spa: Austria
+                      ita: Austria
+                  7fc564ee-8ba5-4cbd-84f7-40d97dab2f50:
+                    ISO2: ME
+                    ISO3: MNE
+                    full: MONTENEGRO
+                    displayed_value:
+                      eng: MONTENEGRO
+                      fra: Monténégro
+                      spa: Montenegro
+                      ita: Montenegro
+                  80a962a0-6dff-45b0-9437-6631d9c1d18a:
+                    ISO2: CH
+                    ISO3: CHE
+                    full: SWISS CONFEDERATION
+                    displayed_value:
+                      eng: SWITZERLAND
+                      fra: Suisse
+                      spa: Suiza
+                      ita: Svizzera
+                  80eb1d9c-62e1-438c-8228-ced73b3c752c:
+                    ISO2: UY
+                    ISO3: URY
+                    full: EASTERN REPUBLIC OF URUGUAY
+                    displayed_value:
+                      eng: URUGUAY
+                      fra: Uruguay
+                      spa: Uruguay
+                      ita: Uruguay
+                  88bcc4cc-7ce0-46e2-a995-09127aa12e35:
+                    ISO2: BA
+                    ISO3: BIH
+                    full: REPUBLIC OF BOSNIA AND HERZEGOVINA (1)
+                    displayed_value:
+                      eng: BOSNIA AND HERZEGOVINA
+                      fra: Bosnie-Herzégovine
+                      spa: Bosnia y Herzegovina
+                      ita: Bosnia ed Erzegovina
+                  8a139403-ef01-40bf-890d-b2d4a2831068:
+                    ISO2: NU
+                    ISO3: NIU
+                    full: REPUBLIC OF NIUE
+                    displayed_value:
+                      eng: NIUE
+                  8ba2b9ca-f534-4d46-800b-782cbc4f3e75:
+                    ISO2: GQ
+                    ISO3: GNQ
+                    full: REPUBLIC OF EQUATORIAL GUINEA
+                    displayed_value:
+                      eng: EQUATORIAL GUINEA
+                      fra: Guinée équatoriale
+                      spa: Guinea Ecuatorial
+                      ita: Guinea Equatoriale
+                  8da0a12a-c100-4c58-8087-30c34ba30f66:
+                    ISO2: PA
+                    ISO3: PAN
+                    full: REPUBLIC OF PANAMA
+                    displayed_value:
+                      eng: PANAMA
+                      fra: Panama
+                      spa: Panamá
+                      ita: Panama
+                  8e7dbef7-2e1a-4f95-9870-2ed1c46c0755:
+                    ISO2: GD
+                    ISO3: GRD
+                    full: GRENADA
+                    displayed_value:
+                      eng: GRENADA
+                      fra: Grenade (pays)
+                      spa: Granada
+                      ita: Grenada
+                  8fce7028-f48f-4bd5-a311-d6373a2f2a83:
+                    ISO2: LA
+                    ISO3: LAO
+                    full: LAO PEOPLE'S DEMOCRATIC REPUBLIC
+                    displayed_value:
+                      eng: LAO PEOPLE'S DEMOCRATIC REPUBLIC (THE)
+                      fra: Laos
+                      spa: Laos
+                      ita: Laos
+                  8fe5cb2d-a768-4736-8467-6d99d50482f3:
+                    ISO2: VC
+                    ISO3: VCT
+                    full: SAINT VINCENT AND THE GRENADINES
+                    displayed_value:
+                      eng: SAINT VINCENT AND THE GRENADINES
+                      fra: Saint-Vincent-et-les-Grenadines
+                      spa: San Vicente y las Granadinas
+                      ita: Saint Vincent e Grenadine
+                  9222f3c4-1352-484b-b3de-c6a24985771b:
+                    ISO2: FM
+                    ISO3: FSM
+                    full: FEDERATED STATES OF MICRONESIA
+                    displayed_value:
+                      eng: MICRONESIA (FEDERATED STATES OF)
+                      fra: États fédérés de Micronésie (pays)
+                      spa: Micronesia
+                      ita: Micronesia
+                  96c33fb6-4e99-4e4c-b62f-bdcc72a68bab:
+                    ISO2: MU
+                    ISO3: MUS
+                    full: REPUBLIC OF MAURITIUS
+                    displayed_value:
+                      eng: MAURITIUS
+                      fra: Maurice (pays)
+                      spa: Mauricio
+                      ita: Mauritius
+                  9867b8e3-b94d-4b6e-b331-0c27208a5e99:
+                    ISO2: AF
+                    ISO3: AFG
+                    full: ISLAMIC REPUBLIC OF AFGHANISTAN
+                    displayed_value:
+                      eng: AFGHANISTAN
+                      fra: Afghanistan
+                      spa: Afganistán
+                      ita: Afghanistan
+                  9b8adde2-319e-4532-bbab-d84b6894b332:
+                    ISO2: EH
+                    ISO3: ESH
+                    full: WESTERN SAHARA
+                    displayed_value:
+                      eng: WESTERN SAHARA
+                  9c83663d-9568-4c01-9b04-90adbbee1029:
+                    ISO2: UG
+                    ISO3: UGA
+                    full: REPUBLIC OF UGANDA
+                    displayed_value:
+                      eng: UGANDA
+                      fra: Ouganda
+                      spa: Uganda
+                      ita: Uganda
+                  9cc63e92-d2d9-4381-8c0d-9e5fb0af46be:
+                    ISO2: AE
+                    ISO3: ARE
+                    full: UNITED ARAB EMIRATES
+                    displayed_value:
+                      eng: UNITED ARAB EMIRATES (THE)
+                      fra: Émirats arabes unis
+                      spa: Emiratos Árabes Unidos
+                      ita: Emirati Arabi Uniti
+                  9d719d6b-a41a-4168-a5c0-fdb8feaa04ad:
+                    ISO2: SA
+                    ISO3: SAU
+                    full: KINGDOM OF SAUDI ARABIA
+                    displayed_value:
+                      eng: SAUDI ARABIA
+                      fra: Arabie saoudite
+                      spa: Arabia Saudita
+                      ita: Arabia Saudita
+                  9d859e1c-7ac9-48ca-83f0-1a09cacc3038:
+                    ISO2: PF
+                    ISO3: PYF
+                    full: TAHITI
+                    displayed_value:
+                      eng: FRANCE - TAHITI
+                  9e32100f-ac16-4730-839e-5c2c73b80605:
+                    ISO2: BR
+                    ISO3: BRA
+                    full: FEDERATIVE REPUBLIC OF BRAZIL
+                    displayed_value:
+                      eng: BRAZIL
+                      fra: Brésil
+                      spa: Brasil
+                      ita: Brasile
+                  9e6e1d97-fa13-449a-b504-cf4027bfe51f:
+                    ISO2: RO
+                    ISO3: ROU
+                    full: ROMANIA
+                    displayed_value:
+                      eng: ROMANIA
+                      fra: Roumanie
+                      spa: Rumania
+                      ita: Romania
+                  9eb36e8b-5715-4ab9-a3df-867eedbcc391:
+                    ISO2: BG
+                    ISO3: BGR
+                    full: REPUBLIC OF BULGARIA
+                    displayed_value:
+                      eng: BULGARIA
+                      fra: Bulgarie
+                      spa: Bulgaria
+                      ita: Bulgaria
+                  9fa3438a-2bed-4e9a-a869-e69a3665998b:
+                    ISO2: ZW
+                    ISO3: ZWE
+                    full: REPUBLIC OF ZIMBABWE
+                    displayed_value:
+                      eng: ZIMBABWE
+                      fra: Zimbabwe
+                      spa: Zimbabue
+                      ita: Zimbabwe
+                  a0644afc-f9c0-40e9-bf86-8e7b48f3506d:
+                    ISO2: TR
+                    ISO3: TUR
+                    full: REPUBLIC OF TURKEY
+                    displayed_value:
+                      eng: TURKEY
+                      fra: Turquie
+                      spa: Turquía
+                      ita: Turchia
+                  a065fb4d-66d6-41d5-b7b7-de14c3d4ab06:
+                    ISO2: PE
+                    ISO3: PER
+                    full: REPUBLIC OF PERU
+                    displayed_value:
+                      eng: PERU
+                      fra: Pérou
+                      spa: Perú
+                      ita: Perù
+                  a0dffb49-fa99-4f55-a4f0-6ccf4af655e3:
+                    ISO2: ES
+                    ISO3: ESP
+                    full: KINGDOM OF SPAIN
+                    displayed_value:
+                      eng: SPAIN
+                      fra: Espagne
+                      spa: España
+                      ita: Spagna
+                  a142b237-a5e3-4b6b-941f-b61e1562e5dc:
+                    ISO2: PG
+                    ISO3: PNG
+                    full: PAPUA NEW GUINEA
+                    displayed_value:
+                      eng: PAPUA NEW GUINEA
+                      fra: Papouasie-Nouvelle-Guinée
+                      spa: Papúa Nueva Guinea
+                      ita: Papua Nuova Guinea
+                  a5145fa7-39e2-4544-8e1d-1ad1e5b2a6ab:
+                    ISO2: BT
+                    ISO3: BTN
+                    full: KINGDOM OF BHUTAN
+                    displayed_value:
+                      eng: BHUTAN
+                      fra: Bhoutan
+                      spa: Bután
+                      ita: Bhutan
+                  ab4dcdaa-b3bc-4ff3-bf14-ef6f0c85df64:
+                    ISO2: NL
+                    ISO3: NLD
+                    full: KINGDOM OF THE NETHERLANDS
+                    displayed_value:
+                      eng: NETHERLANDS (THE)
+                      fra: Pays-Bas
+                      spa: Países Bajos
+                      ita: Paesi Bassi
+                  ab62907d-5fc3-4626-9eaf-0b3b561e2407:
+                    ISO2: IN
+                    ISO3: IND
+                    full: REPUBLIC OF INDIA
+                    displayed_value:
+                      eng: INDIA
+                      fra: Inde
+                      spa: India
+                      ita: India
+                  ad9bc096-4b2c-4882-9b87-03f7ff287ec0:
+                    ISO2: IE
+                    ISO3: IRL
+                    full: IRELAND
+                    displayed_value:
+                      eng: IRELAND
+                      fra: Irlande (pays)
+                      spa: Irlanda
+                      ita: Irlanda
+                  ada35230-b97d-44b8-ae0c-2ea566136585:
+                    ISO2: LV
+                    ISO3: LVA
+                    full: REPUBLIC OF LATVIA
+                    displayed_value:
+                      eng: LATVIA
+                      fra: Lettonie
+                      spa: Letonia
+                      ita: Lettonia
+                  ae8563e4-6bd8-4c6b-a61f-bd5a3722d377:
+                    ISO2: MT
+                    ISO3: MLT
+                    full: REPUBLIC OF MALTA
+                    displayed_value:
+                      eng: MALTA
+                      fra: Malte
+                      spa: Malta
+                      ita: Malta
+                  aea3998b-9067-4c4f-8deb-3be9c0478cfd:
+                    ISO2: IR
+                    ISO3: IRN
+                    full: ISLAMIC REPUBLIC OF IRAN
+                    displayed_value:
+                      eng: IRAN (ISLAMIC REPUBLIC OF)
+                      fra: Iran
+                      spa: Irán
+                      ita: Iran
+                  af1713c2-8062-42c3-a086-0d5c89c412e3:
+                    ISO2: KE
+                    ISO3: KEN
+                    full: REPUBLIC OF KENYA
+                    displayed_value:
+                      eng: KENYA
+                      fra: Kenya
+                      spa: Kenia
+                      ita: Kenya
+                  b1004c84-ba4c-4c3a-9392-e3b2f06963a8:
+                    ISO2: MK
+                    ISO3: MKD
+                    full: THE FORMER YUGOSLAV REPUBLIC OF MACEDONIA
+                    displayed_value:
+                      eng: MACEDONIA (THE FORMER YUGOSLAV REPUBLIC OF)
+                      fra: Macédoine du Nord
+                      spa: Macedonia del Norte
+                      ita: Macedonia del Nord
+                  b1103b90-0823-4e3f-9a4e-11ab0b728b41:
+                    ISO2: MW
+                    ISO3: MWI
+                    full: REPUBLIC OF MALAWI
+                    displayed_value:
+                      eng: MALAWI
+                      fra: Malawi
+                      spa: Malaui
+                      ita: Malawi
+                  b2e161c5-8338-4007-98fd-44cb178fbff7:
+                    ISO2: NR
+                    ISO3: NRU
+                    full: REPUBLIC OF NAURU
+                    displayed_value:
+                      eng: NAURU
+                      fra: Nauru
+                      spa: Nauru
+                      ita: Nauru
+                  b42bbba7-53b6-4594-a074-74f6e5ad9665:
+                    ISO2: NG
+                    ISO3: NGA
+                    full: FEDERAL REPUBLIC OF NIGERIA
+                    displayed_value:
+                      eng: NIGERIA
+                      fra: Nigeria
+                      spa: Nigeria
+                      ita: Nigeria
+                  b4a25c13-cb87-4219-91f1-6aed9468e7c0:
+                    ISO2: SV
+                    ISO3: SLV
+                    full: REPUBLIC OF EL SALVADOR
+                    displayed_value:
+                      eng: EL SALVADOR
+                      fra: Salvador
+                      spa: El Salvador
+                      ita: El Salvador
+                  b4bf7973-c783-4013-93fa-67768b5e16e4:
+                    ISO2: ID
+                    ISO3: IDN
+                    full: REPUBLIC OF INDONESIA
+                    displayed_value:
+                      eng: INDONESIA
+                      fra: Indonésie
+                      spa: Indonesia
+                      ita: Indonesia
+                  b56e2884-46c2-4531-908c-9bbe54544937:
+                    ISO2: BN
+                    ISO3: BRN
+                    full: BRUNEI DARUSSALAM
+                    displayed_value:
+                      eng: BRUNEI DARUSSALAM
+                      fra: Brunei
+                      spa: Brunéi
+                      ita: Brunei
+                  b64542ab-b767-4986-921f-2afc6e350df1:
+                    ISO2: TV
+                    ISO3: TUV
+                    full: TUVALU
+                    displayed_value:
+                      eng: TUVALU
+                      fra: Tuvalu
+                      spa: Tuvalu
+                      ita: Tuvalu
+                  b6598589-68cd-4176-95e7-4a62feb0b43a:
+                    ISO2: JO
+                    ISO3: JOR
+                    full: HASHEMITE KINGDOM OF JORDAN
+                    displayed_value:
+                      eng: JORDAN
+                      fra: Jordanie
+                      spa: Jordania
+                      ita: Giordania
+                  b65afd36-edeb-4e09-91ff-188d1169e8dd:
+                    ISO2: SS
+                    ISO3: SSD
+                    full: REPUBLIC OF SOUTH SUDAN
+                    displayed_value:
+                      eng: SOUTH SUDAN
+                      fra: Soudan du Sud
+                      spa: Sudán del Sur
+                      ita: Sudan del Sud
+                  b8878229-c8f6-4ca8-a18e-1fd1956feb2d:
+                    ISO2: BW
+                    ISO3: BWA
+                    full: REPUBLIC OF BOTSWANA
+                    displayed_value:
+                      eng: BOTSWANA
+                      fra: Botswana
+                      spa: Botsuana
+                      ita: Botswana
+                  b8a00ed0-8aaf-4bec-9e02-c7c7f6dbf725:
+                    ISO2: RW
+                    ISO3: RWA
+                    full: REPUBLIC OF RWANDA
+                    displayed_value:
+                      eng: RWANDA
+                      fra: Rwanda
+                      spa: Ruanda
+                      ita: Ruanda
+                  b966b107-3b4a-4b6b-97d5-c9bc22518645:
+                    ISO2: TJ
+                    ISO3: TJK
+                    full: REPUBLIC OF TAJIKISTAN
+                    displayed_value:
+                      eng: TAJIKISTAN
+                      fra: Tadjikistan
+                      spa: Tayikistán
+                      ita: Tagikistan
+                  b9a7d79b-6bf1-4e11-ba49-799861b57b28:
+                    ISO2: VU
+                    ISO3: VUT
+                    full: REPUBLIC OF VANUATU
+                    displayed_value:
+                      eng: VANUATU
+                      fra: Vanuatu
+                      spa: Vanuatu
+                      ita: Vanuatu
+                  ba658175-c622-43af-b1c1-1fd62ceb3205:
+                    ISO2: TT
+                    ISO3: TTO
+                    full: REPUBLIC OF TRINIDAD AND TOBAGO
+                    displayed_value:
+                      eng: TRINIDAD AND TOBAGO
+                      fra: Trinité-et-Tobago
+                      spa: Trinidad y Tobago
+                      ita: Trinidad e Tobago
+                  bd91ac9f-203f-4ee7-9dce-a0577f7db827:
+                    ISO2: AG
+                    ISO3: ATG
+                    full: ANTIGUA AND BARBUDA
+                    displayed_value:
+                      eng: ANTIGUA AND BARBUDA
+                      fra: Antigua-et-Barbuda
+                      spa: Antigua y Barbuda
+                      ita: Antigua e Barbuda
+                  befedaab-1c46-42c6-b90f-7e52e0595449:
+                    ISO2: HR
+                    ISO3: HRV
+                    full: REPUBLIC OF CROATIA
+                    displayed_value:
+                      eng: CROATIA
+                      fra: Croatie
+                      spa: Croacia
+                      ita: Croazia
+                  bf6ad0d4-be62-4412-ab92-e649522fbfb7:
+                    ISO2: TW
+                    ISO3: TWN
+                    full: REPUBLIC OF CHINA
+                    displayed_value:
+                      eng: REPUBLIC OF CHINA
+                  c088ec81-9745-4454-b89d-6ce1c735538b:
+                    ISO2: SL
+                    ISO3: SLE
+                    full: REPUBLIC OF SIERRA LEONE
+                    displayed_value:
+                      eng: SIERRA LEONE
+                      fra: Sierra Leone
+                      spa: Sierra Leona
+                      ita: Sierra Leone
+                  c24f1f22-1ccb-4e0d-ba41-b02f6c13fb65:
+                    ISO2: KG
+                    ISO3: KGZ
+                    full: KYRGYZ REPUBLIC
+                    displayed_value:
+                      eng: KYRGYZSTAN
+                      fra: Kirghizistan
+                      spa: Kirguistán
+                      ita: Kirghizistan
+                  c2ec4b78-6622-453d-9d96-4ffd16258891:
+                    ISO2: MA
+                    ISO3: MAR
+                    full: KINGDOM OF MOROCCO
+                    displayed_value:
+                      eng: MOROCCO
+                      fra: Maroc
+                      spa: Marruecos
+                      ita: Marocco
+                  c4defcdb-32d0-437f-8c96-487f90ed252e:
+                    ISO2: VA
+                    ISO3: VAT
+                    full: HOLY SEE
+                    displayed_value:
+                      eng: HOLY SEE (THE)
+                  c5679101-8bc0-45fa-9066-cec097ad834b:
+                    ISO2: LI
+                    ISO3: LIE
+                    full: PRINCIPALITY OF LIECHTENSTEIN
+                    displayed_value:
+                      eng: LIECHTENSTEIN
+                      fra: Liechtenstein
+                      spa: Liechtenstein
+                      ita: Liechtenstein
+                  c579de6d-d820-43c1-8f23-22d208a8d154:
+                    ISO2: LT
+                    ISO3: LTU
+                    full: REPUBLIC OF LITHUANIA
+                    displayed_value:
+                      eng: LITHUANIA
+                      fra: Lituanie
+                      spa: Lituania
+                      ita: Lituania
+                  c6a72112-0a8e-497c-91ac-1bf4b761623c:
+                    ISO2: CA
+                    ISO3: CAN
+                    full: CANADA
+                    displayed_value:
+                      eng: CANADA
+                      fra: Canada
+                      spa: Canadá
+                      ita: Canada
+                  c6d2adf0-94b7-4170-82c5-ed889f66cfbb:
+                    ISO2: KP
+                    ISO3: PRK
+                    full: DEMOCRATIC PEOPLE'S REPUBLIC OF KOREA
+                    displayed_value:
+                      eng: DEMOCRATIC PEOPLE'S REPUBLIC OF KOREA (THE)
+                      fra: Corée du Nord
+                      spa: Corea del Norte
+                      ita: Corea del Nord
+                  c97586dd-41e4-409d-b860-25036360e7b3:
+                    ISO2: QA
+                    ISO3: QAT
+                    full: STATE OF QATAR
+                    displayed_value:
+                      eng: QATAR
+                      fra: Qatar
+                      spa: Catar
+                      ita: Qatar
+                  cd678c06-ec73-4800-b577-023f15dd5d3c:
+                    ISO2: ER
+                    ISO3: ERI
+                    full: ERITREA
+                    displayed_value:
+                      eng: ERITREA
+                      fra: Érythrée
+                      spa: Eritrea
+                      ita: Eritrea
+                  ce1491dd-e573-4228-a2aa-b334f8799110:
+                    ISO2: CG
+                    ISO3: COG
+                    full: REPUBLIC OF THE CONGO
+                    displayed_value:
+                      eng: CONGO (THE)
+                      fra: République du Congo
+                      spa: República del Congo
+                      ita: Rep. del Congo
+                  cf164b32-a324-4807-8d17-677b2814b2bd:
+                    ISO2: LY
+                    ISO3: LBY
+                    full: SOCIALIST PEOPLE'S LIBYAN ARAB JAMAHIRIYA
+                    displayed_value:
+                      eng: LIBYAN ARAB JAMAHIRIYA (THE)
+                      fra: Libye
+                      spa: Libia
+                      ita: Libia
+                  d4e512da-c339-470a-88b3-a3a382a5e537:
+                    ISO2: MC
+                    ISO3: MCO
+                    full: PRINCIPALITY OF MONACO
+                    displayed_value:
+                      eng: MONACO
+                      fra: Monaco
+                      spa: Mónaco
+                      ita: Monaco
+                  d6ddd51d-a4d8-4fbf-a1c9-97974d05c2e5:
+                    ISO2: SC
+                    ISO3: SYC
+                    full: REPUBLIC OF SEYCHELLES
+                    displayed_value:
+                      eng: SEYCHELLES
+                      fra: Seychelles
+                      spa: Seychelles
+                      ita: Seychelles
+                  da57114a-1b72-408d-ab34-f74b4e5ee745:
+                    ISO2: ET
+                    ISO3: ETH
+                    full: FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA
+                    displayed_value:
+                      eng: ETHIOPIA
+                      fra: Éthiopie
+                      spa: Etiopía
+                      ita: Etiopia
+                  dc8cdecc-4021-4e80-9a67-371b46cef6ef:
+                    ISO2: MN
+                    ISO3: MNG
+                    full: MONGOLIA
+                    displayed_value:
+                      eng: MONGOLIA
+                      fra: Mongolie
+                      spa: Mongolia
+                      ita: Mongolia
+                  dcfde487-e7e0-4da3-a5e4-1126fc857e5e:
+                    ISO2: MM
+                    ISO3: MMR
+                    full: UNION OF MYANMAR
+                    displayed_value:
+                      eng: MYANMAR
+                      fra: Birmanie
+                      spa: Birmania
+                      ita: Birmania
+                  dde0c9ec-7786-4dd6-b3cd-b338b21f251e:
+                    ISO2: 'NO'
+                    ISO3: NOR
+                    full: KINGDOM OF NORWAY
+                    displayed_value:
+                      eng: NORWAY
+                      fra: Norvège
+                      spa: Noruega
+                      ita: Norvegia
+                  df83da73-3b58-4468-8402-d4b90e35dc9a:
+                    ISO2: EE
+                    ISO3: EST
+                    full: REPUBLIC OF ESTONIA
+                    displayed_value:
+                      eng: ESTONIA
+                      fra: Estonie
+                      spa: Estonia
+                      ita: Estonia
+                  e00c6b8d-55fe-4816-9772-15582d0a6ebb:
+                    ISO2: AO
+                    ISO3: AGO
+                    full: REPUBLIC OF ANGOLA
+                    displayed_value:
+                      eng: ANGOLA
+                      fra: Angola
+                      spa: Angola
+                      ita: Angola
+                  e02e7e9c-19cb-4cc4-a7d2-a9efd0bd16f9:
+                    ISO2: OM
+                    ISO3: OMN
+                    full: SULTANATE OF OMAN
+                    displayed_value:
+                      eng: OMAN
+                      fra: Oman
+                      spa: Omán
+                      ita: Oman
+                  e031cecf-b5f0-4914-ac42-3174a79aceb6:
+                    ISO2: DE
+                    ISO3: DEU
+                    full: FEDERAL REPUBLIC OF GERMANY
+                    displayed_value:
+                      eng: GERMANY
+                      fra: Allemagne
+                      spa: Alemania
+                      ita: Germania
+                  e04280f9-8e69-4e2c-9a89-1b938f6ca1b1:
+                    ISO2: PH
+                    ISO3: PHL
+                    full: REPUBLIC OF THE PHILIPPINES
+                    displayed_value:
+                      eng: PHILIPPINES (THE)
+                      fra: Philippines
+                      spa: Filipinas
+                      ita: Filippine
+                  e0492b7b-9f8c-417e-ab86-d6b8917b2084:
+                    ISO2: MP
+                    ISO3: MNP
+                    full: COMMONWEALTH OF THE NORTHERN MARIANA ISLANDS
+                    displayed_value:
+                      eng: UNITED STATES - NORTHERN MARIANA ISLANDS
+                  e24d276e-4411-4d2f-b9fa-842288399d9e:
+                    ISO2: SB
+                    ISO3: SLB
+                    full: SOLOMON ISLANDS
+                    displayed_value:
+                      eng: SOLOMON ISLANDS
+                      fra: Salomon
+                      spa: Islas Salomón
+                      ita: Isole Salomone
+                  e471e285-ba98-461b-9d0e-4ae73adac5b2:
+                    ISO2: ZA
+                    ISO3: ZAF
+                    full: REPUBLIC OF SOUTH AFRICA
+                    displayed_value:
+                      eng: SOUTH AFRICA
+                      fra: Afrique du Sud
+                      spa: Sudáfrica
+                      ita: Sudafrica
+                  e4ffa527-3c05-48b1-8caf-2d1dfcc57f89:
+                    ISO2: CL
+                    ISO3: CHL
+                    full: REPUBLIC OF CHILE
+                    displayed_value:
+                      eng: CHILE
+                      fra: Chili
+                      spa: Chile
+                      ita: Cile
+                  e7545006-4fe1-4cc6-8f34-72a34ebfe90a:
+                    ISO2: BD
+                    ISO3: BGD
+                    full: PEOPLE'S REPUBLIC OF BANGLADESH
+                    displayed_value:
+                      eng: BANGLADESH
+                      fra: Bangladesh
+                      spa: Bangladés
+                      ita: Bangladesh
+                  e7e94249-98d9-4ea6-89db-da8d46696474:
+                    ISO2: CK
+                    ISO3: COK
+                    full: COOK ISLANDS
+                    displayed_value:
+                      eng: COOK ISLANDS
+                  e82d4898-df3b-41fd-a816-787598ada99a:
+                    ISO2: YE
+                    ISO3: YEM
+                    full: REPUBLIC OF YEMEN
+                    displayed_value:
+                      eng: YEMEN
+                      fra: Yémen
+                      spa: Yemen
+                      ita: Yemen
+                  e95e1e27-422d-48ff-ba52-eb818c0fc517:
+                    ISO2: BH
+                    ISO3: BHR
+                    full: KINGDOM OF BAHRAIN
+                    displayed_value:
+                      eng: BAHRAIN
+                      fra: Bahreïn
+                      spa: Baréin
+                      ita: Bahrein
+                  ed214616-b26c-4e30-b2d8-321a09d76a8b:
+                    ISO2: GT
+                    ISO3: GTM
+                    full: REPUBLIC OF GUATEMALA
+                    displayed_value:
+                      eng: GUATEMALA
+                      fra: Guatemala
+                      spa: Guatemala
+                      ita: Guatemala
+                  ed887a3d-35ee-4e1a-9f25-b9304ff03493:
+                    ISO2: BE
+                    ISO3: BEL
+                    full: KINGDOM OF BELGIUM
+                    displayed_value:
+                      eng: BELGIUM
+                      fra: Belgique
+                      spa: Bélgica
+                      ita: Belgio
+                  ee42e230-319e-4487-b9f5-0918e7e34bc0:
+                    ISO2: SI
+                    ISO3: SVN
+                    full: REPUBLIC OF SLOVENIA
+                    displayed_value:
+                      eng: SLOVENIA
+                      fra: Slovénie
+                      spa: Eslovenia
+                      ita: Slovenia
+                  ef20b98b-aed9-45d2-bb79-f2d87400e060:
+                    ISO2: TH
+                    ISO3: THA
+                    full: KINGDOM OF THAILAND
+                    displayed_value:
+                      eng: THAILAND
+                      fra: Thaïlande
+                      spa: Tailandia
+                      ita: Thailandia
+                  ef6bbcb3-8631-426b-bba4-3c6682ac6ed2:
+                    ISO2: BY
+                    ISO3: BLR
+                    full: REPUBLIC OF BELARUS
+                    displayed_value:
+                      eng: BELARUS
+                      fra: Biélorussie
+                      spa: Bielorrusia
+                      ita: Bielorussia
+                  f008460c-b26c-4327-83aa-6972e22a5406:
+                    ISO2: TN
+                    ISO3: TUN
+                    full: REPUBLIC OF TUNISIA
+                    displayed_value:
+                      eng: TUNISIA
+                      fra: Tunisie
+                      spa: Túnez
+                      ita: Tunisia
+                  f0ae63bb-d7a7-4c5b-8551-5a1903c81473:
+                    ISO2: PS
+                    ISO3: PSE
+                    full: AREA UNDER PALESTINIAN AUTHORITY
+                    displayed_value:
+                      eng: AREA UNDER PALESTINIAN AUTHORITY
+                  f45e72fa-d667-4822-b650-d7bbc5cf85d5:
+                    ISO2: SD
+                    ISO3: SDN
+                    full: REPUBLIC OF THE SUDAN
+                    displayed_value:
+                      eng: SUDAN
+                      fra: Soudan
+                      spa: Sudán
+                      ita: Sudan
+                  f692b302-26e3-4997-b80f-b0d9018b76db:
+                    ISO2: GE
+                    ISO3: GEO
+                    full: GEORGIA
+                    displayed_value:
+                      eng: GEORGIA
+                      fra: Géorgie (pays)
+                      spa: Georgia
+                      ita: Georgia
+                  f7542c84-29bf-4111-8d5b-134736ed628e:
+                    ISO2: CZ
+                    ISO3: CZE
+                    full: CZECH REPUBLIC
+                    displayed_value:
+                      eng: CZECH REPUBLIC (THE)
+                      fra: Tchéquie
+                      spa: República Checa
+                      ita: Rep. Ceca
+                  fcff2755-4f2f-40b4-96c3-f30b58e394c2:
+                    ISO2: RS
+                    ISO3: SRB
+                    full: REPUBLIC OF SERBIA
+                    displayed_value:
+                      eng: SERBIA
+                      fra: Serbie
+                      spa: Serbia
+                      ita: Serbia
+                  fe2b3066-7274-4cb9-9300-0b65a2ba31fd:
+                    ISO2: ZM
+                    ISO3: ZMB
+                    full: REPUBLIC OF ZAMBIA
+                    displayed_value:
+                      eng: ZAMBIA
+                      fra: Zambie
+                      spa: Zambia
+                      ita: Zambia
+                9ee12678-0ea3-44bb-aab1-b54e8f900d4c:
+                  2c7926c8-4ec9-4f2d-9d0f-427ce908267f:
+                    short: EM
+                    displayed_value:
+                      eng: Eastern Mediterranean
+                      fra: Méditerranée orientale
+                      spa: Mediterráneo oriental
+                  52cc951d-be73-463f-9b25-2ad732453b51:
+                    short: CM
+                    displayed_value:
+                      eng: Central Mediterranean
+                      fra: Méditerranée centrale
+                      spa: Mediterráneo central
+                  7a5a6237-ae7d-4def-b432-c5811aa5ff73:
+                    short: WM
+                    displayed_value:
+                      eng: Western Mediterranean
+                      fra: Méditerranée occidentale
+                      spa: Mediterráneo occidental
+                  cf7b470e-10b1-4570-bf81-b3fdee92bd3e:
+                    short: CI
+                    displayed_value:
+                      eng: Canary Islands
+                      fra: Iles Canaries
+                      spa: Islas Canarias
+                ccc69e4a-b583-488b-8a99-3e8142f012dc:
+                  04b2d9bf-fab0-46a7-a25e-6e1f27e494a6:
+                    descr: the police might be looking for this person
+                    key: possibly_sought
+                    displayed_value:
+                      eng: possibly sought
+                      fra: possiblement recherché
+                      spa: posiblemente buscado
+                  17c3f091-dc3a-47a5-b1d7-43d70543728d:
+                    descr: ''
+                    key: survivor
+                    displayed_value:
+                      eng: survivor
+                      fra: survivant
+                      spa: sobreviviente
+                  67ab3c01-1258-483e-9c08-b05039483409:
+                    descr: ''
+                    key: deceased
+                    displayed_value:
+                      eng: deceased
+                      fra: décédé
+                      spa: fallecido
+                  956b698d-7782-4b76-8cb9-1081e99cff43:
+                    descr: ''
+                    key: relative
+                    displayed_value:
+                      eng: relative
+                      fra: proche
+                      spa: familiar
+                  9df7e1df-3d2e-4332-9fdf-3c4023903e83:
+                    descr: ''
+                    key: witness
+                    displayed_value:
+                      eng: witness
+                      fra: témoin
+                      spa: testigo
+                  d658054e-635d-40dd-ac37-639c0dc9462e:
+                    descr: ''
+                    key: informant
+                    displayed_value:
+                      eng: informant
+                      fra: informateur
+                      spa: informante
+                  e4c2bc99-7cef-41c6-bfaa-f5c4f02369e7:
+                    descr: the police is looking for this person
+                    key: sought
+                    displayed_value:
+                      eng: sought
+                      fra: recherché
+                      spa: buscado
+                e22bb1fa-7318-4161-b821-cb22bdf13dfa:
+                  06c0bfc3-11ee-4422-af9c-f7c643092600:
+                    short: F
+                    displayed_value:
+                      eng: Female
+                      fra: Femme
+                      spa: Señora
+                  3c8c3f9d-bcda-4877-8518-43aff2bef7f8:
+                    short: O
+                    displayed_value:
+                      eng: Other
+                      fra: Autre
+                      spa: Otro
+                  57133ed2-b035-4b24-9a76-8714b2d0cf81:
+                    short: M
+                    displayed_value:
+                      eng: Male
+                      fra: Homme
+                      spa: Señor
+                fields:
+                  1f1a01b1-3d1b-49a3-ab4e-c1c0887b6bc4:
+                    label: unique_id
+                    placeholder: AAA-000001
+                    database_type: string
+                    android_type: EditText
+                    linked_list: ''
+                    required: 0
+                    best_descriptive_value: 0
+                    descriptive_value: 1
+                    displayed_value:
+                      eng: Unique ID
+                      fra: ID Unique
+                      spa: Unico ID
+                  a97b52b4-a17c-46b9-b821-e41559b6883e:
+                    label: gender
+                    placeholder: F
+                    database_type: string
+                    android_type: Spinner
+                    linked_list: e22bb1fa-7318-4161-b821-cb22bdf13dfa
+                    required: 1
+                    best_descriptive_value: 0
+                    descriptive_value: 1
+                    displayed_value:
+                      eng: Sex
+                      fra: Sexe
+                      spa: Sexo
+                  94d39b16-8aca-4f4b-9bd0-41acb71b277e:
+                    label: full_name
+                    placeholder: John Doe
+                    database_type: string
+                    android_type: EditText
+                    linked_list: ''
+                    required: 1
+                    best_descriptive_value: 1
+                    descriptive_value: 1
+                    displayed_value:
+                      eng: Full Name
+                      fra: Nom complet
+                      spa: Nombre completo
+                  a78e429a-4d9d-42c2-bfee-0c4e080631d1:
+                    label: age
+                    placeholder: ''
+                    database_type: integer
+                    android_type: EditText
+                    linked_list: ''
+                    required: 1
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Age (years)
+                      fra: Age (années)
+                      spa: Edad (años)
+                  22ce0190-1a35-4c61-ac8d-4c41c06145c5:
+                    label: nationality
+                    placeholder: Switzerland
+                    database_type: string
+                    android_type: AutoCompleteTextView
+                    linked_list: 0d2f93bb-96a6-4472-8a08-fa82070e9db4
+                    required: 2
+                    best_descriptive_value: 0
+                    descriptive_value: 1
+                    displayed_value:
+                      eng: Nationality
+                      fra: Nationalité
+                      spa: Nacionalidad
+                  a32059b2-9166-4c06-8c4b-bffcd634cf25:
+                    label: role
+                    placeholder: ''
+                    database_type: string
+                    android_type: Spinner
+                    linked_list: ccc69e4a-b583-488b-8a99-3e8142f012dc
+                    required: 2
+                    best_descriptive_value: 0
+                    descriptive_value: 1
+                    displayed_value:
+                      eng: Role
+                      fra: Role
+                      spa: Papel
+                  ac0f8e3e-1d47-43ee-a1a6-3ce04b198c43:
+                    label: birth_date
+                    placeholder: YYYY-mm-dd
+                    database_type: date
+                    android_type: CalendarView
+                    linked_list: ''
+                    required: 2
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Date of birth
+                      fra: Date de naissance
+                      spa: Fecha de nacimiento
+                  447cbb5a-7436-4f2f-9427-788b9e7ddbfe:
+                    label: birth_place
+                    placeholder: Paris
+                    database_type: string
+                    android_type: EditText
+                    linked_list: ''
+                    required: 2
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Place of birth
+                      fra: Lieu de naissance
+                      spa: Lugar de nacimiento
+                  747592d3-7d24-499d-a4be-a4c289e6ed29:
+                    label: passport_number
+                    placeholder: ''
+                    database_type: string
+                    android_type: EditText
+                    linked_list: ''
+                    required: 2
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Passport number
+                      fra: Numéro de passeport
+                      spa: Número de pasaporte
+                  b65a3348-8be4-45d6-af7f-56c938f26418:
+                    label: destination
+                    placeholder: ''
+                    database_type: string
+                    android_type: EditText
+                    linked_list: ''
+                    required: 2
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Travel to
+                      fra: Destination
+                      spa: Viajar a
+                  97413115-4841-4893-beeb-3f08eb2f237a:
+                    label: route
+                    placeholder: ''
+                    database_type: string
+                    android_type: Spinner
+                    linked_list: 9ee12678-0ea3-44bb-aab1-b54e8f900d4c
+                    required: 2
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Route
+                      fra: Route
+                      spa: Camino
+                  6573f876-10d8-4a2e-91dd-b67665bde8c8:
+                    label: residence
+                    placeholder: Syria
+                    database_type: string
+                    android_type: AutoCompleteTextView
+                    linked_list: 0d2f93bb-96a6-4472-8a08-fa82070e9db4
+                    required: 2
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Country of residence
+                      fra: Pays de residence
+                      spa: País de residencia
+                  446290ca-d42f-475e-a924-001283b3fba8:
+                    label: alias
+                    placeholder: Big Joe
+                    database_type: string
+                    android_type: EditText
+                    linked_list: ''
+                    required: 3
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Alias
+                      fra: Alias
+                      spa: Alias
+                  3f47cfb3-32e7-4326-af1b-4ffd2da1a22c:
+                    label: embarkation_date
+                    placeholder: YYYY-mm-dd
+                    database_type: date
+                    android_type: CalendarView
+                    linked_list: ''
+                    required: 3
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Embarkation date
+                      fra: Date d'embarcation
+                      spa: Fecha de embarque
+                  26a8ed39-0f61-414a-be66-51d51730703e:
+                    label: embarkation_place
+                    placeholder: Roubaix
+                    database_type: string
+                    android_type: EditText
+                    linked_list: ''
+                    required: 3
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Place of embarkation
+                      fra: Lieu d'embarcation
+                      spa: Lugar de embarque
+                  e156f7b6-2c9f-4773-a51a-a74834f2f815:
+                    label: detention_place
+                    placeholder: Aleppo
+                    database_type: string
+                    android_type: EditText
+                    linked_list: ''
+                    required: 3
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Place of Detention
+                      fra: Lieu de détention
+                      spa: Lugar de detención
+                  ab4ee8fa-83e9-4156-b52c-dc641475aece:
+                    label: date_last_seen
+                    placeholder: YYYY-mm-dd
+                    database_type: date
+                    android_type: CalendarView
+                    linked_list: ''
+                    required: 3
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Date when last seen well
+                      fra: Date de la dernière fois vu en forme
+                      spa: Fecha de la última vez que fue bueno
+                  ba332a63-cf7d-437d-adb5-82931ce5a690:
+                    label: mothers_names
+                    placeholder: ''
+                    database_type: string
+                    android_type: EditText
+                    linked_list: ''
+                    required: 3
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Mother's full names
+                      fra: Nom de la mère
+                      spa: Nombres completos de la madre
+                  75947d07-05a7-4ee0-897d-64895131cc98:
+                    label: fathers_names
+                    placeholder: ''
+                    database_type: string
+                    android_type: EditText
+                    linked_list: ''
+                    required: 3
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Father's full names
+                      fra: Nom du père
+                      spa: Nombres completos del padre
+                  4ae6fa88-181c-4ff8-b8af-47921a972daa:
+                    label: detail
+                    placeholder: Phone number
+                    database_type: text
+                    android_type: EditText
+                    linked_list: ''
+                    required: 4
+                    best_descriptive_value: 0
+                    descriptive_value: 0
+                    displayed_value:
+                      eng: Details
+                      fra: Informations supplémentaires
+                      spa: Informaciones suplementarias
+                ListRelations:
+                  65a5e627-23e1-4fe2-884a-e162f7112988:
+                    color: 734d39
+                    importance: 1
+                    short: SA
+                    displayed_value:
+                      eng: Saw
+                      fra: A vu
+                      spa: Ha visto
+                  9c4e9438-1f2d-4b2d-8d5d-8bea347d5d95:
+                    color: 00ff2a
+                    importance: 1
+                    short: TW
+                    displayed_value:
+                      eng: Travelled with
+                      fra: A voyagé avec
+                      spa: Viajado con
+                  9d7e86ac-5de8-4e4e-bbdb-c0d2bc5efe3d:
+                    color: 7e00ff
+                    importance: 1
+                    short: SE
+                    displayed_value:
+                      eng: Service
+                      fra: Service
+                      spa: Servicio
+                  a98467e8-8ae4-4105-b0e4-ad8691ffb852:
+                    color: cbaf1d
+                    importance: 1
+                    short: NBR
+                    displayed_value:
+                      eng: Non-biological relationship
+                      fra: Relation non biologique
+                      spa: Relación no biológica
+                  dd082289-d708-4d9b-93dd-2eee9fc0df07:
+                    color: 0099ff
+                    importance: 1
+                    short: BR
+                    displayed_value:
+                      eng: Biological relationship
+                      fra: Relation biologique
+                      spa: Relación biológica
+        '500':
+          description: Internal Server Error
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Mon, 03 Oct 2022 16:24:06 GMT
+            Server:
+              schema:
+                type: string
+                example: Apache/2.4.54 (Debian)
+            Vary:
+              schema:
+                type: string
+                example: Authorization
+            X-Powered-By:
+              schema:
+                type: string
+                example: PHP/8.0.23
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '59'
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+                example: '*'
+            Content-Length:
+              schema:
+                type: integer
+                example: '33'
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Connection:
+              schema:
+                type: string
+                example: close
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message: Server Error
+  /api/user:
+    get:
+      tags:
+        - default
+      summary: Get user
+      description: Get user informations
+      parameters:
+        - name: Accept
+          in: header
+          schema:
+            type: string
+          example: application/json
+        - name: Application-id
+          in: header
+          schema:
+            type: string
+          example: '{{application_id}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Wed, 26 Oct 2022 11:06:30 GMT
+            Server:
+              schema:
+                type: string
+                example: Apache/2.4.54 (Debian)
+            Vary:
+              schema:
+                type: string
+                example: Authorization
+            X-Powered-By:
+              schema:
+                type: string
+                example: PHP/8.0.23
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '58'
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+                example: '*'
+            Content-Length:
+              schema:
+                type: integer
+                example: '348'
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5, max=100
+            Connection:
+              schema:
+                type: string
+                example: Keep-Alive
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                id: a2a34d97-6de3-4a2e-b6a9-c44c72076e5d
+                name: Default user
+                email: dev@netw4ppl.tech
+                email_verified_at: null
+                crew_id: b1d9649a-3431-4920-b05b-e8c4a75b0881
+                profile_photo_path: null
+                role_id: ed1b8ae6-48c1-4190-90dc-4f3d91093e0b
+                created_at: '2022-10-25T11:32:12.000000Z'
+                updated_at: '2022-10-25T11:32:12.000000Z'
+                deleted_at: null
+        '500':
+          description: Internal Server Error
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Mon, 03 Oct 2022 16:24:06 GMT
+            Server:
+              schema:
+                type: string
+                example: Apache/2.4.54 (Debian)
+            Vary:
+              schema:
+                type: string
+                example: Authorization
+            X-Powered-By:
+              schema:
+                type: string
+                example: PHP/8.0.23
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '59'
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+                example: '*'
+            Content-Length:
+              schema:
+                type: integer
+                example: '33'
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Connection:
+              schema:
+                type: string
+                example: close
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message: Server Error
+  /api/person:
+    post:
+      tags:
+        - default
+      summary: Add refugee
+      description: >-
+        This query allows the addition of refugees. The body must be in **json
+        format** and follow the following structure:
+
+
+        ``` json
+
+        [
+            {
+                'field_label_1': 'value 1-1',
+                'field_label_2': 'value 2-1',
+                ...
+            },
+            {
+                'field_label_1': 'value 1-2',
+                'field_label_2': 'value 2-3',
+                ...
+            },
+        ]
+
+
+        ```
+
+
+        The server may respond with an error if one of the required fields is
+        not provided or if the data type is wrong.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                - a97b52b4-a17c-46b9-b821-e41559b6883e: 57133ed2-b035-4b24-9a76-8714b2d0cf81
+                  a78e429a-4d9d-42c2-bfee-0c4e080631d1: 28
+                  94d39b16-8aca-4f4b-9bd0-41acb71b277e: Clément Lambert
+                  1f1a01b1-3d1b-49a3-ab4e-c1c0887b6bc4: ABC-000002
+                  b65a3348-8be4-45d6-af7f-56c938f26418: France
+                  date: '2022-08-31'
+                - a97b52b4-a17c-46b9-b821-e41559b6883e: 57133ed2-b035-4b24-9a76-8714b2d0cf81
+                  a78e429a-4d9d-42c2-bfee-0c4e080631d1: 49
+                  94d39b16-8aca-4f4b-9bd0-41acb71b277e: Jenny Lacroix
+                  1f1a01b1-3d1b-49a3-ab4e-c1c0887b6bc4: ABC-000004
+                  b65a3348-8be4-45d6-af7f-56c938f26418: Espagne
+                  date: '2022-08-31'
+                - a97b52b4-a17c-46b9-b821-e41559b6883e: 57133ed2-b035-4b24-9a76-8714b2d0cf81
+                  a78e429a-4d9d-42c2-bfee-0c4e080631d1: 14
+                  94d39b16-8aca-4f4b-9bd0-41acb71b277e: Johnny Monnay
+                  1f1a01b1-3d1b-49a3-ab4e-c1c0887b6bc4: ABC-000005
+                  b65a3348-8be4-45d6-af7f-56c938f26418: Italie
+                  date: '2022-08-31'
+      parameters:
+        - name: Accept
+          in: header
+          schema:
+            type: string
+          example: application/json
+        - name: Content-Type
+          in: header
+          schema:
+            type: string
+          example: application/json
+        - name: Application-id
+          in: header
+          schema:
+            type: string
+          example: '{{application_id}}'
+      responses:
+        '201':
+          description: Created
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Wed, 26 Oct 2022 11:11:30 GMT
+            Server:
+              schema:
+                type: string
+                example: Apache/2.4.54 (Debian)
+            Vary:
+              schema:
+                type: string
+                example: Authorization
+            X-Powered-By:
+              schema:
+                type: string
+                example: PHP/8.0.23
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '59'
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+                example: '*'
+            Content-Length:
+              schema:
+                type: integer
+                example: '118'
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                - a9314fb6-8614-474e-9b89-b26ac27a2703
+                - 7d8fd444-bd35-4d7a-93ba-f88e7e735a3c
+                - 59cf9cdb-634b-4f79-a0da-e618c9b5f163
+        '422':
+          description: Unprocessable Content
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Mon, 03 Oct 2022 16:21:38 GMT
+            Server:
+              schema:
+                type: string
+                example: Apache/2.4.54 (Debian)
+            Vary:
+              schema:
+                type: string
+                example: Authorization
+            X-Powered-By:
+              schema:
+                type: string
+                example: PHP/8.0.23
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '59'
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+                example: '*'
+            Content-Length:
+              schema:
+                type: integer
+                example: '189'
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message: The given data was invalid.
+                errors:
+                  0.full_name:
+                    - The 0.full_name field is required.
+                  0.age:
+                    - The 0.age field is required.
+                  0.date:
+                    - The 0.date field is required.
+  /api/links:
+    post:
+      tags:
+        - default
+      summary: Add relation
+      description: >-
+        This query allows the addition of a relation between 2 already stored
+        refugees. The body must be in json format and follow the following
+        structure:
+
+
+        ``` json
+
+        [
+          {
+            "from_unique_id": "",
+            "to_unique_id": "",
+            "relation": "",
+            "date": "",
+            "detail": ""
+          },
+          {
+            "from_unique_id": "",
+            "to_unique_id": "",
+            "relation": "",
+            "date": "",
+            "detail": ""
+          }
+        ]
+
+
+        ```
+
+
+        The server may respond with an error if one of the required fields is
+        not provided or if the data type is wrong.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                - from: a9314fb6-8614-474e-9b89-b26ac27a2703
+                  to: 59cf9cdb-634b-4f79-a0da-e618c9b5f163
+                  relation: 65a5e627-23e1-4fe2-884a-e162f7112988
+                  date: '2021-05-14 8:51:53'
+      parameters:
+        - name: Accept
+          in: header
+          schema:
+            type: string
+          example: application/json
+        - name: Application-id
+          in: header
+          schema:
+            type: string
+          example: '{{application_id}}'
+      responses:
+        '201':
+          description: Created
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Wed, 26 Oct 2022 11:12:58 GMT
+            Server:
+              schema:
+                type: string
+                example: Apache/2.4.54 (Debian)
+            Vary:
+              schema:
+                type: string
+                example: Authorization
+            X-Powered-By:
+              schema:
+                type: string
+                example: PHP/8.0.23
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '59'
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+                example: '*'
+            Content-Length:
+              schema:
+                type: integer
+                example: '40'
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5, max=100
+            Connection:
+              schema:
+                type: string
+                example: Keep-Alive
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                - 727bf5e9-1c87-42b2-ba44-4b020520eb9f
+        '422':
+          description: Unprocessable Content
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Wed, 26 Oct 2022 11:14:15 GMT
+            Server:
+              schema:
+                type: string
+                example: Apache/2.4.54 (Debian)
+            Vary:
+              schema:
+                type: string
+                example: Authorization
+            X-Powered-By:
+              schema:
+                type: string
+                example: PHP/8.0.23
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '59'
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+                example: '*'
+            Content-Length:
+              schema:
+                type: integer
+                example: '103'
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5, max=100
+            Connection:
+              schema:
+                type: string
+                example: Keep-Alive
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message: The 0.from must be a valid UUID.
+                errors:
+                  0.from:
+                    - The 0.from must be a valid UUID.

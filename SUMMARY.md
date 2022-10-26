@@ -7,5 +7,7 @@
 
 * [API](reference/api.md)
 * [API Reference](reference/api-reference/README.md)
-  * [Pets](reference/api-reference/pets.md)
-  * [Users](reference/api-reference/users.md)
+  * [Fields](reference/api-reference/fields.md)
+  * [Person](reference/api-reference/person.md)
+  * [Relations](reference/api-reference/relations.md)
+  * [User](reference/api-reference/user.md)
