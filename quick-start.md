@@ -93,9 +93,9 @@ services:
 | <pre><code>LOCAL_DB_STORAGE_PATH</code></pre>           | A folder in which the contents of your database will be stored                                                                                                                                                                                      |
 | <pre><code>LOCAL_WEBSITE_PATH</code></pre>              | <p>The path where the website code is stored. <br><span data-gb-custom-inline data-tag="emoji" data-code="26a0">⚠</span> <mark style="color:orange;">If you clone the project from github, make sure the path points to <code>src</code></mark></p> |
 | <pre><code>LOCAL_SSL_PATH</code></pre>                  | <p>The path to your SSL certificate. Can be ignored if you don't want to use https.</p><p><mark style="color:orange;">Recommended <mark style="color:yellow;"></mark> to secure access to the API.</mark></p>                                       |
-| <pre><code>LOCAL_APACHE_CONFIGURATION_FILE</code></pre> | The path to an apache configuration file, an example of which is given [here](quick-start.md#required-configuration-files).                                                                                                                         |
+| <pre><code>LOCAL_APACHE_CONFIGURATION_FILE</code></pre> | The path to an apache configuration file, an example of which is given [here](quick-start.md#apache-configuration-file).                                                                                                                            |
 
-## Required configuration files
+## Required configuration
 
 ### Apache Configuration file
 
@@ -133,6 +133,14 @@ You can delete the lines concerning the ssl certificate if you do not use https
 </VirtualHost>
 </IfModule>
 ```
+
+### A Deepl Account
+
+SCAN automatically translates the created fields and lists. To use the automatic translation feature, you need to create an account on DeepL and fill in your Token API. The free version offers 500,000 characters per month, which is more than enough for the application's needs.
+
+{% hint style="info" %}
+You can find the information needed to create an account here: [https://www.deepl.com/en/pro-api?cta=header-pro-api/](https://www.deepl.com/en/pro-api?cta=header-pro-api/)
+{% endhint %}
 
 ### .env file
 
@@ -175,25 +183,28 @@ MAIL_FROM_NAME="${APP_NAME}"
 DEFAULT_EMAIL="default user email"
 DEFAULT_PASSWORD="default user password"
 DEFAULT_TEAM="default user team"
+
+TRANSLATION_API_URL="https://api-free.deepl.com/v2/translate"
+TRANSLATION_API_TOKEN="YOUR API TOKEN"
 ```
 
 {% hint style="danger" %}
 **Warning :** Please, make sure to correctly fill the following variables
 {% endhint %}
 
-| Variable                                 | Value                                                                                                                              |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| <pre><code>APP_KEY</code></pre>          | Must be leaft blank                                                                                                                |
-| <pre><code>APP_DEBUG</code></pre>        | Set `false` in case of production                                                                                                  |
-| <pre><code>DB_HOST</code></pre>          | You must put the docker sql container name. If you used the [docker configuration above](quick-start.md#docker-compose), put `sql` |
-| <pre><code>DB_DATABASE</code></pre>      | You must put the same name as the one used during the docker configuration.                                                        |
-| <pre><code>DB_USERNAME</code></pre>      | You must put the same username as the one used during the docker configuration.                                                    |
-| <pre><code>DB_PASSWORD</code></pre>      | You must put the same password as the one used during the docker configuration.                                                    |
-| <pre><code>DEFAULT_EMAIL</code></pre>    | Set the default user's email. This information will be used to create the first account on the application.                        |
-| <pre><code>DEFAULT_PASSWORD</code></pre> | Set the default user's password. This information will be used to create the first account on the application.                     |
-| <pre><code>DEFAULT_TEAM</code></pre>     | Set the default team name. This information will be used to create the first team. You can put _DEFAULT ICRC TEAM_ for example.    |
-|                                          |                                                                                                                                    |
-|                                          |                                                                                                                                    |
+| Variable                                      | Value                                                                                                                              |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>APP_KEY</code></pre>               | Must be leaft blank                                                                                                                |
+| <pre><code>APP_DEBUG</code></pre>             | Set `false` in case of production                                                                                                  |
+| <pre><code>DB_HOST</code></pre>               | You must put the docker sql container name. If you used the [docker configuration above](quick-start.md#docker-compose), put `sql` |
+| <pre><code>DB_DATABASE</code></pre>           | You must put the same name as the one used during the docker configuration.                                                        |
+| <pre><code>DB_USERNAME</code></pre>           | You must put the same username as the one used during the docker configuration.                                                    |
+| <pre><code>DB_PASSWORD</code></pre>           | You must put the same password as the one used during the docker configuration.                                                    |
+| <pre><code>DEFAULT_EMAIL</code></pre>         | Set the default user's email. This information will be used to create the first account on the application.                        |
+| <pre><code>DEFAULT_PASSWORD</code></pre>      | Set the default user's password. This information will be used to create the first account on the application.                     |
+| <pre><code>DEFAULT_TEAM</code></pre>          | Set the default team name. This information will be used to create the first team. You can put_`DEFAULT ICRC TEAM`_ for example.   |
+| <pre><code>TRANSLATION_API_URL</code></pre>   | The translation API URL. If you use the free version of deepL, the preset URL is the right one.                                    |
+| <pre><code>TRANSLATION_API_TOKEN</code></pre> | Your DeepL API Token                                                                                                               |
 
 ## Finalize the installation
 
