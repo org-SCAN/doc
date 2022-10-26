@@ -24,10 +24,8 @@ Permissions :
 
 ```
 cytoscape.viewAny 
-person.createFromJson
 links.createFromJson
 person.createFromJson
-links.createFromJson
 user.requestRole
 lists_control.addToList
 person.fixDuplicatedReference
@@ -43,12 +41,11 @@ links.update
 links.delete
 user.changeTeam
 user.requestRole
-duplicate.index 
+duplicate.viewAny
 duplicate.create 
 duplicate.view
 duplicate.update 
 duplicate.delete
-
 ```
 
 </details>
@@ -69,10 +66,10 @@ links.view
 
 </details>
 
-Each time you create a user, you assign him a role, which gives him the associated permissions.&#x20;
+Each time you create a user, you assign him a role, which gives him the associated permissions.
 
 {% hint style="success" %}
-&#x20;In most cases, these three roles are sufficient.&#x20;
+In most cases, these three roles are sufficient.
 {% endhint %}
 
 If you want a **higher granularity**, here is how to create **new Roles** (if not, you go skip this part and go to [inviting-members.md](../inviting-members.md "mention")) **:**
@@ -91,12 +88,26 @@ For instance, here is a common permission from our solution :
 person.viewAny
 ```
 
-The first part refers to the notion, here **Person**.&#x20;
+The first part refers to the notion, here **Person**.
 
 The second part refers to the desired action: here **viewAny (= index)**
 
 {% hint style="success" %}
 If your User has a Role that count "person.index" in its permissions, then your user is able to index (view Any) the persons = acces the page _/person_
+{% endhint %}
+
+Here are the permissions given by the main action :
+
+| Action  | Description                                                                                                                    |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| viewAny | <p>Allow the user to index (view Any) all ressources of a given notion. <br><em>E.g: the table showing all the people</em></p> |
+| view    | <p>Allow the user to view the detail of a given notion.<br><em>E.g : view the detail of one person</em></p>                    |
+| create  | <p>Allow the user to create a new entity of a given notion.<br>E.g : create a new person</p>                                   |
+| update  | <p>Allow the user to edit an entity of a given notion.<br>E.g : edit a  person</p>                                             |
+| delete  | <p>Allow the user to delete an entity of a given notion.<br>E.g : delete a person</p>                                          |
+
+{% hint style="info" %}
+More specific action exists. They are detailled in the [#actions-permissions](implicitly-linked-permissions.md#actions-permissions "mention") section
 {% endhint %}
 
 ### Creating a new Role
@@ -109,23 +120,27 @@ To create a new role, go to the "Role" page in the "User Management" section :
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Role index page (there are already the3 default roles)</p></figcaption></figure>
 
-By clicking on "New Role", you will be able to access the role creation page (i.e. associated to "role.create" permission) :&#x20;
+By clicking on "New Role", you will be able to access the role creation page (i.e. associated to "role.create" permission) :
 
 <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>role creation page</p></figcaption></figure>
 
-On this page, you can associate a name to your new role, then check one by one all the permissions you want your role to have.&#x20;
+On this page, you must associate a name to your new role, then check one by one all the permissions you want your role to have.
 
 To help you, you also have "all" checkboxes, which allow you to check all the checkboxes of a category directly.
 
 {% hint style="info" %}
-Beware, some permissions are implicitly linked, and if you don't check both, bugs may occur.&#x20;
+Beware, some permissions are implicitly linked, and if you don't check both, bugs may occur.
 
 For example, if you check _person.show_ but not _person.index_, your role will be able to inspect a particular person but will not be able to access the index page of all persons.
 
-You can see a table of these linked permissions here : [#implicitly-linked-permissions](implicitly-linked-permissions.md#implicitly-linked-permissions "mention")
+You can see a table of these linked permissions here :[#implicitly-linked-actions](implicitly-linked-permissions.md#implicitly-linked-actions "mention")
 {% endhint %}
 
 To save your role, just click on the **Create** button.
+
+{% hint style="warning" %}
+Did you remember to put a name ?
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Create button (Use it to save your new role)</p></figcaption></figure>
 

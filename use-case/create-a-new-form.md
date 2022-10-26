@@ -8,6 +8,10 @@
 
 </details>
 
+{% content-ref url="../fundamentals/getting-set-up/inviting-members.md" %}
+[inviting-members.md](../fundamentals/getting-set-up/inviting-members.md)
+{% endcontent-ref %}
+
 <details>
 
 <summary>Step 2 : Add user to the team</summary>
