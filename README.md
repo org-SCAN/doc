@@ -18,7 +18,9 @@ These modular and dynamic forms are associated with a given team, which can cont
 
 ## Get Started
 
-Dans cette section, nous allons détailler pas à pas les différentes étapes nécessaires pour pouvoir utiliser notre solution.
+In this section, we will detail step by step the different steps necessary to use our solution.
+
+Let's take a look !
 
 {% content-ref url="fundamentals/getting-set-up/" %}
 [getting-set-up](fundamentals/getting-set-up/)

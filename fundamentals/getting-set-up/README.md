@@ -8,7 +8,7 @@ description: First steps needed
 \* Items denoted by <mark style="color:yellow;">\*</mark> refer to features not yet available.
 {% endhint %}
 
-#### Step 1 : Connection
+#### First step : Connection
 
 To connect, visit [https://app.netw4ppl.tech](https://app.netw4ppl.tech). Use the credentials provided by your administrator.
 
