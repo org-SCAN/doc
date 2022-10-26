@@ -23,37 +23,31 @@ Permissions :
 Permissions :
 
 ```
-cytoscape.index 
-person.create_from_json 
-links.create_from_json 
-person.store_from_json 
-links.store_from_json 
-user.request_role 
-lists_control.add_to_list 
-person.fix_duplicated_reference 
-person.index 
-person.create 
-person.store 
-person.show 
-person.edit 
+cytoscape.viewAny 
+person.createFromJson
+links.createFromJson
+person.createFromJson
+links.createFromJson
+user.requestRole
+lists_control.addToList
+person.fixDuplicatedReference
+person.viewAny
+person.create
+person.view
 person.update 
-person.destroy 
-links.index
+person.delete
+links.viewAny
 links.create 
-links.store 
-links.show 
-links.edit 
+links.view 
 links.update 
-links.destroy 
-user.change_team 
-user.request_role 
+links.delete
+user.changeTeam
+user.requestRole
 duplicate.index 
 duplicate.create 
-duplicate.store 
-duplicate.show 
-duplicate.edit 
+duplicate.view
 duplicate.update 
-duplicate.destroy
+duplicate.delete
 
 ```
 
@@ -66,11 +60,11 @@ duplicate.destroy
 Permissions :
 
 ```
-cytoscape.index
-person.index
-person.show
-links.index
-links.show
+cytoscape.viewAny
+person.viewAny
+person.view
+links.viewAny
+links.view
 ```
 
 </details>
@@ -94,12 +88,12 @@ $$
 For instance, here is a common permission from our solution :
 
 ```
-person.index
+person.viewAny
 ```
 
 The first part refers to the notion, here **Person**.&#x20;
 
-The second part refers to the desired action: here **Index**
+The second part refers to the desired action: here **viewAny (= index)**
 
 {% hint style="success" %}
 If your User has a Role that count "person.index" in its permissions, then your user is able to index (view Any) the persons = acces the page _/person_
