@@ -10,7 +10,7 @@ Install SCAN in only few steps :
 2. [Install Docker](quick-start.md#install-docker)
 3. [Install SCAN requirements with docker Compose](quick-start.md#docker-compose)
 4. [Add the required configuration files required](quick-start.md#required-configuration-files)
-5. Run few command lines
+5. [Run few command lines](quick-start.md#finalize-the-installation)
 
 ## Clone the github project
 
