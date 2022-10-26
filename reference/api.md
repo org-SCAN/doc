@@ -1,4 +1,4 @@
-# API
+# 🔭 API
 
 {% hint style="info" %}
 **Good to know:** SCAN provides an API that allows you to fully interact with our application. You can create your own software to synchronize your data with SCAN!
