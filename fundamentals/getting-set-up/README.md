@@ -1,39 +1,21 @@
+---
+description: First steps needed
+---
+
 # 🛠 Getting set up
 
 {% hint style="warning" %}
 \* Items denoted by <mark style="color:yellow;">\*</mark> refer to features not yet available.
 {% endhint %}
 
-<details>
-
-<summary>Step 1 : Connection</summary>
+#### Step 1 : Connection
 
 To connect, visit [https://app.netw4ppl.tech](https://app.netw4ppl.tech). Use the credentials provided by your administrator.
 
 If you forget your password, you can reset it by clicking on _Forgot your password ?_. <mark style="color:yellow;">\*</mark>
 
-</details>
+<mark style="color:yellow;"></mark>
 
-<details>
+\=> At this point, if **you are not an administrator** and you just want to have a basic usage of the features of our website, you can directly skip to the [basic-usage](../basic-usage/ "mention") section.
 
-<summary>Step 2: Inviting your team</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>Step 3: Making your first post</summary>
-
-
-
-</details>
-
-<details>
-
-<summary>Step 4: Publishing a post</summary>
-
-
-
-</details>
+\=> If **you are an administrator** and you want to modulate the solution to your needs, just continue to the next step.
