@@ -2,7 +2,7 @@
 
 In this section you will learn how to create new users.
 
-### Creating a new User <a href="#creating-a-new-user" id="creating-a-new-user"></a>
+## Creating a new User <a href="#creating-a-new-user" id="creating-a-new-user"></a>
 
 You can go to the _Users_ section in _User management_. You will see the index of the different existing roles.
 

@@ -1,6 +1,6 @@
 # ⚙ Roles
 
-### Default and Specific Roles
+## Default and Specific Roles
 
 The role defines the permissions associated with the user. There are three default roles in SCAN:
 
@@ -74,7 +74,7 @@ In most cases, these three roles are sufficient.
 
 If you want a **higher granularity**, here is how to create **new Roles** (if not, you go skip this part and go to [inviting-members.md](../inviting-members.md "mention")) **:**
 
-### Permissions
+## Permissions
 
 A permission is defined according to the following format:
 
@@ -110,7 +110,7 @@ Here are the permissions given by the main action :
 More specific action exists. They are detailled in the [#actions-permissions](implicitly-linked-permissions.md#actions-permissions "mention") section
 {% endhint %}
 
-### Creating a new Role
+## Creating a new Role
 
 {% hint style="warning" %}
 Please note that to access this page, you need the necessary permissions

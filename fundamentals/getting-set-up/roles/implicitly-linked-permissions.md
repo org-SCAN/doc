@@ -12,7 +12,7 @@ Here is a table representing a proposal of the implicitly linked permissions :
 
 | Permission | Implicitly Linked Permission |
 | ---------- | ---------------------------- |
-| .show      | .viewAny                     |
+| .view      | .viewAny                     |
 | .store     | .viewAny                     |
 | .edit      | .show, .viewAny, .store      |
 | .destroy   | show, .index, .edit          |
@@ -24,7 +24,7 @@ Here is a table representing a proposal of the implicitly linked permissions :
 | Action  | Description                                                                                                                    |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | viewAny | <p>Allow the user to index (view Any) all ressources of a given notion. <br><em>E.g: the table showing all the people</em></p> |
-| show    | <p>Allow the user to view the detail of a given notion.<br><em>E.g : view the detail of one person</em></p>                    |
+| view    | <p>Allow the user to view the detail of a given notion.<br><em>E.g : view the detail of one person</em></p>                    |
 | create  | <p>Allow the user to create a new entity of a given notion.<br>E.g : create a new person</p>                                   |
 | update  | <p>Allow the user to edit an entity of a given notion.<br>E.g : edit a  person</p>                                             |
 | delete  | <p>Allow the user to delete an entity of a given notion.<br>E.g : delete a person</p>                                          |
