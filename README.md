@@ -24,6 +24,14 @@ A possible infrastructure of our solution can therefore be represented as follow
 In the current state, a team is associated with **exactly one** person creation form.
 {% endhint %}
 
+## Feedback/Suggestion Form
+
+For any suggestion or feedback/bug about SCAN that you might encounter during the follow-up of this documentation, please feel free to fill out this form to inform us.
+
+{% embed url="https://dufourlucas.typeform.com/to/MSKERc1P" %}
+Suggestion Form
+{% endembed %}
+
 ## Get Started
 
 In this section, we will detail step by step the different steps necessary to use our solution.

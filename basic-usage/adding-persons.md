@@ -21,7 +21,7 @@ In this example, our team administrator has edited the form so that a person is 
 
 After filling in the form several times with the desired data, we can arrive at this kind of view on the "Persons" tab :&#x20;
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Index of the persons that your team has pushed to the database.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (2).png" alt=""><figcaption><p>Index of the persons that your team has pushed to the database.</p></figcaption></figure>
 
 In this table, it is possible to filter the elements by fields, in an increasing or decreasing way. It is also possible to make a general search via the "Search:" tool.
 
@@ -35,3 +35,4 @@ From this page, it is possible to modify the value of the person's fields by cli
 
 
 
+At the very end of a person's show page, you may have noticed a relationship section. This is perfect because it is the next step in this documentation.
