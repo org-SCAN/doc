@@ -32,6 +32,6 @@ A date field gives the possibility to fill in a date.
 
 ## List
 
-A list field gives the possibility to pick up an element from a given list. SCAN allows you to [create your own lists](lists.md). Just take a look at the next section !
+A list field gives the possibility to pick up an element from a given list. SCAN allows you to [create your own lists](../lists.md). Just take a look at the next section !
 
 <figure><img src="../../../.gitbook/assets/list_field.png" alt=""><figcaption><p>List input</p></figcaption></figure>

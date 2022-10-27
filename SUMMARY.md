@@ -11,14 +11,15 @@
   * [🫂 Teams](fundamentals/getting-set-up/inviting-members.md)
   * [🗃 Fields](fundamentals/getting-set-up/fields/README.md)
     * [Fields type](fundamentals/getting-set-up/fields/fields-type.md)
-    * [📋 Lists](fundamentals/getting-set-up/fields/lists.md)
+  * [📋 Lists](fundamentals/getting-set-up/lists.md)
 * [📩 Basic Usage](fundamentals/basic-usage/README.md)
+  * [🗣 Adding persons](fundamentals/basic-usage/adding-persons.md)
+  * [🔗 Adding relations](fundamentals/basic-usage/adding-relations.md)
   * [🙋♂ My profile](fundamentals/basic-usage/my-profile/README.md)
     * [Get my API token](fundamentals/basic-usage/my-profile/get-my-api-token.md)
     * [Enable or disable 2FA](fundamentals/basic-usage/my-profile/enable-or-disable-2fa.md)
     * [Request a new role](fundamentals/basic-usage/my-profile/request-a-new-role.md)
     * [Change my team](fundamentals/basic-usage/my-profile/change-my-team.md)
-  * [Adding persons](fundamentals/basic-usage/adding-persons.md)
 
 ## Use Case
 
