@@ -10,10 +10,13 @@ To enable it:
 2. In the Two Factor Authentication section, click on 'enable'.
 3.
 
-    <figure><img src="../../../.gitbook/assets/2FA_section.png" alt=""><figcaption><p>2FA section</p></figcaption></figure>
-4. Enter your password
-5. Using your authenticator application, scan the QR code displayed
-6. The next time you log in, SCAN will ask you for a code. You will find this code on the 2FA application you used.
+```
+<figure><img src="../../../.gitbook/assets/2FA_section.png" alt=""><figcaption><p>2FA section</p></figcaption></figure>
+```
+
+1. Enter your password
+2. Using your authenticator application, scan the QR code displayed
+3. The next time you log in, SCAN will ask you for a code. You will find this code on the 2FA application you used.
 
 {% hint style="info" %}
 SCAN displays recovery codes. These codes will be useful if you lose access to your authentication application.

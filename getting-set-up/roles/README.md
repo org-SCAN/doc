@@ -118,11 +118,11 @@ Please note that to access this page, you need the necessary permissions
 
 To create a new role, go to the "Role" page in the "User Management" section :
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Role index page (there are already the3 default roles)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Role index page (there are already the3 default roles)</p></figcaption></figure>
 
 By clicking on "New Role", you will be able to access the role creation page (i.e. associated to "role.create" permission) :
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>role creation page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>role creation page</p></figcaption></figure>
 
 On this page, you must associate a name to your new role, then check one by one all the permissions you want your role to have.
 
@@ -142,12 +142,12 @@ To save your role, just click on the **Create** button.
 Did you remember to put a name ?
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Create button (Use it to save your new role)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Create button (Use it to save your new role)</p></figcaption></figure>
 
 You can now see your new role in the list of existing roles. You can modify it by clicking on _Edit_, and even delete it with the _Delete_ button.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>New index of roles</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>New index of roles</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>show view of the New role (note the delete button)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>show view of the New role (note the delete button)</p></figcaption></figure>
 
 The next page is about the implicitly linked permissions, if you are not interested you can go straight to [inviting-members.md](../inviting-members.md "mention").

@@ -29,7 +29,3 @@ In the current state, a team is associated with **exactly one** person creation 
 In this section, we will detail step by step the different steps necessary to use our solution.
 
 Let's take a look !
-
-{% content-ref url="fundamentals/getting-set-up/" %}
-[getting-set-up](fundamentals/getting-set-up/)
-{% endcontent-ref %}

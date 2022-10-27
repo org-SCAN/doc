@@ -8,8 +8,8 @@
 
 </details>
 
-{% content-ref url="../fundamentals/getting-set-up/inviting-members.md" %}
-[inviting-members.md](../fundamentals/getting-set-up/inviting-members.md)
+{% content-ref url="../getting-set-up/inviting-members.md" %}
+[inviting-members.md](../getting-set-up/inviting-members.md)
 {% endcontent-ref %}
 
 <details>

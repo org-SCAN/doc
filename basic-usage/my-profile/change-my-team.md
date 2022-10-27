@@ -13,4 +13,4 @@ If you do not see the 'Change team' section, it is because your role does not al
 By changing your team, you will no longer see the dataset of the team you belonged to before. You can always reassign to your old team so that you regains access to the old data
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/change_team.gif" alt=""><figcaption><p>Change team</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/change_team.gif" alt=""><figcaption><p>Change team</p></figcaption></figure>

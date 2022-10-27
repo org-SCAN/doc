@@ -13,4 +13,4 @@ To retrieve your API token :
 3. Enter your password
 4. Your API Token is displayed. You can consult it at any time
 
-<figure><img src="../../../.gitbook/assets/get_api_token.png" alt=""><figcaption><p>Get your private API Token</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/get_api_token.png" alt=""><figcaption><p>Get your private API Token</p></figcaption></figure>
