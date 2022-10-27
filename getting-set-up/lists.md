@@ -18,7 +18,7 @@ For example, we would like to create a field for our form where the user would h
 
 If we create a field called "Destination" and attach the list countries to it (as seen in the image above), then the user will have a dropdown in his creation form containing all the countries and will be able to select one for the value of this field :&#x20;
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>Bottom of the <strong>Person creation page</strong> : the user have to choose a country from the list as a destination.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>Bottom of the <strong>Person creation page</strong> : the user have to choose a country from the list as a destination.</p></figcaption></figure>
 
 ### Create a new List
 
@@ -44,7 +44,7 @@ You will then have your list, populated with the elements you want :&#x20;
 
 Now, if you want to use our solution to reference the birds you saw in your garden, you just have to create a new team, and create one field as an extension of the common birds list :&#x20;
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Using common birds list as the associated list when creating the field</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>Using common birds list as the associated list when creating the field</p></figcaption></figure>
 
 So, when a user of your team adds an item it will look like this :&#x20;
 

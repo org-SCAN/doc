@@ -6,7 +6,7 @@ These types of relations are diverse, and there is a default list of "common" re
 
 In fact, the default list of relations is literally a SCAN list: to be more familiar with this notion and to know how to add elements to it, we invite you to read the corresponding section if you haven't already done so : [lists.md](../getting-set-up/lists.md "mention")
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>List of default relation types</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>List of default relation types</p></figcaption></figure>
 
 ### Add a relation
 
