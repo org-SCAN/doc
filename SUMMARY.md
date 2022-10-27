@@ -8,7 +8,7 @@
   * [👩💻 Users](fundamentals/getting-set-up/setting-permissions.md)
   * [⚙ Roles](fundamentals/getting-set-up/roles/README.md)
     * [Permissions](fundamentals/getting-set-up/roles/implicitly-linked-permissions.md)
-  * [🧑 Teams](fundamentals/getting-set-up/inviting-members.md)
+  * [🫂 Teams](fundamentals/getting-set-up/inviting-members.md)
   * [🗃 Fields](fundamentals/getting-set-up/fields/README.md)
     * [Fields type](fundamentals/getting-set-up/fields/fields-type.md)
     * [📋 Lists](fundamentals/getting-set-up/fields/lists.md)

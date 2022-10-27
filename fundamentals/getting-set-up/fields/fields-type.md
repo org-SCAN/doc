@@ -1,5 +1,7 @@
 # Fields type
 
+This page seeks to detail all the types of fields you can choose when creating a field.
+
 ## Small Text
 
 A small text field gives the possibility to fill in a short text.
@@ -24,9 +26,9 @@ A date field gives the possibility to fill in a date.
 
 <figure><img src="../../../.gitbook/assets/date_field.png" alt=""><figcaption><p>Date input</p></figcaption></figure>
 
-## Yes / No
+## Yes / No (wip)
 
-// TO DO
+[https://github.com/TC-netw4ppl/website/issues/293](https://github.com/TC-netw4ppl/website/issues/293)
 
 ## List
 

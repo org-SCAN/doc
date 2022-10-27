@@ -4,30 +4,30 @@ description: Optionnal section
 
 # Permissions
 
-## Implicitly linked actions
-
 (Just skip this page and go to [inviting-members.md](../inviting-members.md "mention") if you are not interested in permissions for now).
+
+## Implicitly linked actions
 
 Here is a table representing a proposal of the implicitly linked permissions :
 
 | Permission | Implicitly Linked Permission |
 | ---------- | ---------------------------- |
 | .view      | .viewAny                     |
-| .store     | .viewAny                     |
-| .edit      | .show, .viewAny, .store      |
-| .destroy   | show, .index, .edit          |
+| .create    | .viewAny                     |
+| .update    | .view, .viewAny              |
+| .delete    | .view, .viewAny              |
 
 ## Actions permissions
 
 ### Basic Action
 
-| Action  | Description                                                                                                                    |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| viewAny | <p>Allow the user to index (view Any) all ressources of a given notion. <br><em>E.g: the table showing all the people</em></p> |
-| view    | <p>Allow the user to view the detail of a given notion.<br><em>E.g : view the detail of one person</em></p>                    |
-| create  | <p>Allow the user to create a new entity of a given notion.<br>E.g : create a new person</p>                                   |
-| update  | <p>Allow the user to edit an entity of a given notion.<br>E.g : edit a  person</p>                                             |
-| delete  | <p>Allow the user to delete an entity of a given notion.<br>E.g : delete a person</p>                                          |
+| Action  | Description                                                                                                                   |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| viewAny | <p>Allow the user to index (view Any) all ressources of a given notion.<br><em>E.g: the table showing all the people</em></p> |
+| view    | <p>Allow the user to view the detail of a given notion.<br><em>E.g : view the detail of one person</em></p>                   |
+| create  | <p>Allow the user to create a new entity of a given notion.<br>E.g : create a new person</p>                                  |
+| update  | <p>Allow the user to edit an entity of a given notion.<br>E.g : edit a person</p>                                             |
+| delete  | <p>Allow the user to delete an entity of a given notion.<br>E.g : delete a person</p>                                         |
 
 ### Specific permissions
 

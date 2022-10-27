@@ -98,13 +98,13 @@ If your User has a Role that count "person.index" in its permissions, then your 
 
 Here are the permissions given by the main action :
 
-| Action  | Description                                                                                                                    |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| viewAny | <p>Allow the user to index (view Any) all ressources of a given notion. <br><em>E.g: the table showing all the people</em></p> |
-| view    | <p>Allow the user to view the detail of a given notion.<br><em>E.g : view the detail of one person</em></p>                    |
-| create  | <p>Allow the user to create a new entity of a given notion.<br>E.g : create a new person</p>                                   |
-| update  | <p>Allow the user to edit an entity of a given notion.<br>E.g : edit a  person</p>                                             |
-| delete  | <p>Allow the user to delete an entity of a given notion.<br>E.g : delete a person</p>                                          |
+| Action  | Description                                                                                                                   |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| viewAny | <p>Allow the user to index (view Any) all ressources of a given notion.<br><em>E.g: the table showing all the people</em></p> |
+| view    | <p>Allow the user to view the detail of a given notion.<br><em>E.g : view the detail of one person</em></p>                   |
+| create  | <p>Allow the user to create a new entity of a given notion.<br>E.g : create a new person</p>                                  |
+| update  | <p>Allow the user to edit an entity of a given notion.<br>E.g : edit a person</p>                                             |
+| delete  | <p>Allow the user to delete an entity of a given notion.<br>E.g : delete a person</p>                                         |
 
 {% hint style="info" %}
 More specific action exists. They are detailled in the [#actions-permissions](implicitly-linked-permissions.md#actions-permissions "mention") section
@@ -142,12 +142,12 @@ To save your role, just click on the **Create** button.
 Did you remember to put a name ?
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Create button (Use it to save your new role)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Create button (Use it to save your new role)</p></figcaption></figure>
 
 You can now see your new role in the list of existing roles. You can modify it by clicking on _Edit_, and even delete it with the _Delete_ button.
 
 <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>New index of roles</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>show view of the New role (note the delete button)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>show view of the New role (note the delete button)</p></figcaption></figure>
 
 The next page is about the implicitly linked permissions, if you are not interested you can go straight to [inviting-members.md](../inviting-members.md "mention").
