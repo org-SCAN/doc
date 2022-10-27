@@ -4,6 +4,14 @@
 
 Welcome to SCAN! Here you'll find all the documentation you need to get up and running with the SCAN software and the SCAN API.
 
+## Feedback/Suggestion Form
+
+You can address us any suggestion, report any bug right there :
+
+{% embed url="https://dufourlucas.typeform.com/to/MSKERc1P" %}
+Suggestion form
+{% endembed %}
+
 ## Want to jump right in?
 
 Feeling like an eager beaver? Jump in to the quick start docs and get making your install:
