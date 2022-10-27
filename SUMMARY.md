@@ -18,7 +18,7 @@
 * [🗣 Persons](basic-usage/adding-persons.md)
 * [🔗 Relations](basic-usage/relations.md)
 * [📊 Cytoscape](basic-usage/cytoscape.md)
-* [🙋♂ My profile](basic-usage/my-profile/README.md)
+* [🙋 My profile](basic-usage/my-profile/README.md)
   * [Get my API token](basic-usage/my-profile/get-my-api-token.md)
   * [Enable or disable 2FA](basic-usage/my-profile/enable-or-disable-2fa.md)
   * [Request a new role](basic-usage/my-profile/request-a-new-role.md)
