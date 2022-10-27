@@ -4,7 +4,7 @@ Now that several of your users are associated in the same team, it is time to cr
 
 As a reminder, here is the targeted infrastructure :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>exemple of the targeted infrastructure for the end of this demo</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (2).png" alt=""><figcaption><p>exemple of the targeted infrastructure for the end of this demo</p></figcaption></figure>
 
 ## Create a new field
 
@@ -34,6 +34,6 @@ The <mark style="color:orange;">orange</mark> **and **<mark style="color:red;">*
 
 The example below shows the creation of a number field, which will be displayed on the site and the application. This field is not a descriptive value.
 
-<figure><img src="../../../.gitbook/assets/create_field.gif" alt=""><figcaption><p>Create a new integer field</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/create_field.gif" alt=""><figcaption><p>Create a new integer field</p></figcaption></figure>
 
 Once you are satisfied with your fields, you can test the creation of a person directly in the namesake tab.

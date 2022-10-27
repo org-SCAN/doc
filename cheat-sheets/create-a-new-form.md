@@ -1,16 +1,16 @@
-# 📑 Create a new form
+---
+description: Work In Progress Section
+---
+
+# 📑 Create a new form (wip)
 
 <details>
 
 <summary>Step 1 : Create a new Team</summary>
 
-
+&#x20;[inviting-members.md](../getting-set-up/inviting-members.md "mention")
 
 </details>
-
-{% content-ref url="../getting-set-up/inviting-members.md" %}
-[inviting-members.md](../getting-set-up/inviting-members.md)
-{% endcontent-ref %}
 
 <details>
 

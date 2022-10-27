@@ -15,8 +15,8 @@
 
 ## Basic usage
 
-* [🗣 Adding persons](basic-usage/adding-persons.md)
-* [🔗 Adding relations](basic-usage/adding-relations.md)
+* [🗣 Persons](basic-usage/adding-persons.md)
+* [🔗 Relations](basic-usage/relations.md)
 * [📊 Cytoscape](basic-usage/cytoscape.md)
 * [🙋♂ My profile](basic-usage/my-profile/README.md)
   * [Get my API token](basic-usage/my-profile/get-my-api-token.md)
@@ -26,4 +26,4 @@
 
 ## Cheat sheets
 
-* [📑 Create a new form](cheat-sheets/create-a-new-form.md)
+* [📑 Create a new form (wip)](cheat-sheets/create-a-new-form.md)

@@ -122,7 +122,7 @@ To create a new role, go to the "Role" page in the "User Management" section :
 
 By clicking on "New Role", you will be able to access the role creation page (i.e. associated to "role.create" permission) :
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>role creation page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>role creation page</p></figcaption></figure>
 
 On this page, you must associate a name to your new role, then check one by one all the permissions you want your role to have.
 
@@ -146,7 +146,7 @@ Did you remember to put a name ?
 
 You can now see your new role in the list of existing roles. You can modify it by clicking on _Edit_, and even delete it with the _Delete_ button.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>New index of roles</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>New index of roles</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>show view of the New role (note the delete button)</p></figcaption></figure>
 
