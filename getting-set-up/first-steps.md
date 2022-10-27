@@ -10,6 +10,6 @@ To connect, visit [https://app.netw4ppl.tech](https://app.netw4ppl.tech). Use th
 
 If you forget your password, you can reset it by clicking on _Forgot your password ?_. <mark style="color:yellow;">\*</mark>
 
-\=> At this point, if **you are not an administrator** and you just want to have a basic usage of the features of our website, you can directly skip to the [Broken link](broken-reference "mention") section.
+\=> At this point, if **you are not an administrator** and you just want to have a basic usage of the features of our website, you can directly skip to the [adding-persons.md](../basic-usage/adding-persons.md "mention") section.
 
 \=> If **you are an administrator** and you want to modulate the solution to your needs, just continue to the next step.

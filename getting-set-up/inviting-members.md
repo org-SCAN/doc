@@ -21,7 +21,7 @@ To create a new team :
 
 Once your team is created, you can add user to this team.
 
-A user only sees the information of the team he is in. In other words, by changing the team of a user, he will no longer see the dataset of the team he belonged to before. You can always reassign the user to his old team so that he regains access to the old data. Note that some users with the user.changeTeam permission can change their team themselves by following this procedure: [Broken link](broken-reference "mention").
+A user only sees the information of the team he is in. In other words, by changing the team of a user, he will no longer see the dataset of the team he belonged to before. You can always reassign the user to his old team so that he regains access to the old data. Note that some users with the user.changeTeam permission can change their team themselves by following this procedure: [change-my-team.md](../basic-usage/my-profile/change-my-team.md "mention").
 
 {% hint style="warning" %}
 You must have the required permissions to perform this operation
@@ -42,7 +42,7 @@ You just have to :
 Please note that it is also possible to change the team of a user directly from his edition page (in User Management).
 {% endhint %}
 
-If we refer to our infrastructure graph, the change of a user's team can be represented as follows :&#x20;
+If we refer to our infrastructure graph, the change of a user's team can be represented as follows:
 
 <figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p>User 3 switching from Team 2 to Team 1 (=> he will now see all the persons created in Team 1)</p></figcaption></figure>
 

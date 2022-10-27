@@ -23,24 +23,29 @@ Permissions :
 Permissions :
 
 ```
-cytoscape.viewAny 
+cytoscape.viewAny
+ 
 links.createFromJson
-person.createFromJson
-user.requestRole
-lists_control.addToList
+links.viewAny
+links.create 
+links.view 
+links.update 
+links.delete
+
 person.fixDuplicatedReference
 person.viewAny
 person.create
 person.view
 person.update 
 person.delete
-links.viewAny
-links.create 
-links.view 
-links.update 
-links.delete
+person.createFromJson
+
+user.requestRole
 user.changeTeam
 user.requestRole
+
+lists_control.addToList
+
 duplicate.viewAny
 duplicate.create 
 duplicate.view
@@ -58,8 +63,10 @@ Permissions :
 
 ```
 cytoscape.viewAny
+
 person.viewAny
 person.view
+
 links.viewAny
 links.view
 ```

@@ -4,13 +4,13 @@ In this section you will learn how to create new users.
 
 ## Creating a new User <a href="#creating-a-new-user" id="creating-a-new-user"></a>
 
-You can go to the _Users_ section in _User management_. You will see the index of the different existing roles.
+You can go to the _Users_ section in _User management_. You will see the index of the different existing users.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>User index</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>User index</p></figcaption></figure>
 
 By clicking on _Add user_, you will arrive on this page of User creation :
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>User creation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>User creation</p></figcaption></figure>
 
 You will then have several fields to fill in:
 

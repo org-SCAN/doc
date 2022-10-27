@@ -16,12 +16,12 @@ The website allows to display, in a coherent and orderly way, all the informatio
 
 These modular and dynamic forms are associated with a given team, which can contain several users with different permissions.
 
-A possible infrastructure of our solution can therefore be represented as follows :&#x20;
+A possible infrastructure of our solution can therefore be represented as follows :
 
 <figure><img src=".gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Basic exemple of SCAN teams and forms infrastructure</p></figcaption></figure>
 
 {% hint style="success" %}
-In the current state, a team is associated with **exactly one** person creation form.
+In the current state, a team is associated with **exactly one** form.
 {% endhint %}
 
 ## Feedback/Suggestion Form
