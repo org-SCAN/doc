@@ -1,4 +1,4 @@
-# 👩💻 Users
+# 👩💻 👩💻 Users
 
 In this section you will learn how to create new users.
 
@@ -6,7 +6,7 @@ In this section you will learn how to create new users.
 
 You can go to the _Users_ section in _User management_. You will see the index of the different existing users.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>User index</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>User index</p></figcaption></figure>
 
 By clicking on _Add user_, you will arrive on this page of User creation :
 

@@ -44,7 +44,7 @@ Please note that it is also possible to change the team of a user directly from 
 
 If we refer to our infrastructure graph, the change of a user's team can be represented as follows:
 
-<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p>User 3 switching from Team 2 to Team 1 (=> he will now see all the persons created in Team 1)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption><p>User 3 switching from Team 2 to Team 1 (=> he will now see all the persons created in Team 1)</p></figcaption></figure>
 
 ## Remove a user from a team
 

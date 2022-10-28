@@ -40,7 +40,7 @@ When adding a new element to the list, you will need to fill all the required fi
 
 You will then have your list, populated with the elements you want :
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>common bird populated list</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>common bird populated list</p></figcaption></figure>
 
 Now, if you want to use our solution to reference the birds you saw in your garden, you just have to create a new team, and create one field as an extension of the common birds list :
 
