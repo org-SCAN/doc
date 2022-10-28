@@ -6,7 +6,7 @@
 ## Getting set up !
 
 * [👣 First steps](getting-set-up/first-steps.md)
-* [👩💻 Users](getting-set-up/setting-permissions.md)
+* [👩💻 👩💻 Users](getting-set-up/setting-permissions.md)
 * [⚙ Roles](getting-set-up/roles/README.md)
   * [Permissions](getting-set-up/roles/implicitly-linked-permissions.md)
 * [🫂 Teams](getting-set-up/inviting-members.md)
@@ -19,7 +19,7 @@
 * [🗣 Persons](basic-usage/adding-persons.md)
 * [🔗 Relations](basic-usage/relations.md)
 * [📊 Cytoscape](basic-usage/cytoscape.md)
-* [🙋 My profile](basic-usage/my-profile/README.md)
+* [🙋♂ My profile](basic-usage/my-profile/README.md)
   * [Get my API token](basic-usage/my-profile/get-my-api-token.md)
   * [Enable or disable 2FA](basic-usage/my-profile/enable-or-disable-2fa.md)
   * [Request a new role](basic-usage/my-profile/request-a-new-role.md)

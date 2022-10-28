@@ -8,7 +8,7 @@ description: Introduction to SCAN
 
 SCAN, for : Share, Compile, ANalyse, aims to store as much information as possible in order to find missing persons. SCAN also allows the automatic construction of a relational graph on cytoscape.
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption><p>View of the first entries* of the persons database (*all the data shown in this documentation is fake)</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>View of the first entries* of the persons database (*all the data shown in this documentation is fake)</p></figcaption></figure>
 
 The project consists of a relational database, allowing to store a great diversity of data. This database is combined wih an android application and a website.
 
