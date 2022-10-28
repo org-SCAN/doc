@@ -36,7 +36,7 @@ Through the person selection menu, if you select both a starting and an ending p
 
 Morover, you can also calculate the **betweenness centrality** of a person with the corresponding button. The more central a person is in the overall architecture, the more its node will be colored towards red :&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Here, Stephanie Daniel is the most "central" person considering all relations. The goes Zachariah and Ruthie.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Here, Stephanie Daniel is the most "central" person considering all relations. The goes Zachariah and Ruthie.</p></figcaption></figure>
 
 ### 3.  **General features**
 
@@ -48,7 +48,7 @@ This wheel has several options that you can select :&#x20;
 
 * Degre, Cise, Fcose and Breathfirst layout : these are automatic layouts that allow you to place all the nodes according to a precise organization. This is what they look like :&#x20;
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Dagre Layout</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Dagre Layout</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Cise Layout</p></figcaption></figure>
 

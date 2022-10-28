@@ -4,7 +4,7 @@ The list is a type of field pre-filled with several values.
 
 By default there are already pre-filled lists, like the list of all countries or the most used migration routes.
 
-<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Default pre-filled lists</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption><p>Default pre-filled lists</p></figcaption></figure>
 
 Here is a look at the list of countries :
 
