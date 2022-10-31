@@ -1,4 +1,4 @@
-# 🙋♂ My profile
+# 🙋 My profile
 
 You can access your profile by clicking on your name at the top right corner.
 

@@ -1,4 +1,4 @@
-# 👩💻 👩💻 Users
+# 👩💻 Users
 
 In this section you will learn how to create new users.
 
@@ -32,17 +32,17 @@ You then register your user by clicking on the Create button at the end of the p
 
 Like any field in our application, you can edit your user at any time (to change the role for example), but also delete him.
 
-### Grant or Reject Role
+## Grant or Reject Role
 
-If a user has permission (user.requestRole), he can request a role from his administrator (you).&#x20;
+If a user has permission (user.requestRole), he can request a role from his administrator (you).
 
-You can then grant or reject it, from the **user index page** in the dedicated section :&#x20;
+You can then grant or reject it, from the **user index page** in the dedicated section :
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Here, the user "My user" has requested the editor role, you can grant him or reject him the role.</p></figcaption></figure>
 
-### Manage API token permissions
+## Manage API token permissions
 
-In the **detail page of a user**, you can also manage the permissions of its API token, to control if your user can use the API to create, delete, read or update data :&#x20;
+In the **detail page of a user**, you can also manage the permissions of its API token, to control if your user can use the API to create, delete, read or update data :
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Manage API tokens section</p></figcaption></figure>
 
