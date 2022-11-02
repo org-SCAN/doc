@@ -1,7 +1,6 @@
 # Table of contents
 
 * [👋 Welcome to SCAN](README.md)
-* [🚨 Report a Bug](report-a-bug.md)
 
 ## Getting set up !
 
@@ -28,3 +27,7 @@
 ## Cheat sheets
 
 * [📑 Create a new form](cheat-sheets/create-a-new-form.md)
+
+## REPORT
+
+* [🚨 Report a Bug](report/report-a-bug.md)
