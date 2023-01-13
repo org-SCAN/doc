@@ -14,15 +14,15 @@ A long text field gives the possibility to fill in a long text.
 
 <figure><img src="../../.gitbook/assets/long_text_field.png" alt=""><figcaption><p>Long text input</p></figcaption></figure>
 
-## Integer
+## Number
 
-An integer field gives the possibility to fill in a number.
+An number field gives the possibility to fill in a number. This datatype is rangeable.
 
 <figure><img src="../../.gitbook/assets/integer_field.png" alt=""><figcaption><p>Integer input</p></figcaption></figure>
 
 ## Date
 
-A date field gives the possibility to fill in a date.
+A date field gives the possibility to fill in a date. This datatype is rangeable.
 
 <figure><img src="../../.gitbook/assets/date_field.png" alt=""><figcaption><p>Date input</p></figcaption></figure>
 
@@ -35,3 +35,9 @@ A date field gives the possibility to fill in a date.
 A list field gives the possibility to pick up an element from a given list. SCAN allows you to [create your own lists](../lists.md). Just take a look at the next section !
 
 <figure><img src="../../.gitbook/assets/list_field.png" alt=""><figcaption><p>List input</p></figcaption></figure>
+
+## Color
+
+## Coordinate
+
+## Range

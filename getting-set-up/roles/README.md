@@ -73,10 +73,22 @@ links.view
 
 </details>
 
+<details>
+
+<summary>Null</summary>
+
+Permissions :&#x20;
+
+```
+Ø
+```
+
+</details>
+
 Each time you create a user, you assign him a role, which gives him the associated permissions.
 
 {% hint style="success" %}
-In most cases, these three roles are sufficient.
+In most cases, these  roles are sufficient.
 {% endhint %}
 
 If you want a **higher granularity**, here is how to create **new Roles** (if not, you go skip this part and go to [inviting-members.md](../inviting-members.md "mention")) **:**

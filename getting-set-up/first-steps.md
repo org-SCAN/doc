@@ -1,14 +1,10 @@
 # 👣 First steps
 
-{% hint style="warning" %}
-\* Items denoted by <mark style="color:yellow;">\*</mark> refer to features not yet available.
-{% endhint %}
-
 ## Connection
 
 To connect, visit [https://app.netw4ppl.tech](https://app.netw4ppl.tech). Use the credentials provided by your administrator.
 
-If you forget your password, you can reset it by clicking on _Forgot your password ?_. <mark style="color:yellow;">\*</mark>
+If you forget your password, you can reset it by clicking on _Forgot your password ?_.
 
 \=> At this point, if **you are not an administrator** and you just want to have a basic usage of the features of our website, you can directly skip to the [adding-persons.md](../basic-usage/adding-persons.md "mention") section.
 
