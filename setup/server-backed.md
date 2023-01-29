@@ -6,7 +6,7 @@ description: How to set up the app with a server backed SCAN deployment
 
 First, go to the settings:
 
-![](<../.gitbook/assets/image (3).png>)->![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (15).png>)->![](<../.gitbook/assets/image (18).png>)
 
 
 

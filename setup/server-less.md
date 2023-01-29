@@ -6,7 +6,7 @@ description: How to set up the app with a serverless SCAN deployment
 
 First, go to the settings:
 
-![](<../.gitbook/assets/image (3).png>)->![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (15).png>)->![](<../.gitbook/assets/image (8).png>)
 
 To do this, you must first synchronize your application with your scan server, then switch to a serverless usage and publish the data by email.
 
