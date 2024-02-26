@@ -101,8 +101,8 @@ $(document).ready(function(){initNavTree('DuplicateController_8php_source.html',
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>use Carbon\Carbon;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>use Illuminate\Http\Request;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>use Illuminate\Http\Response;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>use Illuminate\Support\Facades\Artisan;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>use Illuminate\Support\Facades\Auth;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>use Illuminate\Support\Facades\Auth;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>use <a class="code hl_class" href="classApp_1_1Jobs_1_1DuplicateComputeJob.html">App\Jobs\DuplicateComputeJob</a>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classApp_1_1Http_1_1Controllers_1_1DuplicateController.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classApp_1_1Http_1_1Controllers_1_1DuplicateController.html">DuplicateController</a> <span class="keyword">extends</span> <a class="code hl_class" href="classApp_1_1Http_1_1Controllers_1_1Controller.html">Controller</a></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('DuplicateController_8php_source.html',
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        $this-&gt;authorize(<span class="stringliteral">&quot;compute&quot;</span>,</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            Duplicate::class);</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        Artisan::queue(<span class="stringliteral">&#39;duplicate:compute&#39;</span>);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        DuplicateComputeJob::dispatch();</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">return</span> redirect()-&gt;route(<span class="stringliteral">&#39;duplicate.index&#39;</span>);</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
@@ -193,6 +193,7 @@ $(document).ready(function(){initNavTree('DuplicateController_8php_source.html',
 <div class="ttc" id="aclassApp_1_1Http_1_1Controllers_1_1DuplicateController_html_adeab56ddb7e3bce8ad099dd6508a926c"><div class="ttname"><a href="classApp_1_1Http_1_1Controllers_1_1DuplicateController.html#adeab56ddb7e3bce8ad099dd6508a926c">App\Http\Controllers\DuplicateController\destroy</a></div><div class="ttdeci">destroy(Duplicate $duplicate)</div><div class="ttdef"><b>Definition:</b> <a href="DuplicateController_8php_source.html#l00110">DuplicateController.php:110</a></div></div>
 <div class="ttc" id="aclassApp_1_1Http_1_1Controllers_1_1DuplicateController_html_af1dac3b58bb1c8fa6fa83d0701a2075e"><div class="ttname"><a href="classApp_1_1Http_1_1Controllers_1_1DuplicateController.html#af1dac3b58bb1c8fa6fa83d0701a2075e">App\Http\Controllers\DuplicateController\create</a></div><div class="ttdeci">create()</div><div class="ttdef"><b>Definition:</b> <a href="DuplicateController_8php_source.html#l00058">DuplicateController.php:58</a></div></div>
 <div class="ttc" id="aclassApp_1_1Http_1_1Controllers_1_1DuplicateController_html_af973ac57b4d25990aa18912c5aa5dd72"><div class="ttname"><a href="classApp_1_1Http_1_1Controllers_1_1DuplicateController.html#af973ac57b4d25990aa18912c5aa5dd72">App\Http\Controllers\DuplicateController\edit</a></div><div class="ttdeci">edit(Duplicate $duplicate)</div><div class="ttdef"><b>Definition:</b> <a href="DuplicateController_8php_source.html#l00088">DuplicateController.php:88</a></div></div>
+<div class="ttc" id="aclassApp_1_1Jobs_1_1DuplicateComputeJob_html"><div class="ttname"><a href="classApp_1_1Jobs_1_1DuplicateComputeJob.html">App\Jobs\DuplicateComputeJob</a></div><div class="ttdef"><b>Definition:</b> <a href="DuplicateComputeJob_8php_source.html#l00013">DuplicateComputeJob.php:14</a></div></div>
 <div class="ttc" id="aclassApp_1_1Models_1_1CommandRun_html"><div class="ttname"><a href="classApp_1_1Models_1_1CommandRun.html">App\Models\CommandRun</a></div><div class="ttdef"><b>Definition:</b> <a href="CommandRun_8php_source.html#l00016">CommandRun.php:17</a></div></div>
 <div class="ttc" id="aclassApp_1_1Models_1_1Duplicate_html"><div class="ttname"><a href="classApp_1_1Models_1_1Duplicate.html">App\Models\Duplicate</a></div><div class="ttdef"><b>Definition:</b> <a href="Duplicate_8php_source.html#l00011">Duplicate.php:12</a></div></div>
 <div class="ttc" id="anamespaceApp_1_1Http_1_1Controllers_html"><div class="ttname"><a href="namespaceApp_1_1Http_1_1Controllers.html">App\Http\Controllers</a></div><div class="ttdef"><b>Definition:</b> <a href="ApiLogController_8php_source.html#l00003">ApiLogController.php:3</a></div></div>
@@ -202,7 +203,7 @@ $(document).ready(function(){initNavTree('DuplicateController_8php_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5194e5fea318fda12687127c23f8aba1.html">app</a></li><li class="navelem"><a class="el" href="dir_b9c8cd5da349efd320f611b10ccbd6dc.html">Http</a></li><li class="navelem"><a class="el" href="dir_21690dfb6b6f4ee3861534e99f7a4e15.html">Controllers</a></li><li class="navelem"><a class="el" href="DuplicateController_8php.html">DuplicateController.php</a></li>
-    <li class="footer">Generated on Fri Feb 23 2024 09:10:00 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Mon Feb 26 2024 10:28:29 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

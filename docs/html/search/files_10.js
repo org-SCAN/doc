@@ -10,6 +10,9 @@ var searchData=
   ['permissionrole_2ephp_7',['PermissionRole.php',['../PermissionRole_8php.html',1,'']]],
   ['permissionseeder_2ephp_8',['PermissionSeeder.php',['../PermissionSeeder_8php.html',1,'']]],
   ['personhasevent_2ephp_9',['PersonHasEvent.php',['../PersonHasEvent_8php.html',1,'']]],
-  ['policy_2eblade_2ephp_10',['policy.blade.php',['../policy_8blade_8php.html',1,'']]],
-  ['preventrequestsduringmaintenance_2ephp_11',['PreventRequestsDuringMaintenance.php',['../PreventRequestsDuringMaintenance_8php.html',1,'']]]
+  ['places_2ephp_10',['Places.php',['../Places_8php.html',1,'']]],
+  ['placescontroller_2ephp_11',['PlacesController.php',['../PlacesController_8php.html',1,'']]],
+  ['placespolicy_2ephp_12',['PlacesPolicy.php',['../PlacesPolicy_8php.html',1,'']]],
+  ['policy_2eblade_2ephp_13',['policy.blade.php',['../policy_8blade_8php.html',1,'']]],
+  ['preventrequestsduringmaintenance_2ephp_14',['PreventRequestsDuringMaintenance.php',['../PreventRequestsDuringMaintenance_8php.html',1,'']]]
 ];

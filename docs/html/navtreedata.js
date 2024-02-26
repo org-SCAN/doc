@@ -51,12 +51,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "401_8blade_8php.html",
-"PreventRequestsDuringMaintenance_8php.html",
-"classApp_1_1Exceptions_1_1Handler.html#aab34629ab414b983d518197ac24ad500",
-"classApp_1_1Http_1_1Middleware_1_1VerifyCsrfToken.html#a5a05d5a6db35d91bb1350161686c3f73",
-"classApp_1_1Models_1_1ListStructure.html#a1f0dbe70e5ac0d5253226d02b7ae0022",
-"classDatabase_1_1Seeders_1_1LanguageSeeder.html",
-"hashing_8php.html"
+"PermissionSeeder_8php.html",
+"classApp_1_1Console_1_1Commands_1_1MakeCommandSet.html",
+"classApp_1_1Http_1_1Livewire_1_1LinkSelectDropdown.html#adf35fbfcebcf38928ea1835122571b28",
+"classApp_1_1Models_1_1ListControl.html",
+"classDatabase_1_1Factories_1_1FieldFactory.html",
+"dir_e8dec502d8a1f5823ffce2f55c2c037b.html",
+"namespaceLaravel.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

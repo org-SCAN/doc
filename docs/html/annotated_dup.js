@@ -46,6 +46,7 @@ var annotated_dup =
           [ "ListControlController", "classApp_1_1Http_1_1Controllers_1_1ListControlController.html", "classApp_1_1Http_1_1Controllers_1_1ListControlController" ],
           [ "ManageUsersController", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController.html", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController" ],
           [ "PermissionController", "classApp_1_1Http_1_1Controllers_1_1PermissionController.html", "classApp_1_1Http_1_1Controllers_1_1PermissionController" ],
+          [ "PlacesController", "classApp_1_1Http_1_1Controllers_1_1PlacesController.html", "classApp_1_1Http_1_1Controllers_1_1PlacesController" ],
           [ "RefugeeController", "classApp_1_1Http_1_1Controllers_1_1RefugeeController.html", "classApp_1_1Http_1_1Controllers_1_1RefugeeController" ],
           [ "RequestRole", "classApp_1_1Http_1_1Controllers_1_1RequestRole.html", "classApp_1_1Http_1_1Controllers_1_1RequestRole" ],
           [ "RoleController", "classApp_1_1Http_1_1Controllers_1_1RoleController.html", "classApp_1_1Http_1_1Controllers_1_1RoleController" ],
@@ -59,6 +60,7 @@ var annotated_dup =
             [ "Show", "classApp_1_1Http_1_1Livewire_1_1Forms_1_1Show.html", "classApp_1_1Http_1_1Livewire_1_1Forms_1_1Show" ]
           ] ],
           [ "ChangeCrew", "classApp_1_1Http_1_1Livewire_1_1ChangeCrew.html", "classApp_1_1Http_1_1Livewire_1_1ChangeCrew" ],
+          [ "ChangeLanguage", "classApp_1_1Http_1_1Livewire_1_1ChangeLanguage.html", "classApp_1_1Http_1_1Livewire_1_1ChangeLanguage" ],
           [ "CreateFormChooseField", "classApp_1_1Http_1_1Livewire_1_1CreateFormChooseField.html", "classApp_1_1Http_1_1Livewire_1_1CreateFormChooseField" ],
           [ "CreateList", "classApp_1_1Http_1_1Livewire_1_1CreateList.html", "classApp_1_1Http_1_1Livewire_1_1CreateList" ],
           [ "GdprActions", "classApp_1_1Http_1_1Livewire_1_1GdprActions.html", "classApp_1_1Http_1_1Livewire_1_1GdprActions" ],
@@ -71,6 +73,7 @@ var annotated_dup =
         [ "Middleware", "namespaceApp_1_1Http_1_1Middleware.html", [
           [ "Authenticate", "classApp_1_1Http_1_1Middleware_1_1Authenticate.html", "classApp_1_1Http_1_1Middleware_1_1Authenticate" ],
           [ "EncryptCookies", "classApp_1_1Http_1_1Middleware_1_1EncryptCookies.html", "classApp_1_1Http_1_1Middleware_1_1EncryptCookies" ],
+          [ "Localization", "classApp_1_1Http_1_1Middleware_1_1Localization.html", "classApp_1_1Http_1_1Middleware_1_1Localization" ],
           [ "PreventRequestsDuringMaintenance", "classApp_1_1Http_1_1Middleware_1_1PreventRequestsDuringMaintenance.html", "classApp_1_1Http_1_1Middleware_1_1PreventRequestsDuringMaintenance" ],
           [ "RedirectIfAuthenticated", "classApp_1_1Http_1_1Middleware_1_1RedirectIfAuthenticated.html", "classApp_1_1Http_1_1Middleware_1_1RedirectIfAuthenticated" ],
           [ "TrimStrings", "classApp_1_1Http_1_1Middleware_1_1TrimStrings.html", "classApp_1_1Http_1_1Middleware_1_1TrimStrings" ],
@@ -102,6 +105,7 @@ var annotated_dup =
           [ "UpdateCrewRequest", "classApp_1_1Http_1_1Requests_1_1UpdateCrewRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateCrewRequest" ],
           [ "UpdateEventRequest", "classApp_1_1Http_1_1Requests_1_1UpdateEventRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateEventRequest" ],
           [ "UpdateFieldRequest", "classApp_1_1Http_1_1Requests_1_1UpdateFieldRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateFieldRequest" ],
+          [ "UpdateLanguageRequest", "classApp_1_1Http_1_1Requests_1_1UpdateLanguageRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateLanguageRequest" ],
           [ "UpdateLinkRequest", "classApp_1_1Http_1_1Requests_1_1UpdateLinkRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateLinkRequest" ],
           [ "UpdateListControlRequest", "classApp_1_1Http_1_1Requests_1_1UpdateListControlRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateListControlRequest" ],
           [ "UpdateListElemRequest", "classApp_1_1Http_1_1Requests_1_1UpdateListElemRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateListElemRequest" ],
@@ -118,6 +122,9 @@ var annotated_dup =
       ] ],
       [ "Interface", "namespaceApp_1_1Interface.html", [
         [ "DataTypeModel", "interfaceApp_1_1Interface_1_1DataTypeModel.html", "interfaceApp_1_1Interface_1_1DataTypeModel" ]
+      ] ],
+      [ "Jobs", "namespaceApp_1_1Jobs.html", [
+        [ "DuplicateComputeJob", "classApp_1_1Jobs_1_1DuplicateComputeJob.html", "classApp_1_1Jobs_1_1DuplicateComputeJob" ]
       ] ],
       [ "Models", "namespaceApp_1_1Models.html", [
         [ "ApiLog", "classApp_1_1Models_1_1ApiLog.html", "classApp_1_1Models_1_1ApiLog" ],
@@ -144,6 +151,7 @@ var annotated_dup =
         [ "ListStructure", "classApp_1_1Models_1_1ListStructure.html", "classApp_1_1Models_1_1ListStructure" ],
         [ "Permission", "classApp_1_1Models_1_1Permission.html", "classApp_1_1Models_1_1Permission" ],
         [ "PermissionRole", "classApp_1_1Models_1_1PermissionRole.html", "classApp_1_1Models_1_1PermissionRole" ],
+        [ "Places", "classApp_1_1Models_1_1Places.html", "classApp_1_1Models_1_1Places" ],
         [ "Refugee", "classApp_1_1Models_1_1Refugee.html", "classApp_1_1Models_1_1Refugee" ],
         [ "Role", "classApp_1_1Models_1_1Role.html", "classApp_1_1Models_1_1Role" ],
         [ "RoleRequest", "classApp_1_1Models_1_1RoleRequest.html", "classApp_1_1Models_1_1RoleRequest" ],
@@ -165,6 +173,7 @@ var annotated_dup =
         [ "LinkPolicy", "classApp_1_1Policies_1_1LinkPolicy.html", "classApp_1_1Policies_1_1LinkPolicy" ],
         [ "ListControlPolicy", "classApp_1_1Policies_1_1ListControlPolicy.html", "classApp_1_1Policies_1_1ListControlPolicy" ],
         [ "PermissionPolicy", "classApp_1_1Policies_1_1PermissionPolicy.html", "classApp_1_1Policies_1_1PermissionPolicy" ],
+        [ "PlacesPolicy", "classApp_1_1Policies_1_1PlacesPolicy.html", "classApp_1_1Policies_1_1PlacesPolicy" ],
         [ "RefugeePolicy", "classApp_1_1Policies_1_1RefugeePolicy.html", "classApp_1_1Policies_1_1RefugeePolicy" ],
         [ "RolePolicy", "classApp_1_1Policies_1_1RolePolicy.html", "classApp_1_1Policies_1_1RolePolicy" ],
         [ "SourcePolicy", "classApp_1_1Policies_1_1SourcePolicy.html", "classApp_1_1Policies_1_1SourcePolicy" ],

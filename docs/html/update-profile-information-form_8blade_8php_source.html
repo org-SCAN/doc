@@ -94,11 +94,11 @@ $(document).ready(function(){initNavTree('update-profile-information-form_8blade
 <div class="contents">
 <a href="update-profile-information-form_8blade_8php.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;x-jet-form-section submit=<span class="stringliteral">&quot;updateProfileInformation&quot;</span>&gt;</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>    &lt;x-slot name=<span class="stringliteral">&quot;title&quot;</span>&gt;</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>        {{ __(<span class="stringliteral">&#39;Profile Information&#39;</span>) }}</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>        {{ __(<span class="stringliteral">&#39;profile/update-profile-information-form.profile_information&#39;</span>) }}</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    &lt;/x-slot&gt;</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    &lt;x-slot name=<span class="stringliteral">&quot;description&quot;</span>&gt;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        {{ __(<span class="stringliteral">&#39;Update your account\&#39;s profile information and email address.&#39;</span>) }}</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        {{ __(<span class="stringliteral">&#39;profile/update-profile-information-form.update_profile_info_and_email&#39;</span>) }}</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    &lt;/x-slot&gt;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    &lt;x-slot name=<span class="stringliteral">&quot;form&quot;</span>&gt;</div>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('update-profile-information-form_8blade
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="stringliteral">                                    reader.readAsDataURL($refs.photo.files[0]);</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="stringliteral">                            &quot;</span> /&gt;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;photo&quot;</span> value=<span class="stringliteral">&quot;{{ __(&#39;Photo&#39;) }}&quot;</span> /&gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;photo&quot;</span> value=<span class="stringliteral">&quot;{{ __(&#39;profile/update-profile-information-form.photo&#39;) }}&quot;</span> /&gt;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                &lt;!-- Current Profile Photo --&gt;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;mt-2&quot;</span> x-show=<span class="stringliteral">&quot;! photoPreview&quot;</span>&gt;</div>
@@ -133,11 +133,11 @@ $(document).ready(function(){initNavTree('update-profile-information-form_8blade
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                &lt;/div&gt;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                &lt;x-jet-secondary-button <span class="keyword">class</span>=<span class="stringliteral">&quot;mt-2 mr-2&quot;</span> type=<span class="stringliteral">&quot;button&quot;</span> x-on:click.prevent=<span class="stringliteral">&quot;$refs.photo.click()&quot;</span>&gt;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    {{ __(<span class="stringliteral">&#39;Select A New Photo&#39;</span>) }}</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    {{ __(<span class="stringliteral">&#39;profile/update-profile-information-form.select_new_photo&#39;</span>) }}</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                &lt;/x-jet-secondary-button&gt;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                @<span class="keywordflow">if</span> ($this-&gt;user-&gt;profile_photo_path)</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    &lt;x-jet-secondary-button type=<span class="stringliteral">&quot;button&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;mt-2&quot;</span> wire:click=<span class="stringliteral">&quot;deleteProfilePhoto&quot;</span>&gt;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        {{ __(<span class="stringliteral">&#39;Remove Photo&#39;</span>) }}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        {{ __(<span class="stringliteral">&#39;profile/update-profile-information-form.remove_photo&#39;</span>) }}</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    &lt;/x-jet-secondary-button&gt;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <span class="keyword">@end</span><span class="keywordflow">if</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
@@ -147,14 +147,14 @@ $(document).ready(function(){initNavTree('update-profile-information-form_8blade
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    &lt;!-- Name --&gt;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;col-span-6 sm:col-span-4&quot;</span>&gt;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;name&quot;</span> value=<span class="stringliteral">&quot;{{ __(&#39;Name&#39;) }}&quot;</span> /&gt;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            &lt;x-jet-input <span class="keywordtype">id</span>=<span class="stringliteral">&quot;name&quot;</span> type=<span class="stringliteral">&quot;text&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;mt-1 block w-full&quot;</span> wire:model.defer=<span class="stringliteral">&quot;state.name&quot;</span> autocomplete=<span class="stringliteral">&quot;name&quot;</span> /&gt;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            &lt;x-jet-input-error <span class="keywordflow">for</span>=<span class="stringliteral">&quot;name&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;mt-2&quot;</span> /&gt;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;username&quot;</span> value=<span class="stringliteral">&quot;{{ __(&#39;profile/update-profile-information-form.name&#39;) }}&quot;</span> /&gt;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            &lt;x-jet-input <span class="keywordtype">id</span>=<span class="stringliteral">&quot;username&quot;</span> type=<span class="stringliteral">&quot;text&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;mt-1 block w-full&quot;</span> wire:model.defer=<span class="stringliteral">&quot;state.name&quot;</span> autocomplete=<span class="stringliteral">&quot;username&quot;</span> /&gt;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            &lt;x-jet-input-error <span class="keywordflow">for</span>=<span class="stringliteral">&quot;username&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;mt-2&quot;</span> /&gt;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        &lt;/div&gt;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        &lt;!-- Email --&gt;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;col-span-6 sm:col-span-4&quot;</span>&gt;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;email&quot;</span> value=<span class="stringliteral">&quot;{{ __(&#39;Email&#39;) }}&quot;</span> /&gt;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;email&quot;</span> value=<span class="stringliteral">&quot;{{ __(&#39;profile/update-profile-information-form.email&#39;) }}&quot;</span> /&gt;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            &lt;x-jet-input <span class="keywordtype">id</span>=<span class="stringliteral">&quot;email&quot;</span> type=<span class="stringliteral">&quot;email&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;mt-1 block w-full&quot;</span> wire:model.defer=<span class="stringliteral">&quot;state.email&quot;</span> /&gt;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            &lt;x-jet-input-error <span class="keywordflow">for</span>=<span class="stringliteral">&quot;email&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;mt-2&quot;</span> /&gt;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        &lt;/div&gt;</div>
@@ -162,11 +162,11 @@ $(document).ready(function(){initNavTree('update-profile-information-form_8blade
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    &lt;x-slot name=<span class="stringliteral">&quot;actions&quot;</span>&gt;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        &lt;x-jet-action-message <span class="keyword">class</span>=<span class="stringliteral">&quot;mr-3&quot;</span> on=<span class="stringliteral">&quot;saved&quot;</span>&gt;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            {{ __(<span class="stringliteral">&#39;Saved.&#39;</span>) }}</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            {{ __(<span class="stringliteral">&#39;profile/update-profile-information-form.saved&#39;</span>) }}</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        &lt;/x-jet-action-message&gt;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        &lt;x-jet-button wire:loading.attr=<span class="stringliteral">&quot;disabled&quot;</span> wire:target=<span class="stringliteral">&quot;photo&quot;</span>&gt;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            {{ __(<span class="stringliteral">&#39;Save&#39;</span>) }}</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            {{ __(<span class="stringliteral">&#39;profile/update-profile-information-form.save&#39;</span>) }}</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        &lt;/x-jet-button&gt;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    &lt;/x-slot&gt;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>&lt;/x-jet-form-section&gt;</div>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('update-profile-information-form_8blade
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fa3b942b33b04fef8622e6ed9abffc5c.html">resources</a></li><li class="navelem"><a class="el" href="dir_e07514aae5818c4edb893d37544f1a26.html">views</a></li><li class="navelem"><a class="el" href="dir_122373a5ea6c24564471d85c844d4a94.html">profile</a></li><li class="navelem"><a class="el" href="update-profile-information-form_8blade_8php.html">update-profile-information-form.blade.php</a></li>
-    <li class="footer">Generated on Fri Feb 23 2024 09:10:01 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Mon Feb 26 2024 10:28:29 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

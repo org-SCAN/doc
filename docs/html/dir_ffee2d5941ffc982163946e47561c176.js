@@ -23,6 +23,7 @@ var dir_ffee2d5941ffc982163946e47561c176 =
     [ "UpdateCrewRequest.php", "UpdateCrewRequest_8php.html", "UpdateCrewRequest_8php" ],
     [ "UpdateEventRequest.php", "UpdateEventRequest_8php.html", "UpdateEventRequest_8php" ],
     [ "UpdateFieldRequest.php", "UpdateFieldRequest_8php.html", "UpdateFieldRequest_8php" ],
+    [ "UpdateLanguageRequest.php", "UpdateLanguageRequest_8php.html", "UpdateLanguageRequest_8php" ],
     [ "UpdateLinkRequest.php", "UpdateLinkRequest_8php.html", "UpdateLinkRequest_8php" ],
     [ "UpdateListControlRequest.php", "UpdateListControlRequest_8php.html", "UpdateListControlRequest_8php" ],
     [ "UpdateListElemRequest.php", "UpdateListElemRequest_8php.html", "UpdateListElemRequest_8php" ],

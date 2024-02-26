@@ -92,27 +92,28 @@ $(document).ready(function(){initNavTree('api_2index_8blade_8php_source.html',''
   <div class="headertitle"><div class="title">index.blade.php</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="api_2index_8blade_8php.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>@section(<span class="stringliteral">&#39;title&#39;</span>,<span class="stringliteral">&quot;Manage API tokens&quot;</span>)</div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>&lt;x-app-layout&gt;</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    &lt;x-slot name=<span class="stringliteral">&quot;header&quot;</span>&gt;</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>        &lt;h2 <span class="keyword">class</span>=<span class="stringliteral">&quot;font-semibold text-xl text-gray-800 leading-tight&quot;</span>&gt;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>            {{ __(<span class="stringliteral">&#39;API Tokens&#39;</span>) }}</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        &lt;/h2&gt;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    &lt;/x-slot&gt;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    &lt;div&gt;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;max-w-7xl mx-auto py-10 sm:px-6 lg:px-8&quot;</span>&gt;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            @livewire(<span class="stringliteral">&#39;api.api-token-manager&#39;</span>)</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        &lt;/div&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    &lt;/div&gt;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>&lt;/x-app-layout&gt;</div>
+<a href="api_2index_8blade_8php.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>@section(<span class="stringliteral">&#39;title&#39;</span>, __(<span class="stringliteral">&#39;api/index.manage_api_tokens&#39;</span>))</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>&lt;x-app-layout&gt;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    &lt;x-slot name=<span class="stringliteral">&quot;header&quot;</span>&gt;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>        &lt;h2 <span class="keyword">class</span>=<span class="stringliteral">&quot;font-semibold text-xl text-gray-800 leading-tight&quot;</span>&gt;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>            {{ __(<span class="stringliteral">&#39;api/index.api_tokens&#39;</span>) }}</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        &lt;/h2&gt;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    &lt;/x-slot&gt;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    &lt;div&gt;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;max-w-7xl mx-auto py-10 sm:px-6 lg:px-8&quot;</span>&gt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            @livewire(<span class="stringliteral">&#39;api.api-token-manager&#39;</span>)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        &lt;/div&gt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    &lt;/div&gt;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>&lt;/x-app-layout&gt;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fa3b942b33b04fef8622e6ed9abffc5c.html">resources</a></li><li class="navelem"><a class="el" href="dir_e07514aae5818c4edb893d37544f1a26.html">views</a></li><li class="navelem"><a class="el" href="dir_8bd564603e58c698864a36b49babd8b8.html">api</a></li><li class="navelem"><a class="el" href="api_2index_8blade_8php.html">index.blade.php</a></li>
-    <li class="footer">Generated on Fri Feb 23 2024 09:10:01 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Mon Feb 26 2024 10:28:29 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

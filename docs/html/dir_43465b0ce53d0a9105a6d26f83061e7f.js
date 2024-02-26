@@ -24,6 +24,7 @@ var dir_43465b0ce53d0a9105a6d26f83061e7f =
     [ "ListStructure.php", "ListStructure_8php.html", "ListStructure_8php" ],
     [ "Permission.php", "Permission_8php.html", "Permission_8php" ],
     [ "PermissionRole.php", "PermissionRole_8php.html", "PermissionRole_8php" ],
+    [ "Places.php", "Places_8php.html", "Places_8php" ],
     [ "Refugee.php", "Refugee_8php.html", "Refugee_8php" ],
     [ "Role.php", "Role_8php.html", "Role_8php" ],
     [ "RoleRequest.php", "RoleRequest_8php.html", "RoleRequest_8php" ],

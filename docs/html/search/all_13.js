@@ -20,8 +20,14 @@ var searchData=
   ['person2_17',['person2',['../classApp_1_1Models_1_1Duplicate.html#a3c75bac9a17b8d880bf9381785adb565',1,'App::Models::Duplicate']]],
   ['personhasevent_18',['PersonHasEvent',['../classApp_1_1Rules_1_1PersonHasEvent.html',1,'App::Rules']]],
   ['personhasevent_2ephp_19',['PersonHasEvent.php',['../PersonHasEvent_8php.html',1,'']]],
-  ['persons_20',['persons',['../classApp_1_1Models_1_1Crew.html#a924b6ebc31a602c767ddba92610d18d8',1,'App\Models\Crew\persons()'],['../classApp_1_1Models_1_1Event.html#a7e98091df82e35ed14492820da88446a',1,'App\Models\Event\persons()']]],
-  ['policy_2eblade_2ephp_21',['policy.blade.php',['../policy_8blade_8php.html',1,'']]],
-  ['preventrequestsduringmaintenance_22',['PreventRequestsDuringMaintenance',['../classApp_1_1Http_1_1Middleware_1_1PreventRequestsDuringMaintenance.html',1,'App::Http::Middleware']]],
-  ['preventrequestsduringmaintenance_2ephp_23',['PreventRequestsDuringMaintenance.php',['../PreventRequestsDuringMaintenance_8php.html',1,'']]]
+  ['persons_20',['persons',['../classApp_1_1Models_1_1Event.html#a7e98091df82e35ed14492820da88446a',1,'App\Models\Event\persons()'],['../classApp_1_1Models_1_1Crew.html#a924b6ebc31a602c767ddba92610d18d8',1,'App\Models\Crew\persons()']]],
+  ['places_21',['Places',['../classApp_1_1Models_1_1Places.html',1,'App::Models']]],
+  ['places_2ephp_22',['Places.php',['../Places_8php.html',1,'']]],
+  ['placescontroller_23',['PlacesController',['../classApp_1_1Http_1_1Controllers_1_1PlacesController.html',1,'App::Http::Controllers']]],
+  ['placescontroller_2ephp_24',['PlacesController.php',['../PlacesController_8php.html',1,'']]],
+  ['placespolicy_25',['PlacesPolicy',['../classApp_1_1Policies_1_1PlacesPolicy.html',1,'App::Policies']]],
+  ['placespolicy_2ephp_26',['PlacesPolicy.php',['../PlacesPolicy_8php.html',1,'']]],
+  ['policy_2eblade_2ephp_27',['policy.blade.php',['../policy_8blade_8php.html',1,'']]],
+  ['preventrequestsduringmaintenance_28',['PreventRequestsDuringMaintenance',['../classApp_1_1Http_1_1Middleware_1_1PreventRequestsDuringMaintenance.html',1,'App::Http::Middleware']]],
+  ['preventrequestsduringmaintenance_2ephp_29',['PreventRequestsDuringMaintenance.php',['../PreventRequestsDuringMaintenance_8php.html',1,'']]]
 ];

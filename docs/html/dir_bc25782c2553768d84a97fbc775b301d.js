@@ -2,6 +2,7 @@ var dir_bc25782c2553768d84a97fbc775b301d =
 [
     [ "Authenticate.php", "Authenticate_8php.html", "Authenticate_8php" ],
     [ "EncryptCookies.php", "EncryptCookies_8php.html", "EncryptCookies_8php" ],
+    [ "Localization.php", "Localization_8php.html", "Localization_8php" ],
     [ "PreventRequestsDuringMaintenance.php", "PreventRequestsDuringMaintenance_8php.html", "PreventRequestsDuringMaintenance_8php" ],
     [ "RedirectIfAuthenticated.php", "RedirectIfAuthenticated_8php.html", "RedirectIfAuthenticated_8php" ],
     [ "TrimStrings.php", "TrimStrings_8php.html", "TrimStrings_8php" ],

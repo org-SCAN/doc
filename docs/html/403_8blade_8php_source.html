@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('403_8blade_8php_source.html',''); init
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    &lt;meta charset=<span class="stringliteral">&quot;utf-8&quot;</span>&gt;</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    &lt;meta name=<span class="stringliteral">&quot;viewport&quot;</span> content=<span class="stringliteral">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    &lt;title&gt;Forbidden&lt;/title&gt;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    &lt;title&gt;{{ __(<span class="stringliteral">&#39;errors/errors.forbidden&#39;</span>) }}&lt;/title&gt;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    &lt;style&gt;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        html {</div>
@@ -607,12 +607,12 @@ $(document).ready(function(){initNavTree('403_8blade_8php_source.html',''); init
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>    &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;max-w-xl mx-auto sm:px-6 lg:px-8&quot;</span>&gt;</div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;flex items-center pt-8 sm:justify-start sm:pt-0&quot;</span>&gt;</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider&quot;</span>&gt;</div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>                403</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>                {{ __(<span class="stringliteral">&#39;errors/errors.403&#39;</span>) }}</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>            &lt;/div&gt;</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span> </div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;ml-4 text-lg text-gray-500 uppercase tracking-wider&quot;</span>&gt;</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>                {{ $exception-&gt;getMessage() }} &lt;a href=<span class="stringliteral">&quot;{{ route(&#39;/&#39;) }}&quot;</span></div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>                                                  style=<span class="stringliteral">&quot;text-decoration: underline&quot;</span>&gt; Home Page&lt;/a&gt;&lt;/div&gt;</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>                                                  style=<span class="stringliteral">&quot;text-decoration: underline&quot;</span>&gt; {{ __(<span class="stringliteral">&#39;errors/errors.home_page&#39;</span>) }}&lt;/a&gt;&lt;/div&gt;</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        &lt;/div&gt;</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    &lt;/div&gt;</div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>&lt;/div&gt;</div>
@@ -624,7 +624,7 @@ $(document).ready(function(){initNavTree('403_8blade_8php_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fa3b942b33b04fef8622e6ed9abffc5c.html">resources</a></li><li class="navelem"><a class="el" href="dir_e07514aae5818c4edb893d37544f1a26.html">views</a></li><li class="navelem"><a class="el" href="dir_c03f785caa4a980a101e1f84efd4f57d.html">errors</a></li><li class="navelem"><a class="el" href="403_8blade_8php.html">403.blade.php</a></li>
-    <li class="footer">Generated on Fri Feb 23 2024 09:10:01 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Mon Feb 26 2024 10:28:29 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>
