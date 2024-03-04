@@ -3,7 +3,6 @@ var classApp_1_1Models_1_1Role =
     [ "biggestRole", "classApp_1_1Models_1_1Role.html#a3d5b62ce225ad8ef0530def12d43e68d", null ],
     [ "getRouteBases", "classApp_1_1Models_1_1Role.html#a36c79b8d00b9498aba7057566bb5852a", null ],
     [ "getSortedPermisisons", "classApp_1_1Models_1_1Role.html#ac6b68425580f68d548c4192d24bae68a", null ],
-    [ "list", "classApp_1_1Models_1_1Role.html#abfaf427619f87a54c28987a2927e24d2", null ],
     [ "permissions", "classApp_1_1Models_1_1Role.html#a17b93d7a39722a30b58022ded691e382", null ],
     [ "smallestRole", "classApp_1_1Models_1_1Role.html#affe7981a1aca471cc58225a8a4016d04", null ],
     [ "users", "classApp_1_1Models_1_1Role.html#ab18c60adf5b0a593ace5a9484c57b9d7", null ],

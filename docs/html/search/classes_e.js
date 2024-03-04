@@ -7,8 +7,5 @@ var searchData=
   ['permissionrole_4',['PermissionRole',['../classApp_1_1Models_1_1PermissionRole.html',1,'App::Models']]],
   ['permissionseeder_5',['PermissionSeeder',['../classDatabase_1_1Seeders_1_1PermissionSeeder.html',1,'Database::Seeders']]],
   ['personhasevent_6',['PersonHasEvent',['../classApp_1_1Rules_1_1PersonHasEvent.html',1,'App::Rules']]],
-  ['places_7',['Places',['../classApp_1_1Models_1_1Places.html',1,'App::Models']]],
-  ['placescontroller_8',['PlacesController',['../classApp_1_1Http_1_1Controllers_1_1PlacesController.html',1,'App::Http::Controllers']]],
-  ['placespolicy_9',['PlacesPolicy',['../classApp_1_1Policies_1_1PlacesPolicy.html',1,'App::Policies']]],
-  ['preventrequestsduringmaintenance_10',['PreventRequestsDuringMaintenance',['../classApp_1_1Http_1_1Middleware_1_1PreventRequestsDuringMaintenance.html',1,'App::Http::Middleware']]]
+  ['preventrequestsduringmaintenance_7',['PreventRequestsDuringMaintenance',['../classApp_1_1Http_1_1Middleware_1_1PreventRequestsDuringMaintenance.html',1,'App::Http::Middleware']]]
 ];

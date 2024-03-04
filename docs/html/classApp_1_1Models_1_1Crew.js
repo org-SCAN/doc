@@ -3,7 +3,6 @@ var classApp_1_1Models_1_1Crew =
     [ "fields", "classApp_1_1Models_1_1Crew.html#a56723b20cb5bb088f29b9edda49b1bf4", null ],
     [ "getDefaultCrewId", "classApp_1_1Models_1_1Crew.html#a691103457b84abff7a0471999547d889", null ],
     [ "hasEvent", "classApp_1_1Models_1_1Crew.html#aaac4ce4676fc06bb2a64bb6ee8911d35", null ],
-    [ "list", "classApp_1_1Models_1_1Crew.html#ab695733042d696db10625cf3543a8add", null ],
     [ "persons", "classApp_1_1Models_1_1Crew.html#a924b6ebc31a602c767ddba92610d18d8", null ],
     [ "relations", "classApp_1_1Models_1_1Crew.html#a5c930df07a694822367446dfe45c0554", null ],
     [ "users", "classApp_1_1Models_1_1Crew.html#a27dffdcd37015f7672b8e69ac3585775", null ],

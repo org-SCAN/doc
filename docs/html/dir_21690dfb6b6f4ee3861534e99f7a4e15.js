@@ -11,7 +11,6 @@ var dir_21690dfb6b6f4ee3861534e99f7a4e15 =
     [ "ListControlController.php", "ListControlController_8php.html", "ListControlController_8php" ],
     [ "ManageUsersController.php", "ManageUsersController_8php.html", "ManageUsersController_8php" ],
     [ "PermissionController.php", "PermissionController_8php.html", "PermissionController_8php" ],
-    [ "PlacesController.php", "PlacesController_8php.html", "PlacesController_8php" ],
     [ "RefugeeController.php", "RefugeeController_8php.html", "RefugeeController_8php" ],
     [ "RequestRole.php", "Controllers_2RequestRole_8php.html", "Controllers_2RequestRole_8php" ],
     [ "RoleController.php", "RoleController_8php.html", "RoleController_8php" ],

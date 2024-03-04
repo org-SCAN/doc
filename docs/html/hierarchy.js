@@ -15,7 +15,6 @@ var hierarchy =
         [ "App\\Http\\Controllers\\ListControlController", "classApp_1_1Http_1_1Controllers_1_1ListControlController.html", null ],
         [ "App\\Http\\Controllers\\ManageUsersController", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController.html", null ],
         [ "App\\Http\\Controllers\\PermissionController", "classApp_1_1Http_1_1Controllers_1_1PermissionController.html", null ],
-        [ "App\\Http\\Controllers\\PlacesController", "classApp_1_1Http_1_1Controllers_1_1PlacesController.html", null ],
         [ "App\\Http\\Controllers\\RefugeeController", "classApp_1_1Http_1_1Controllers_1_1RefugeeController.html", null ],
         [ "App\\Http\\Controllers\\RequestRole", "classApp_1_1Http_1_1Controllers_1_1RequestRole.html", null ],
         [ "App\\Http\\Controllers\\RoleController", "classApp_1_1Http_1_1Controllers_1_1RoleController.html", null ],
@@ -41,7 +40,6 @@ var hierarchy =
       [ "App\\Policies\\LinkPolicy", "classApp_1_1Policies_1_1LinkPolicy.html", null ],
       [ "App\\Policies\\ListControlPolicy", "classApp_1_1Policies_1_1ListControlPolicy.html", null ],
       [ "App\\Policies\\PermissionPolicy", "classApp_1_1Policies_1_1PermissionPolicy.html", null ],
-      [ "App\\Policies\\PlacesPolicy", "classApp_1_1Policies_1_1PlacesPolicy.html", null ],
       [ "App\\Policies\\RefugeePolicy", "classApp_1_1Policies_1_1RefugeePolicy.html", null ],
       [ "App\\Policies\\RolePolicy", "classApp_1_1Policies_1_1RolePolicy.html", null ],
       [ "App\\Policies\\SourcePolicy", "classApp_1_1Policies_1_1SourcePolicy.html", null ],
@@ -58,7 +56,6 @@ var hierarchy =
       [ "Database\\Factories\\RoleFactory", "classDatabase_1_1Factories_1_1RoleFactory.html", null ],
       [ "Database\\Factories\\SourceFactory", "classDatabase_1_1Factories_1_1SourceFactory.html", null ]
     ] ],
-    [ "App\\Http\\Middleware\\Localization", "classApp_1_1Http_1_1Middleware_1_1Localization.html", null ],
     [ "App\\Console\\Commands\\MakeCommandSet", "classApp_1_1Console_1_1Commands_1_1MakeCommandSet.html", null ],
     [ "Middleware", null, [
       [ "App\\Http\\Middleware\\Authenticate", "classApp_1_1Http_1_1Middleware_1_1Authenticate.html", null ],
@@ -87,7 +84,6 @@ var hierarchy =
     ] ],
     [ "Component", null, [
       [ "App\\Http\\Livewire\\ChangeCrew", "classApp_1_1Http_1_1Livewire_1_1ChangeCrew.html", null ],
-      [ "App\\Http\\Livewire\\ChangeLanguage", "classApp_1_1Http_1_1Livewire_1_1ChangeLanguage.html", null ],
       [ "App\\Http\\Livewire\\CreateList", "classApp_1_1Http_1_1Livewire_1_1CreateList.html", null ],
       [ "App\\Http\\Livewire\\Forms\\Form", "classApp_1_1Http_1_1Livewire_1_1Forms_1_1Form.html", [
         [ "App\\Http\\Livewire\\CreateFormChooseField", "classApp_1_1Http_1_1Livewire_1_1CreateFormChooseField.html", null ]
@@ -160,7 +156,6 @@ var hierarchy =
       [ "App\\Http\\Requests\\UpdateCrewRequest", "classApp_1_1Http_1_1Requests_1_1UpdateCrewRequest.html", null ],
       [ "App\\Http\\Requests\\UpdateEventRequest", "classApp_1_1Http_1_1Requests_1_1UpdateEventRequest.html", null ],
       [ "App\\Http\\Requests\\UpdateFieldRequest", "classApp_1_1Http_1_1Requests_1_1UpdateFieldRequest.html", null ],
-      [ "App\\Http\\Requests\\UpdateLanguageRequest", "classApp_1_1Http_1_1Requests_1_1UpdateLanguageRequest.html", null ],
       [ "App\\Http\\Requests\\UpdateLinkRequest", "classApp_1_1Http_1_1Requests_1_1UpdateLinkRequest.html", null ],
       [ "App\\Http\\Requests\\UpdateListControlRequest", "classApp_1_1Http_1_1Requests_1_1UpdateListControlRequest.html", null ],
       [ "App\\Http\\Requests\\UpdateListElemRequest", "classApp_1_1Http_1_1Requests_1_1UpdateListElemRequest.html", null ],
@@ -203,7 +198,6 @@ var hierarchy =
       ] ],
       [ "App\\Models\\ListStructure", "classApp_1_1Models_1_1ListStructure.html", null ],
       [ "App\\Models\\Permission", "classApp_1_1Models_1_1Permission.html", null ],
-      [ "App\\Models\\Places", "classApp_1_1Models_1_1Places.html", null ],
       [ "App\\Models\\Refugee", "classApp_1_1Models_1_1Refugee.html", null ],
       [ "App\\Models\\Role", "classApp_1_1Models_1_1Role.html", null ],
       [ "App\\Models\\RoleRequest", "classApp_1_1Models_1_1RoleRequest.html", null ],
@@ -259,9 +253,6 @@ var hierarchy =
       [ "App\\Providers\\FortifyServiceProvider", "classApp_1_1Providers_1_1FortifyServiceProvider.html", null ],
       [ "App\\Providers\\JetstreamServiceProvider", "classApp_1_1Providers_1_1JetstreamServiceProvider.html", null ],
       [ "App\\Providers\\RouteServiceProvider", "classApp_1_1Providers_1_1RouteServiceProvider.html", null ]
-    ] ],
-    [ "ShouldQueue", null, [
-      [ "App\\Jobs\\DuplicateComputeJob", "classApp_1_1Jobs_1_1DuplicateComputeJob.html", null ]
     ] ],
     [ "ToCollection", null, [
       [ "App\\Imports\\RefugeesImport", "classApp_1_1Imports_1_1RefugeesImport.html", null ]

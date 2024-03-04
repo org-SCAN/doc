@@ -16,7 +16,6 @@ var dir_e07514aae5818c4edb893d37544f1a26 =
     [ "livewire", "dir_42d19b8e76a5f428f21a97cd46bbeb21.html", "dir_42d19b8e76a5f428f21a97cd46bbeb21" ],
     [ "permissions", "dir_a3de2227abee8220279a5823ac594ba4.html", "dir_a3de2227abee8220279a5823ac594ba4" ],
     [ "person", "dir_91d69064e71d061ebbbcc3881926dbea.html", "dir_91d69064e71d061ebbbcc3881926dbea" ],
-    [ "places", "dir_37dd0c4eda93222b98dd3b9dad12c074.html", "dir_37dd0c4eda93222b98dd3b9dad12c074" ],
     [ "profile", "dir_122373a5ea6c24564471d85c844d4a94.html", "dir_122373a5ea6c24564471d85c844d4a94" ],
     [ "roles", "dir_4148651602a56d8fa73f8b28e319d8ff.html", "dir_4148651602a56d8fa73f8b28e319d8ff" ],
     [ "sources", "dir_8191c2811d3cee5f168c63709228a4e9.html", "dir_8191c2811d3cee5f168c63709228a4e9" ],

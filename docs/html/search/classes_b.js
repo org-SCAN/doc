@@ -32,6 +32,5 @@ var searchData=
   ['listrouteseeder_29',['ListRouteSeeder',['../classDatabase_1_1Seeders_1_1ListRouteSeeder.html',1,'Database::Seeders']]],
   ['listsourcetype_30',['ListSourceType',['../classApp_1_1Models_1_1ListSourceType.html',1,'App::Models']]],
   ['listsourcetypeseeder_31',['ListSourceTypeSeeder',['../classDatabase_1_1Seeders_1_1ListSourceTypeSeeder.html',1,'Database::Seeders']]],
-  ['liststructure_32',['ListStructure',['../classApp_1_1Models_1_1ListStructure.html',1,'App::Models']]],
-  ['localization_33',['Localization',['../classApp_1_1Http_1_1Middleware_1_1Localization.html',1,'App::Http::Middleware']]]
+  ['liststructure_32',['ListStructure',['../classApp_1_1Models_1_1ListStructure.html',1,'App::Models']]]
 ];

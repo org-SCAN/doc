@@ -6,7 +6,6 @@ var dir_5194e5fea318fda12687127c23f8aba1 =
     [ "Http", "dir_b9c8cd5da349efd320f611b10ccbd6dc.html", "dir_b9c8cd5da349efd320f611b10ccbd6dc" ],
     [ "Imports", "dir_d88a98f324341c072a8d3f05b06af795.html", "dir_d88a98f324341c072a8d3f05b06af795" ],
     [ "Interface", "dir_d877f485d2880b08461c8aa8dfb7ac07.html", "dir_d877f485d2880b08461c8aa8dfb7ac07" ],
-    [ "Jobs", "dir_7c1b9eb699396eb24b84f576215fe687.html", "dir_7c1b9eb699396eb24b84f576215fe687" ],
     [ "Models", "dir_43465b0ce53d0a9105a6d26f83061e7f.html", "dir_43465b0ce53d0a9105a6d26f83061e7f" ],
     [ "Notifications", "dir_1afe6c4686cc0b3709c1a658b437cd3f.html", "dir_1afe6c4686cc0b3709c1a658b437cd3f" ],
     [ "Policies", "dir_3d30d02dfee2de898ecf3d721aadeeaf.html", "dir_3d30d02dfee2de898ecf3d721aadeeaf" ],

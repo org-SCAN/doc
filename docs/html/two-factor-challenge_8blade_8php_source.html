@@ -100,11 +100,11 @@ $(document).ready(function(){initNavTree('two-factor-challenge_8blade_8php_sourc
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        &lt;div x-data=<span class="stringliteral">&quot;{ recovery: false }&quot;</span>&gt;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;mb-4 text-sm text-gray-600&quot;</span> x-show=<span class="stringliteral">&quot;! recovery&quot;</span>&gt;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                {{ __(<span class="stringliteral">&#39;auth/two_factor_challenge.confirm_access_with_auth_app&#39;</span>) }}</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                {{ __(<span class="stringliteral">&#39;Please confirm access to your account by entering the authentication code provided by your authenticator application.&#39;</span>) }}</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>            &lt;/div&gt;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;mb-4 text-sm text-gray-600&quot;</span> x-show=<span class="stringliteral">&quot;recovery&quot;</span>&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                {{ __(<span class="stringliteral">&#39;auth/two_factor_challenge.confirm_access_with_recovery_code&#39;</span>) }}</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                {{ __(<span class="stringliteral">&#39;Please confirm access to your account by entering one of your emergency recovery codes.&#39;</span>) }}</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            &lt;/div&gt;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            &lt;x-jet-validation-errors <span class="keyword">class</span>=<span class="stringliteral">&quot;mb-4&quot;</span> /&gt;</div>
@@ -113,36 +113,36 @@ $(document).ready(function(){initNavTree('two-factor-challenge_8blade_8php_sourc
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                @csrf</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;mt-4&quot;</span> x-show=<span class="stringliteral">&quot;! recovery&quot;</span>&gt;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;code&quot;</span> value=<span class="stringliteral">&quot;{{ __(&#39;auth/two_factor_challenge.code&#39;) }}&quot;</span> /&gt;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;code&quot;</span> value=<span class="stringliteral">&quot;{{ __(&#39;Code&#39;) }}&quot;</span> /&gt;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                    &lt;x-jet-input <span class="keywordtype">id</span>=<span class="stringliteral">&quot;code&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;block mt-1 w-full&quot;</span> type=<span class="stringliteral">&quot;text&quot;</span> inputmode=<span class="stringliteral">&quot;numeric&quot;</span> name=<span class="stringliteral">&quot;code&quot;</span> autofocus x-ref=<span class="stringliteral">&quot;code&quot;</span> autocomplete=<span class="stringliteral">&quot;one-time-code&quot;</span> /&gt;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                &lt;/div&gt;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;mt-4&quot;</span> x-show=<span class="stringliteral">&quot;recovery&quot;</span>&gt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;recovery_code&quot;</span> value=<span class="stringliteral">&quot;{{ __(&#39;auth/two_factor_challenge.recovery_code&#39;) }}&quot;</span> /&gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;recovery_code&quot;</span> value=<span class="stringliteral">&quot;{{ __(&#39;Recovery Code&#39;) }}&quot;</span> /&gt;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                    &lt;x-jet-input <span class="keywordtype">id</span>=<span class="stringliteral">&quot;recovery_code&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;block mt-1 w-full&quot;</span> type=<span class="stringliteral">&quot;text&quot;</span> name=<span class="stringliteral">&quot;recovery_code&quot;</span> x-ref=<span class="stringliteral">&quot;recovery_code&quot;</span> autocomplete=<span class="stringliteral">&quot;one-time-code&quot;</span> /&gt;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                &lt;/div&gt;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;flex items-center justify-end mt-4&quot;</span>&gt;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    &lt;button type=<span class="stringliteral">&quot;button&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;text-sm text-gray-600 hover:text-gray-900 underline cursor-pointer&quot;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                            x-show=<span class="stringliteral">&quot;! recovery&quot;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                            x-on:click=<span class="stringliteral">&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                                    x-show=<span class="stringliteral">&quot;! recovery&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                                    x-on:click=<span class="stringliteral">&quot;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="stringliteral">                                        recovery = true;</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="stringliteral">                                        $nextTick(() =&gt; { $refs.recovery_code.focus() })</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="stringliteral">                                    &quot;</span>&gt;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                        {{ __(<span class="stringliteral">&#39;auth/two_factor_challenge.use_recovery_code&#39;</span>) }}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                        {{ __(<span class="stringliteral">&#39;Use a recovery code&#39;</span>) }}</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    &lt;/button&gt;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    &lt;button type=<span class="stringliteral">&quot;button&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;text-sm text-gray-600 hover:text-gray-900 underline cursor-pointer&quot;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                            x-show=<span class="stringliteral">&quot;recovery&quot;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                            x-on:click=<span class="stringliteral">&quot;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                    x-show=<span class="stringliteral">&quot;recovery&quot;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                    x-on:click=<span class="stringliteral">&quot;</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="stringliteral">                                        recovery = false;</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="stringliteral">                                        $nextTick(() =&gt; { $refs.code.focus() })</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="stringliteral">                                    &quot;</span>&gt;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                        {{ __(<span class="stringliteral">&#39;auth/two_factor_challenge.use_authentication_code&#39;</span>) }}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                        {{ __(<span class="stringliteral">&#39;Use an authentication code&#39;</span>) }}</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    &lt;/button&gt;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    &lt;x-jet-button <span class="keyword">class</span>=<span class="stringliteral">&quot;ml-4&quot;</span>&gt;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        {{ __(<span class="stringliteral">&#39;auth/two_factor_challenge.log_in&#39;</span>) }}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        {{ __(<span class="stringliteral">&#39;Log in&#39;</span>) }}</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    &lt;/x-jet-button&gt;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                &lt;/div&gt;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            &lt;/form&gt;</div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('two-factor-challenge_8blade_8php_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fa3b942b33b04fef8622e6ed9abffc5c.html">resources</a></li><li class="navelem"><a class="el" href="dir_e07514aae5818c4edb893d37544f1a26.html">views</a></li><li class="navelem"><a class="el" href="dir_f5e91a2cca60adaa7cc6c2a396e31cc3.html">auth</a></li><li class="navelem"><a class="el" href="two-factor-challenge_8blade_8php.html">two-factor-challenge.blade.php</a></li>
-    <li class="footer">Generated on Mon Feb 26 2024 10:28:29 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Mon Mar 4 2024 09:51:05 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -10,7 +10,6 @@ var dir_3d30d02dfee2de898ecf3d721aadeeaf =
     [ "LinkPolicy.php", "LinkPolicy_8php.html", "LinkPolicy_8php" ],
     [ "ListControlPolicy.php", "ListControlPolicy_8php.html", "ListControlPolicy_8php" ],
     [ "PermissionPolicy.php", "PermissionPolicy_8php.html", "PermissionPolicy_8php" ],
-    [ "PlacesPolicy.php", "PlacesPolicy_8php.html", "PlacesPolicy_8php" ],
     [ "RefugeePolicy.php", "RefugeePolicy_8php.html", "RefugeePolicy_8php" ],
     [ "RolePolicy.php", "RolePolicy_8php.html", "RolePolicy_8php" ],
     [ "SourcePolicy.php", "SourcePolicy_8php.html", "SourcePolicy_8php" ],

@@ -38,10 +38,7 @@ var searchData=
   ['listsourcetypeseeder_2ephp_35',['ListSourceTypeSeeder.php',['../ListSourceTypeSeeder_8php.html',1,'']]],
   ['liststructure_2ephp_36',['ListStructure.php',['../ListStructure_8php.html',1,'']]],
   ['livewire_2ddatatables_2ephp_37',['livewire-datatables.php',['../livewire-datatables_8php.html',1,'']]],
-  ['localization_2ephp_38',['Localization.php',['../Localization_8php.html',1,'']]],
-  ['logging_2ephp_39',['logging.php',['../logging_8php.html',1,'']]],
-  ['login_2eblade_2ephp_40',['login.blade.php',['../login_8blade_8php.html',1,'']]],
-  ['login_2ephp_41',['login.php',['../login_8php.html',1,'']]],
-  ['logout_2dother_2dbrowser_2dsessions_2dform_2eblade_2ephp_42',['logout-other-browser-sessions-form.blade.php',['../logout-other-browser-sessions-form_8blade_8php.html',1,'']]],
-  ['logout_2dother_2dbrowser_2dsessions_2dform_2ephp_43',['logout-other-browser-sessions-form.php',['../logout-other-browser-sessions-form_8php.html',1,'']]]
+  ['logging_2ephp_38',['logging.php',['../logging_8php.html',1,'']]],
+  ['login_2eblade_2ephp_39',['login.blade.php',['../login_8blade_8php.html',1,'']]],
+  ['logout_2dother_2dbrowser_2dsessions_2dform_2eblade_2ephp_40',['logout-other-browser-sessions-form.blade.php',['../logout-other-browser-sessions-form_8blade_8php.html',1,'']]]
 ];

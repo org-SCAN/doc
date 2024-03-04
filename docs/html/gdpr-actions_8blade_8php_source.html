@@ -94,21 +94,21 @@ $(document).ready(function(){initNavTree('gdpr-actions_8blade_8php_source.html',
 <div class="contents">
 <a href="gdpr-actions_8blade_8php.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;x-jet-action-section&gt;</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>    &lt;x-slot name=<span class="stringliteral">&quot;title&quot;</span>&gt;</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>        {{ __(<span class="stringliteral">&quot;livewire/gdpr-actions.gdpr_actions&quot;</span>)  }}</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>        {{ __(<span class="stringliteral">&#39;GDPR actions&#39;</span>) }}</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    &lt;/x-slot&gt;</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    &lt;x-slot name=<span class="stringliteral">&quot;description&quot;</span>&gt;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        {{ __(<span class="stringliteral">&quot;livewire/gdpr-actions.description&quot;</span>)  }}</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        {{ __(<span class="stringliteral">&#39;Download or delete Item\&#39;s informations.&#39;</span>) }}</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    &lt;/x-slot&gt;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    &lt;x-slot name=<span class="stringliteral">&quot;content&quot;</span>&gt;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        &lt;div&gt;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            @<span class="keywordflow">if</span>(!$this-&gt;person)</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                {{-- Display a dropdown with all the registered Items, <span class="keyword">this</span> dropdown is wired to Item --}}</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;person&quot;</span> value=<span class="stringliteral">&quot;{{ __(&quot;</span>livewire/gdpr-actions.form_title<span class="stringliteral">&quot;)  }}&quot;</span>/&gt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                &lt;x-jet-label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;person&quot;</span> value=<span class="stringliteral">&quot;{{ __(&#39;Item&#39;) }}&quot;</span>/&gt;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                &lt;select wire:model=<span class="stringliteral">&quot;person&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;form-input rounded-md shadow-sm mt-1 block w-full&quot;</span> <span class="keywordtype">id</span>=<span class="stringliteral">&quot;person&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                        name=<span class="stringliteral">&quot;person&quot;</span>&gt;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                    &lt;option value=<span class="stringliteral">&quot;&quot;</span>&gt;{{ __(<span class="stringliteral">&quot;livewire/gdpr-actions.form_placeholder&quot;</span>)  }}&lt;/option&gt;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                    &lt;option value=<span class="stringliteral">&quot;&quot;</span>&gt;-- Select the Item to <span class="keyword">delete</span> --&lt;/option&gt;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                    @<span class="keywordflow">foreach</span>($this-&gt;persons as $person)</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                        &lt;option value=<span class="stringliteral">&quot;{{ $person-&gt;id }}&quot;</span>&gt;{{ $person-&gt;best_descriptive_value }}&lt;/option&gt;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                    <span class="keyword">@end</span><span class="keywordflow">foreach</span></div>
@@ -118,10 +118,10 @@ $(document).ready(function(){initNavTree('gdpr-actions_8blade_8php_source.html',
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="stringliteral">                &lt;strong&gt;{{ $this-&gt;person-&gt;best_descriptive_value }}&lt;/strong&gt;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="stringliteral">                &lt;div class=&quot;mt-2&quot;&gt;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="stringliteral">                    &lt;x-jet-button wire:click=&quot;export&quot; wire:loading.attr=&quot;disabled&quot;&gt;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="stringliteral">                        {{ __(&quot;livewire/gdpr-actions.export&quot;)  }}</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="stringliteral">                        {{ __(&#39;</span>Export<span class="stringliteral">&#39;) }}</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="stringliteral">                    &lt;/x-jet-button&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="stringliteral">                    &lt;x-jet-button wire:click=&quot;delete&quot; wire:loading.attr=&quot;disabled&quot;&gt;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="stringliteral">                        {{ __(&quot;livewire/gdpr-actions.delete&quot;)  }}</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="stringliteral">                        {{ __(&#39;</span>Delete<span class="stringliteral">&#39;) }}</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="stringliteral">                    &lt;/x-jet-button&gt;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="stringliteral">                &lt;/div&gt;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="stringliteral">            @endif</span></div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('gdpr-actions_8blade_8php_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fa3b942b33b04fef8622e6ed9abffc5c.html">resources</a></li><li class="navelem"><a class="el" href="dir_e07514aae5818c4edb893d37544f1a26.html">views</a></li><li class="navelem"><a class="el" href="dir_42d19b8e76a5f428f21a97cd46bbeb21.html">livewire</a></li><li class="navelem"><a class="el" href="gdpr-actions_8blade_8php.html">gdpr-actions.blade.php</a></li>
-    <li class="footer">Generated on Mon Feb 26 2024 10:28:29 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Mon Mar 4 2024 09:51:05 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

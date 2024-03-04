@@ -11,14 +11,13 @@ var searchData=
   ['imports_8',['Imports',['../namespaceApp_1_1Imports.html',1,'App']]],
   ['interface_9',['Interface',['../namespaceApp_1_1Interface.html',1,'App']]],
   ['jetstream_10',['Jetstream',['../namespaceApp_1_1Actions_1_1Jetstream.html',1,'App::Actions']]],
-  ['jobs_11',['Jobs',['../namespaceApp_1_1Jobs.html',1,'App']]],
-  ['livewire_12',['Livewire',['../namespaceApp_1_1Http_1_1Livewire.html',1,'App::Http']]],
-  ['middleware_13',['Middleware',['../namespaceApp_1_1Http_1_1Middleware.html',1,'App::Http']]],
-  ['models_14',['Models',['../namespaceApp_1_1Models.html',1,'App']]],
-  ['notifications_15',['Notifications',['../namespaceApp_1_1Notifications.html',1,'App']]],
-  ['policies_16',['Policies',['../namespaceApp_1_1Policies.html',1,'App']]],
-  ['providers_17',['Providers',['../namespaceApp_1_1Providers.html',1,'App']]],
-  ['requests_18',['Requests',['../namespaceApp_1_1Http_1_1Requests.html',1,'App::Http']]],
-  ['rules_19',['Rules',['../namespaceApp_1_1Rules.html',1,'App']]],
-  ['traits_20',['Traits',['../namespaceApp_1_1Traits.html',1,'App']]]
+  ['livewire_11',['Livewire',['../namespaceApp_1_1Http_1_1Livewire.html',1,'App::Http']]],
+  ['middleware_12',['Middleware',['../namespaceApp_1_1Http_1_1Middleware.html',1,'App::Http']]],
+  ['models_13',['Models',['../namespaceApp_1_1Models.html',1,'App']]],
+  ['notifications_14',['Notifications',['../namespaceApp_1_1Notifications.html',1,'App']]],
+  ['policies_15',['Policies',['../namespaceApp_1_1Policies.html',1,'App']]],
+  ['providers_16',['Providers',['../namespaceApp_1_1Providers.html',1,'App']]],
+  ['requests_17',['Requests',['../namespaceApp_1_1Http_1_1Requests.html',1,'App::Http']]],
+  ['rules_18',['Rules',['../namespaceApp_1_1Rules.html',1,'App']]],
+  ['traits_19',['Traits',['../namespaceApp_1_1Traits.html',1,'App']]]
 ];
