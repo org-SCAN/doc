@@ -26,11 +26,7 @@ In the current state, a team is associated with **exactly one** form.
 
 ## Feedback/Suggestion Form
 
-For any suggestion or feedback/bug about SCAN that you might encounter during the follow-up of this documentation, please feel free to fill out this form to inform us.
-
-{% embed url="https://dufourlucas.typeform.com/to/MSKERc1P" %}
-Suggestion Form
-{% endembed %}
+For any suggestion or feedback/bug about SCAN that you might encounter during the follow-up of this documentation, please feel free to fill out send us an email at this address : **support@scan4ppl.tech**
 
 ## Get Started
 

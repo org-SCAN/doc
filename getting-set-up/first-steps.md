@@ -2,7 +2,7 @@
 
 ## Connection
 
-To connect, visit [https://app.netw4ppl.tech](https://app.netw4ppl.tech). Use the credentials provided by your administrator.
+To connect, visit [https://scan4ppl.tech](https://scan4ppl.tech). Use the credentials provided by your administrator.
 
 If you forget your password, you can reset it by clicking on _Forgot your password ?_.
 

@@ -18,7 +18,7 @@ For example, we would like to create a field for our form where the user would h
 
 If we create a field called "Destination" and attach the list countries to it (as seen in the image above), then the user will have a dropdown in his creation form containing all the countries and will be able to select one for the value of this field :
 
-<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>Bottom of the <strong>Person creation page</strong> : the user have to choose a country from the list as a destination.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>Once you selected list type in <strong>Person creation page</strong> : the user have to choose a country from the list as a destination.</p></figcaption></figure>
 
 ### Create a new List
 

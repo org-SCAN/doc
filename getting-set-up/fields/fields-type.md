@@ -26,9 +26,15 @@ A date field gives the possibility to fill in a date. This datatype is rangeable
 
 <figure><img src="../../.gitbook/assets/date_field.png" alt=""><figcaption><p>Date input</p></figcaption></figure>
 
-## Yes / No (wip)
+## Yes / No
 
-[https://github.com/TC-netw4ppl/website/issues/293](https://github.com/TC-netw4ppl/website/issues/293)
+A Yes/No field allow you to add a checkbox. If the box is checked, the information is true.
+
+<div align="left" data-full-width="false">
+
+<figure><img src="../../.gitbook/assets/yes_no_field.png" alt=""><figcaption><p>Yes / No input</p></figcaption></figure>
+
+</div>
 
 ## List
 
@@ -38,6 +44,18 @@ A list field gives the possibility to pick up an element from a given list. SCAN
 
 ## Color
 
+A color field gives the possibility to fill in a color. It can be usefull to associate a color to your data to visualize it !
+
+<figure><img src="../../.gitbook/assets/color_field.png" alt=""><figcaption><p>Color input</p></figcaption></figure>
+
 ## Coordinate
 
+This field allow you to fill in a latitude and a longitude. These data can be visualized onto a map (WIP).
+
+<figure><img src="../../.gitbook/assets/coordinate_field.png" alt=""><figcaption><p>Coordinate input</p></figcaption></figure>
+
 ## Range
+
+This field type displays a slide bar to select a ranged number (between 0 and 100 basically).
+
+<figure><img src="../../.gitbook/assets/range_field.png" alt=""><figcaption><p>Range input</p></figcaption></figure>
