@@ -9,7 +9,7 @@ var searchData=
   ['refugeesimport_6',['RefugeesImport',['../classApp_1_1Imports_1_1RefugeesImport.html',1,'App::Imports']]],
   ['relationdoesnotalreadyexist_7',['RelationDoesNotAlreadyExist',['../classApp_1_1Rules_1_1RelationDoesNotAlreadyExist.html',1,'App::Rules']]],
   ['removeteammember_8',['RemoveTeamMember',['../classApp_1_1Actions_1_1Jetstream_1_1RemoveTeamMember.html',1,'App::Actions::Jetstream']]],
-  ['requestrole_9',['RequestRole',['../classApp_1_1Http_1_1Controllers_1_1RequestRole.html',1,'App\Http\Controllers\RequestRole'],['../classApp_1_1Http_1_1Livewire_1_1RequestRole.html',1,'App\Http\Livewire\RequestRole']]],
+  ['requestrole_9',['RequestRole',['../classApp_1_1Http_1_1Controllers_1_1RequestRole.html',1,'App\Http\Controllers\RequestRole'],['../classApp_1_1Livewire_1_1RequestRole.html',1,'App\Livewire\RequestRole']]],
   ['resetuserpassword_10',['ResetUserPassword',['../classApp_1_1Actions_1_1Fortify_1_1ResetUserPassword.html',1,'App::Actions::Fortify']]],
   ['role_11',['Role',['../classApp_1_1Models_1_1Role.html',1,'App::Models']]],
   ['rolecontroller_12',['RoleController',['../classApp_1_1Http_1_1Controllers_1_1RoleController.html',1,'App::Http::Controllers']]],

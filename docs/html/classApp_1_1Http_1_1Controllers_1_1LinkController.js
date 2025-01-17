@@ -2,7 +2,7 @@ var classApp_1_1Http_1_1Controllers_1_1LinkController =
 [
     [ "__construct", "classApp_1_1Http_1_1Controllers_1_1LinkController.html#a9c3774529431e94de757c9f86a10878f", null ],
     [ "apiGetRelations", "classApp_1_1Http_1_1Controllers_1_1LinkController.html#ad3f40e6a0ba2d081256c3cc48bf9ba7e", null ],
-    [ "create", "classApp_1_1Http_1_1Controllers_1_1LinkController.html#a5961c6b82fd337ffb3671cd6017ee8e1", null ],
+    [ "create", "classApp_1_1Http_1_1Controllers_1_1LinkController.html#aade9b572641c50d7d30b47d5bc401b19", null ],
     [ "createFromJson", "classApp_1_1Http_1_1Controllers_1_1LinkController.html#a5786f4607db9195b577d623126b8855a", null ],
     [ "destroy", "classApp_1_1Http_1_1Controllers_1_1LinkController.html#a0e02ffd7f4f051480de7c956851036c9", null ],
     [ "edit", "classApp_1_1Http_1_1Controllers_1_1LinkController.html#a43bb1e4dca938918fc29971953d4108e", null ],

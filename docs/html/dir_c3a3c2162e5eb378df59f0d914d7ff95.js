@@ -5,6 +5,8 @@ var dir_c3a3c2162e5eb378df59f0d914d7ff95 =
     [ "MakeCommandSet.php", "MakeCommandSet_8php.html", "MakeCommandSet_8php" ],
     [ "MakeList.php", "MakeList_8php.html", "MakeList_8php" ],
     [ "MakeResourceTest.php", "MakeResourceTest_8php.html", "MakeResourceTest_8php" ],
+    [ "MakeSchemaCommand.php", "MakeSchemaCommand_8php.html", "MakeSchemaCommand_8php" ],
+    [ "MigrateCustomSchemaCommand.php", "MigrateCustomSchemaCommand_8php.html", "MigrateCustomSchemaCommand_8php" ],
     [ "UpdateList.php", "UpdateList_8php.html", "UpdateList_8php" ],
     [ "UpdatePermissions.php", "UpdatePermissions_8php.html", "UpdatePermissions_8php" ]
 ];

@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('form-select-dropdown_8blade_8php_sourc
 </div><!--header-->
 <div class="contents">
 <a href="form-select-dropdown_8blade_8php.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;div&gt;</div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>    &lt;label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;{{ $form_elem }}&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;block font-medium text-md text-gray-700&quot;</span>&gt; {!! $title !!}&lt;/label&gt;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>    @<span class="keywordflow">if</span>($title)&lt;label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;{{ $form_elem }}&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;block font-medium text-md text-gray-700&quot;</span>&gt; {!! $title !!}&lt;/label&gt;<span class="keyword">@end</span><span class="keywordflow">if</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>        @livewire(<span class="stringliteral">&quot;select-dropdown&quot;</span>, [</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>        <span class="stringliteral">&#39;label&#39;</span> =&gt; $form_elem,</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>        <span class="stringliteral">&#39;placeholder&#39;</span> =&gt; $placeHolder,</div>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('form-select-dropdown_8blade_8php_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fa3b942b33b04fef8622e6ed9abffc5c.html">resources</a></li><li class="navelem"><a class="el" href="dir_e07514aae5818c4edb893d37544f1a26.html">views</a></li><li class="navelem"><a class="el" href="dir_42d19b8e76a5f428f21a97cd46bbeb21.html">livewire</a></li><li class="navelem"><a class="el" href="dir_e8dec502d8a1f5823ffce2f55c2c037b.html">forms</a></li><li class="navelem"><a class="el" href="form-select-dropdown_8blade_8php.html">form-select-dropdown.blade.php</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 22:09:06 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Jan 17 2025 13:55:33 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

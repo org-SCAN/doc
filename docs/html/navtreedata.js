@@ -26,7 +26,11 @@ var NAVTREE =
 [
   [ "SCAN", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -51,12 +55,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "401_8blade_8php.html",
-"PreventRequestsDuringMaintenance_8php.html",
-"classApp_1_1Exceptions_1_1Handler.html#aab34629ab414b983d518197ac24ad500",
-"classApp_1_1Http_1_1Middleware_1_1VerifyCsrfToken.html#a5a05d5a6db35d91bb1350161686c3f73",
-"classApp_1_1Models_1_1ListStructure.html#a1f0dbe70e5ac0d5253226d02b7ae0022",
-"classDatabase_1_1Seeders_1_1LanguageSeeder.html",
-"hashing_8php.html"
+"ManageUsersController_8php.html",
+"change__language_8blade_8php_source.html",
+"classApp_1_1Http_1_1Middleware_1_1Localization.html#a2d75c7aba25c5495f0a61040297da4b2",
+"classApp_1_1Models_1_1Crew.html",
+"classApp_1_1Policies_1_1CytoscapePolicy.html#adc10f178a70b0b877c79fcba130eb294",
+"create-form-choose-field_8php_source.html",
+"form-select-dropdown_8blade_8php.html",
+"resources_2lang_2en_2cytoscape_2index_8php.html#a64a3c24c154c25eb61fc554825d9a085"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

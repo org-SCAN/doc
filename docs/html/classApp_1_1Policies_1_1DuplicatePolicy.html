@@ -113,13 +113,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a84086fae0c914f4c737af3b50b14d45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c2e689e359132b3ac46442b84bf4c8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Policies_1_1DuplicatePolicy.html#a4c2e689e359132b3ac46442b84bf4c8f">resolve</a> (<a class="el" href="classApp_1_1Models_1_1User.html">User</a> $user)</td></tr>
 <tr class="separator:a4c2e689e359132b3ac46442b84bf4c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e3d02a4828b0d0512c89373bacb83f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Policies_1_1DuplicatePolicy.html#af2e3d02a4828b0d0512c89373bacb83f">chooseAlgorithm</a> (<a class="el" href="classApp_1_1Models_1_1User.html">User</a> $user)</td></tr>
+<tr class="separator:af2e3d02a4828b0d0512c89373bacb83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classApp_1_1Policies_1_1GlobalPolicy')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classApp_1_1Policies_1_1GlobalPolicy.html">App\Policies\GlobalPolicy</a></td></tr>
 <tr class="memitem:ad080910883f58384d840732a50e18e63 inherit pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Policies_1_1GlobalPolicy.html#ad080910883f58384d840732a50e18e63">__construct</a> ($route_name)</td></tr>
 <tr class="separator:ad080910883f58384d840732a50e18e63 inherit pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae2878fca34fb18b0c64b13c19c7ddfc inherit pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Policies_1_1GlobalPolicy.html#aae2878fca34fb18b0c64b13c19c7ddfc">viewAny</a> (<a class="el" href="classApp_1_1Models_1_1User.html">User</a> $user)</td></tr>
 <tr class="separator:aae2878fca34fb18b0c64b13c19c7ddfc inherit pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33aa06a9b99953192bb1d9d7bb938bbf inherit pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Policies_1_1GlobalPolicy.html#a33aa06a9b99953192bb1d9d7bb938bbf">hasPermission</a> ($user, $function)</td></tr>
-<tr class="separator:a33aa06a9b99953192bb1d9d7bb938bbf inherit pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5bebd6fb5fdf767c08a675d46f6310f inherit pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Policies_1_1GlobalPolicy.html#aa5bebd6fb5fdf767c08a675d46f6310f">hasPermission</a> ( $user, $function)</td></tr>
+<tr class="separator:aa5bebd6fb5fdf767c08a675d46f6310f inherit pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42335e99b467e11e9f6c63e8f709eade inherit pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Policies_1_1GlobalPolicy.html#a42335e99b467e11e9f6c63e8f709eade">viewMenu</a> (<a class="el" href="classApp_1_1Models_1_1User.html">User</a> $user)</td></tr>
 <tr class="separator:a42335e99b467e11e9f6c63e8f709eade inherit pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1419248855b5d26b82ec272a67796d80 inherit pub_methods_classApp_1_1Policies_1_1GlobalPolicy"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Policies_1_1GlobalPolicy.html#a1419248855b5d26b82ec272a67796d80">view</a> (<a class="el" href="classApp_1_1Models_1_1User.html">User</a> $user, Model $model)</td></tr>
@@ -170,11 +172,41 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DuplicatePolicy_8php_source.html#l00013">13</a> of file <a class="el" href="DuplicatePolicy_8php_source.html">DuplicatePolicy.php</a>.</p>
 
-<p class="reference">References <a class="el" href="GlobalPolicy_8php_source.html#l00017">App\Policies\GlobalPolicy\$route_name</a>.</p>
+<p class="reference">References <a class="el" href="GlobalPolicy_8php_source.html#l00016">App\Policies\GlobalPolicy\$route_name</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af2e3d02a4828b0d0512c89373bacb83f" name="af2e3d02a4828b0d0512c89373bacb83f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e3d02a4828b0d0512c89373bacb83f">&#9670;&#160;</a></span>chooseAlgorithm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">App\Policies\DuplicatePolicy::chooseAlgorithm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classApp_1_1Models_1_1User.html">User</a>&#160;</td>
+          <td class="paramname"><em>$user</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Determine whether the user can choose a different algorithm.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">User</td><td class="paramname">$user</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Response </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="DuplicatePolicy_8php_source.html#l00051">51</a> of file <a class="el" href="DuplicatePolicy_8php_source.html">DuplicatePolicy.php</a>.</p>
+
+<p class="reference">References <a class="el" href="GlobalPolicy_8php_source.html#l00041">App\Policies\GlobalPolicy\hasPermission()</a>.</p>
+
+</div>
+</div>
 <a id="a84086fae0c914f4c737af3b50b14d45a" name="a84086fae0c914f4c737af3b50b14d45a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84086fae0c914f4c737af3b50b14d45a">&#9670;&#160;</a></span>compute()</h2>
 
@@ -201,7 +233,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DuplicatePolicy_8php_source.html#l00025">25</a> of file <a class="el" href="DuplicatePolicy_8php_source.html">DuplicatePolicy.php</a>.</p>
 
-<p class="reference">References <a class="el" href="GlobalPolicy_8php_source.html#l00042">App\Policies\GlobalPolicy\hasPermission()</a>.</p>
+<p class="reference">References <a class="el" href="GlobalPolicy_8php_source.html#l00041">App\Policies\GlobalPolicy\hasPermission()</a>.</p>
 
 </div>
 </div>
@@ -231,7 +263,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DuplicatePolicy_8php_source.html#l00038">38</a> of file <a class="el" href="DuplicatePolicy_8php_source.html">DuplicatePolicy.php</a>.</p>
 
-<p class="reference">References <a class="el" href="GlobalPolicy_8php_source.html#l00042">App\Policies\GlobalPolicy\hasPermission()</a>.</p>
+<p class="reference">References <a class="el" href="GlobalPolicy_8php_source.html#l00041">App\Policies\GlobalPolicy\hasPermission()</a>.</p>
 
 </div>
 </div>
@@ -244,7 +276,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>App</b></li><li class="navelem"><a class="el" href="namespaceApp_1_1Policies.html">Policies</a></li><li class="navelem"><a class="el" href="classApp_1_1Policies_1_1DuplicatePolicy.html">DuplicatePolicy</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 22:09:07 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Jan 17 2025 13:55:35 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

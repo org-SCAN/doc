@@ -97,31 +97,34 @@ $(document).ready(function(){initNavTree('SourceFactory_8php_source.html',''); i
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceDatabase_1_1Factories.html">Database\Factories</a>;</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>use <a class="code hl_class" href="classApp_1_1Models_1_1ListSourceType.html">App\Models\ListSourceType</a>;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>use Illuminate\Database\Eloquent\Factories\Factory;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classDatabase_1_1Factories_1_1SourceFactory.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classDatabase_1_1Factories_1_1SourceFactory.html">SourceFactory</a> <span class="keyword">extends</span> Factory</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classDatabase_1_1Factories_1_1SourceFactory.html#aa8a8486fd88e9500f7323e8faf72cf29">   18</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="classDatabase_1_1Factories_1_1SourceFactory.html#aa8a8486fd88e9500f7323e8faf72cf29">definition</a>()</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">return</span> [</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="stringliteral">&#39;name&#39;</span> =&gt; $this-&gt;faker-&gt;name,</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="stringliteral">&#39;source_type_id&#39;</span> =&gt; ListSourceType::inRandomOrder()-&gt;first()-&gt;id,</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="stringliteral">&#39;trust&#39;</span> =&gt; $this-&gt;faker-&gt;randomFloat(2, 0, 10),</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="stringliteral">&#39;reference&#39;</span> =&gt; $this-&gt;faker-&gt;text,</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        ];</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>use <a class="code hl_class" href="classApp_1_1Models_1_1Source.html">App\Models\Source</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>use Illuminate\Database\Eloquent\Factories\Factory;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classDatabase_1_1Factories_1_1SourceFactory.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="classDatabase_1_1Factories_1_1SourceFactory.html">SourceFactory</a> <span class="keyword">extends</span> Factory</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classDatabase_1_1Factories_1_1SourceFactory.html#aa8a8486fd88e9500f7323e8faf72cf29">   20</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="classDatabase_1_1Factories_1_1SourceFactory.html#aa8a8486fd88e9500f7323e8faf72cf29">definition</a>(</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    ): array</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">return</span> [</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="stringliteral">&#39;name&#39;</span> =&gt; $this-&gt;faker-&gt;name,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="stringliteral">&#39;source_type_id&#39;</span> =&gt; ListSourceType::inRandomOrder()-&gt;first()-&gt;id,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="stringliteral">&#39;trust&#39;</span> =&gt; 1,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="stringliteral">&#39;reference&#39;</span> =&gt; $this-&gt;faker-&gt;text,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        ];</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
 <div class="ttc" id="aclassApp_1_1Models_1_1ListSourceType_html"><div class="ttname"><a href="classApp_1_1Models_1_1ListSourceType.html">App\Models\ListSourceType</a></div><div class="ttdef"><b>Definition:</b> <a href="ListSourceType_8php_source.html#l00005">ListSourceType.php:6</a></div></div>
-<div class="ttc" id="aclassDatabase_1_1Factories_1_1SourceFactory_html"><div class="ttname"><a href="classDatabase_1_1Factories_1_1SourceFactory.html">Database\Factories\SourceFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="SourceFactory_8php_source.html#l00011">SourceFactory.php:12</a></div></div>
-<div class="ttc" id="aclassDatabase_1_1Factories_1_1SourceFactory_html_aa8a8486fd88e9500f7323e8faf72cf29"><div class="ttname"><a href="classDatabase_1_1Factories_1_1SourceFactory.html#aa8a8486fd88e9500f7323e8faf72cf29">Database\Factories\SourceFactory\definition</a></div><div class="ttdeci">definition()</div><div class="ttdef"><b>Definition:</b> <a href="SourceFactory_8php_source.html#l00018">SourceFactory.php:18</a></div></div>
-<div class="ttc" id="anamespaceDatabase_1_1Factories_html"><div class="ttname"><a href="namespaceDatabase_1_1Factories.html">Database\Factories</a></div><div class="ttdef"><b>Definition:</b> <a href="ApiLogFactory_8php_source.html#l00003">ApiLogFactory.php:3</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Source_html"><div class="ttname"><a href="classApp_1_1Models_1_1Source.html">App\Models\Source</a></div><div class="ttdef"><b>Definition:</b> <a href="Source_8php_source.html#l00010">Source.php:11</a></div></div>
+<div class="ttc" id="aclassDatabase_1_1Factories_1_1SourceFactory_html"><div class="ttname"><a href="classDatabase_1_1Factories_1_1SourceFactory.html">Database\Factories\SourceFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="SourceFactory_8php_source.html#l00012">SourceFactory.php:13</a></div></div>
+<div class="ttc" id="aclassDatabase_1_1Factories_1_1SourceFactory_html_aa8a8486fd88e9500f7323e8faf72cf29"><div class="ttname"><a href="classDatabase_1_1Factories_1_1SourceFactory.html#aa8a8486fd88e9500f7323e8faf72cf29">Database\Factories\SourceFactory\definition</a></div><div class="ttdeci">definition()</div><div class="ttdef"><b>Definition:</b> <a href="SourceFactory_8php_source.html#l00020">SourceFactory.php:20</a></div></div>
+<div class="ttc" id="anamespaceDatabase_1_1Factories_html"><div class="ttname"><a href="namespaceDatabase_1_1Factories.html">Database\Factories</a></div><div class="ttdef"><b>Definition:</b> <a href="CommandRunFactory_8php_source.html#l00003">CommandRunFactory.php:3</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_803ee67260c130b45d29089798491ab2.html">database</a></li><li class="navelem"><a class="el" href="dir_eb58a0a89c7667beb1088d45c3cb99f7.html">factories</a></li><li class="navelem"><a class="el" href="SourceFactory_8php.html">SourceFactory.php</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 22:09:06 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Jan 17 2025 13:55:33 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

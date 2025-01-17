@@ -96,99 +96,110 @@ $(document).ready(function(){initNavTree('Role_8php_source.html',''); initResiza
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceApp_1_1Models.html">App\Models</a>;</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>use App\Traits\Uuids;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>use Illuminate\Database\Eloquent\Factories\HasFactory;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>use Illuminate\Database\Eloquent\Model;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>use Illuminate\Database\Eloquent\SoftDeletes;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>use Illuminate\Support\Str;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classApp_1_1Models_1_1Role.html">Role</a> <span class="keyword">extends</span> Model</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    use HasFactory, Uuids, SoftDeletes;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#ae20f74c17f3ebc164015f0fa7b1e35d2">   20</a></span>    <span class="keyword">protected</span> <a class="code hl_variable" href="classApp_1_1Models_1_1Role.html#ae20f74c17f3ebc164015f0fa7b1e35d2">$keyType</a> = <span class="stringliteral">&#39;string&#39;</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#ab65ffe9b618d788dc06b762369164e45">   28</a></span>    <span class="keyword">public</span> <a class="code hl_variable" href="classApp_1_1Models_1_1Role.html#ab65ffe9b618d788dc06b762369164e45">$incrementing</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>use App\Traits\ModelEventsLogs;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>use App\Traits\Uuids;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>use Illuminate\Database\Eloquent\Factories\HasFactory;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>use Illuminate\Database\Eloquent\Model;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>use Illuminate\Database\Eloquent\SoftDeletes;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>use Illuminate\Support\Str;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="classApp_1_1Models_1_1Role.html">Role</a> <span class="keyword">extends</span> Model</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    use HasFactory, Uuids, <a class="code hl_variable" href="namespaceApp_1_1Models.html#a3722aec003396768de72674a70d47016">SoftDeletes</a>, ModelEventsLogs;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#ae20f74c17f3ebc164015f0fa7b1e35d2">   21</a></span>    <span class="keyword">protected</span> <a class="code hl_variable" href="classApp_1_1Models_1_1Role.html#ae20f74c17f3ebc164015f0fa7b1e35d2">$keyType</a> = <span class="stringliteral">&#39;string&#39;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#ab65ffe9b618d788dc06b762369164e45">   29</a></span>    <span class="keyword">public</span> <a class="code hl_variable" href="classApp_1_1Models_1_1Role.html#ab65ffe9b618d788dc06b762369164e45">$incrementing</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#a6ba1b8708ecd4c451f86f4fbac7197e2">   36</a></span>    <span class="keyword">protected</span> <a class="code hl_variable" href="classApp_1_1Models_1_1Role.html#a6ba1b8708ecd4c451f86f4fbac7197e2">$guarded</a> = [];</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#ac547db9ff3a8cc05387ebcda6c8b2184">   43</a></span>    <span class="keyword">protected</span> <a class="code hl_variable" href="classApp_1_1Models_1_1Role.html#ac547db9ff3a8cc05387ebcda6c8b2184">$hidden</a> = [<span class="stringliteral">&#39;deleted_at&#39;</span>, <span class="stringliteral">&quot;created_at&quot;</span>, <span class="stringliteral">&quot;updated_at&quot;</span>];</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#ab18c60adf5b0a593ace5a9484c57b9d7">   45</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#ab18c60adf5b0a593ace5a9484c57b9d7">users</a>(){</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> $this-&gt;hasMany(User::class);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#a3d5b62ce225ad8ef0530def12d43e68d">   49</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#a3d5b62ce225ad8ef0530def12d43e68d">biggestRole</a>()</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> self::has(<span class="stringliteral">&quot;permissions&quot;</span>, Permission::count())-&gt;first()-&gt;id;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#affe7981a1aca471cc58225a8a4016d04">   54</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#affe7981a1aca471cc58225a8a4016d04">smallestRole</a>()</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        $nbPerm = Permission::count();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $smallest_role = <span class="keyword">new</span> <a class="code hl_class" href="classApp_1_1Models_1_1Role.html">Role</a>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">foreach</span> (Role::all() as $role) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">if</span> ($role-&gt;permissions-&gt;count() &lt; $nbPerm) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                $smallest_role = $role;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> $smallest_role-&gt;id;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#a17b93d7a39722a30b58022ded691e382">   70</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#a17b93d7a39722a30b58022ded691e382">permissions</a>()</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    {</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> $this-&gt;belongsToMany(Permission::class)-&gt;using(PermissionRole::class)-&gt;withTimestamps()-&gt;withPivot(<span class="stringliteral">&quot;id&quot;</span>);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#a36c79b8d00b9498aba7057566bb5852a">   75</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#a36c79b8d00b9498aba7057566bb5852a">getRouteBases</a>()</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        $permissions = Permission::all()-&gt;sortBy(<span class="stringliteral">&quot;policy_route&quot;</span>)-&gt;unique(<span class="stringliteral">&quot;policy_route&quot;</span>);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $route_bases = $permissions-&gt;map(<span class="keyword">function</span> ($elem) {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            $exploded = explode(<span class="stringliteral">&quot;.&quot;</span>, $elem-&gt;policy_route);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordflow">return</span> Str::camel($exploded[0]);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        })-&gt;unique();</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> $route_bases;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#ac6b68425580f68d548c4192d24bae68a">   87</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#ac6b68425580f68d548c4192d24bae68a">getSortedPermisisons</a>($route_bases)</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    {</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        $permissions = Permission::all()-&gt;sortBy(<span class="stringliteral">&quot;policy_route&quot;</span>)-&gt;unique(<span class="stringliteral">&quot;policy_route&quot;</span>);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $sorted_permissions = [];</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">foreach</span> ($route_bases as $route_base) {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            $sorted_permissions[$route_base] = [];</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">foreach</span> ($permissions as $permission) {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <span class="keywordflow">if</span> (Str::is(Str::snake($route_base) . <span class="stringliteral">&quot;*&quot;</span>, $permission-&gt;policy_route)) {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    $sorted_permissions[$route_base][$permission-&gt;id] = $permission-&gt;policy_route;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                }</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordflow">return</span> $sorted_permissions;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Role_html"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html">App\Models\Role</a></div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00011">Role.php:12</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_a17b93d7a39722a30b58022ded691e382"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#a17b93d7a39722a30b58022ded691e382">App\Models\Role\permissions</a></div><div class="ttdeci">permissions()</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00070">Role.php:70</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_a36c79b8d00b9498aba7057566bb5852a"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#a36c79b8d00b9498aba7057566bb5852a">App\Models\Role\getRouteBases</a></div><div class="ttdeci">static getRouteBases()</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00075">Role.php:75</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_a3d5b62ce225ad8ef0530def12d43e68d"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#a3d5b62ce225ad8ef0530def12d43e68d">App\Models\Role\biggestRole</a></div><div class="ttdeci">static biggestRole()</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00049">Role.php:49</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_a6ba1b8708ecd4c451f86f4fbac7197e2"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#a6ba1b8708ecd4c451f86f4fbac7197e2">App\Models\Role\$guarded</a></div><div class="ttdeci">$guarded</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00036">Role.php:36</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_ab18c60adf5b0a593ace5a9484c57b9d7"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#ab18c60adf5b0a593ace5a9484c57b9d7">App\Models\Role\users</a></div><div class="ttdeci">users()</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00045">Role.php:45</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_ab65ffe9b618d788dc06b762369164e45"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#ab65ffe9b618d788dc06b762369164e45">App\Models\Role\$incrementing</a></div><div class="ttdeci">$incrementing</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00028">Role.php:28</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_ac547db9ff3a8cc05387ebcda6c8b2184"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#ac547db9ff3a8cc05387ebcda6c8b2184">App\Models\Role\$hidden</a></div><div class="ttdeci">$hidden</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00043">Role.php:43</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_ac6b68425580f68d548c4192d24bae68a"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#ac6b68425580f68d548c4192d24bae68a">App\Models\Role\getSortedPermisisons</a></div><div class="ttdeci">static getSortedPermisisons($route_bases)</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00087">Role.php:87</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_ae20f74c17f3ebc164015f0fa7b1e35d2"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#ae20f74c17f3ebc164015f0fa7b1e35d2">App\Models\Role\$keyType</a></div><div class="ttdeci">$keyType</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00020">Role.php:20</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_affe7981a1aca471cc58225a8a4016d04"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#affe7981a1aca471cc58225a8a4016d04">App\Models\Role\smallestRole</a></div><div class="ttdeci">static smallestRole()</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00054">Role.php:54</a></div></div>
-<div class="ttc" id="anamespaceApp_1_1Models_html"><div class="ttname"><a href="namespaceApp_1_1Models.html">App\Models</a></div><div class="ttdef"><b>Definition:</b> <a href="ApiLog_8php_source.html#l00003">ApiLog.php:3</a></div></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#a6ba1b8708ecd4c451f86f4fbac7197e2">   37</a></span>    <span class="keyword">protected</span> <a class="code hl_variable" href="classApp_1_1Models_1_1Role.html#a6ba1b8708ecd4c451f86f4fbac7197e2">$guarded</a> = [];</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#ac547db9ff3a8cc05387ebcda6c8b2184">   44</a></span>    <span class="keyword">protected</span> <a class="code hl_variable" href="classApp_1_1Models_1_1Role.html#ac547db9ff3a8cc05387ebcda6c8b2184">$hidden</a> = [<span class="stringliteral">&#39;deleted_at&#39;</span>, <span class="stringliteral">&quot;created_at&quot;</span>, <span class="stringliteral">&quot;updated_at&quot;</span>];</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#ab18c60adf5b0a593ace5a9484c57b9d7">   46</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#ab18c60adf5b0a593ace5a9484c57b9d7">users</a>(){</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> $this-&gt;hasMany(User::class);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#a3d5b62ce225ad8ef0530def12d43e68d">   50</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#a3d5b62ce225ad8ef0530def12d43e68d">biggestRole</a>()</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> self::has(<span class="stringliteral">&quot;permissions&quot;</span>, Permission::count())-&gt;first()-&gt;id;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#affe7981a1aca471cc58225a8a4016d04">   55</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#affe7981a1aca471cc58225a8a4016d04">smallestRole</a>()</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $nbPerm = Permission::count();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        $smallest_role = <span class="keyword">new</span> <a class="code hl_class" href="classApp_1_1Models_1_1Role.html">Role</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">foreach</span> (Role::all() as $role) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span> ($role-&gt;permissions-&gt;count() &lt; $nbPerm) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                $smallest_role = $role;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">return</span> $smallest_role-&gt;id;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#a17b93d7a39722a30b58022ded691e382">   71</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#a17b93d7a39722a30b58022ded691e382">permissions</a>()</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> $this-&gt;belongsToMany(Permission::class)-&gt;using(PermissionRole::class)-&gt;withTimestamps()-&gt;withPivot(<span class="stringliteral">&quot;id&quot;</span>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#a36c79b8d00b9498aba7057566bb5852a">   76</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#a36c79b8d00b9498aba7057566bb5852a">getRouteBases</a>()</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        $permissions = Permission::all()-&gt;sortBy(<span class="stringliteral">&quot;policy_route&quot;</span>)-&gt;unique(<span class="stringliteral">&quot;policy_route&quot;</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        $route_bases = $permissions-&gt;map(<span class="keyword">function</span> ($elem) {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            $exploded = explode(<span class="stringliteral">&quot;.&quot;</span>, $elem-&gt;policy_route);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">return</span> Str::camel($exploded[0]);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        })-&gt;unique();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">return</span> $route_bases;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#ac6b68425580f68d548c4192d24bae68a">   88</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#ac6b68425580f68d548c4192d24bae68a">getSortedPermisisons</a>($route_bases)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        $permissions = Permission::all()-&gt;sortBy(<span class="stringliteral">&quot;policy_route&quot;</span>)-&gt;unique(<span class="stringliteral">&quot;policy_route&quot;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        $sorted_permissions = [];</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">foreach</span> ($route_bases as $route_base) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            $sorted_permissions[$route_base] = [];</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">foreach</span> ($permissions as $permission) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="keywordflow">if</span> (Str::is(Str::snake($route_base) . <span class="stringliteral">&quot;*&quot;</span>, $permission-&gt;policy_route)) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    $sorted_permissions[$route_base][$permission-&gt;id] = $permission-&gt;policy_route;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">return</span> $sorted_permissions;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classApp_1_1Models_1_1Role.html#abfaf427619f87a54c28987a2927e24d2">  104</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Models_1_1Role.html#abfaf427619f87a54c28987a2927e24d2">list</a>() {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="comment">// order by displayed value and pluck it</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        $displayed_value = <span class="stringliteral">&quot;name&quot;</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">return</span> self::orderBy($displayed_value)-&gt;pluck($displayed_value,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="stringliteral">&#39;id&#39;</span>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html">App\Models\Role</a></div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00012">Role.php:13</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_a17b93d7a39722a30b58022ded691e382"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#a17b93d7a39722a30b58022ded691e382">App\Models\Role\permissions</a></div><div class="ttdeci">permissions()</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00071">Role.php:71</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_a36c79b8d00b9498aba7057566bb5852a"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#a36c79b8d00b9498aba7057566bb5852a">App\Models\Role\getRouteBases</a></div><div class="ttdeci">static getRouteBases()</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00076">Role.php:76</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_a3d5b62ce225ad8ef0530def12d43e68d"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#a3d5b62ce225ad8ef0530def12d43e68d">App\Models\Role\biggestRole</a></div><div class="ttdeci">static biggestRole()</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00050">Role.php:50</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_a6ba1b8708ecd4c451f86f4fbac7197e2"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#a6ba1b8708ecd4c451f86f4fbac7197e2">App\Models\Role\$guarded</a></div><div class="ttdeci">$guarded</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00037">Role.php:37</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_ab18c60adf5b0a593ace5a9484c57b9d7"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#ab18c60adf5b0a593ace5a9484c57b9d7">App\Models\Role\users</a></div><div class="ttdeci">users()</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00046">Role.php:46</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_ab65ffe9b618d788dc06b762369164e45"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#ab65ffe9b618d788dc06b762369164e45">App\Models\Role\$incrementing</a></div><div class="ttdeci">$incrementing</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00029">Role.php:29</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_abfaf427619f87a54c28987a2927e24d2"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#abfaf427619f87a54c28987a2927e24d2">App\Models\Role\list</a></div><div class="ttdeci">static list()</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00104">Role.php:104</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_ac547db9ff3a8cc05387ebcda6c8b2184"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#ac547db9ff3a8cc05387ebcda6c8b2184">App\Models\Role\$hidden</a></div><div class="ttdeci">$hidden</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00044">Role.php:44</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_ac6b68425580f68d548c4192d24bae68a"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#ac6b68425580f68d548c4192d24bae68a">App\Models\Role\getSortedPermisisons</a></div><div class="ttdeci">static getSortedPermisisons($route_bases)</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00088">Role.php:88</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_ae20f74c17f3ebc164015f0fa7b1e35d2"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#ae20f74c17f3ebc164015f0fa7b1e35d2">App\Models\Role\$keyType</a></div><div class="ttdeci">$keyType</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00021">Role.php:21</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Role_html_affe7981a1aca471cc58225a8a4016d04"><div class="ttname"><a href="classApp_1_1Models_1_1Role.html#affe7981a1aca471cc58225a8a4016d04">App\Models\Role\smallestRole</a></div><div class="ttdeci">static smallestRole()</div><div class="ttdef"><b>Definition:</b> <a href="Role_8php_source.html#l00055">Role.php:55</a></div></div>
+<div class="ttc" id="anamespaceApp_1_1Models_html"><div class="ttname"><a href="namespaceApp_1_1Models.html">App\Models</a></div><div class="ttdef"><b>Definition:</b> <a href="AssociatedList_8php_source.html#l00003">AssociatedList.php:3</a></div></div>
+<div class="ttc" id="anamespaceApp_1_1Models_html_a3722aec003396768de72674a70d47016"><div class="ttname"><a href="namespaceApp_1_1Models.html#a3722aec003396768de72674a70d47016">App\Models\SoftDeletes</a></div><div class="ttdeci">Use Illuminate Database Eloquent SoftDeletes</div><div class="ttdef"><b>Definition:</b> <a href="Schema_8php_source.html#l00009">Schema.php:9</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5194e5fea318fda12687127c23f8aba1.html">app</a></li><li class="navelem"><a class="el" href="dir_43465b0ce53d0a9105a6d26f83061e7f.html">Models</a></li><li class="navelem"><a class="el" href="Role_8php.html">Role.php</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 22:09:06 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Jan 17 2025 13:55:33 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

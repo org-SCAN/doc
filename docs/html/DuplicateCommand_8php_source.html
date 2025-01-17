@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('DuplicateCommand_8php_source.html','')
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="comment">// Do not compute the similarity with the same refugee,</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="comment">// Do not compute the similarity with a refugee that has already been compared and not edited since.</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="comment">//Do not compute the similarity with refugees that has been marked as resolve.</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            $crewSimilarities = <a class="code hl_function" href="classApp_1_1Models_1_1Duplicate.html#a223ca9a0dd4d1489d52ed5b774052659">Duplicate::compute</a>($crew);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            [$crewSimilarities, $algorithm_id] = <a class="code hl_function" href="classApp_1_1Models_1_1Duplicate.html#a223ca9a0dd4d1489d52ed5b774052659">Duplicate::compute</a>($crew);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            $this-&gt;info(count($crewSimilarities).<span class="stringliteral">&quot; persons computed for crew &quot;</span>.$crew-&gt;name);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="comment">// Step 3 : Add the similarities to the duplicates table</span></div>
@@ -136,31 +136,32 @@ $(document).ready(function(){initNavTree('DuplicateCommand_8php_source.html','')
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                        <span class="stringliteral">&quot;person1_id&quot;</span> =&gt; $person,</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                        <span class="stringliteral">&quot;person2_id&quot;</span> =&gt; $person2,</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                        <span class="stringliteral">&quot;crew_id&quot;</span> =&gt; $crew-&gt;id,</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    ]);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    $duplicate-&gt;similarity = $similarity;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    $duplicate-&gt;command_run_id = $command-&gt;id;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    $duplicate-&gt;save();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="comment">// Step 4 : Mark the command as finished</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $command-&gt;end();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> Command::SUCCESS;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                        <span class="stringliteral">&quot;duplicate_algorithm_id&quot;</span> =&gt; $algorithm_id,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    ]);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    $duplicate-&gt;similarity = $similarity;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    $duplicate-&gt;command_run_id = $command-&gt;id;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    $duplicate-&gt;save();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="comment">// Step 4 : Mark the command as finished</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $command-&gt;end();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> Command::SUCCESS;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
 <div class="ttc" id="aclassApp_1_1Console_1_1Commands_1_1DuplicateCommand_html"><div class="ttname"><a href="classApp_1_1Console_1_1Commands_1_1DuplicateCommand.html">App\Console\Commands\DuplicateCommand</a></div><div class="ttdef"><b>Definition:</b> <a href="DuplicateCommand_8php_source.html#l00010">DuplicateCommand.php:11</a></div></div>
 <div class="ttc" id="aclassApp_1_1Console_1_1Commands_1_1DuplicateCommand_html_a01216ec5e316652c224de9e7854661da"><div class="ttname"><a href="classApp_1_1Console_1_1Commands_1_1DuplicateCommand.html#a01216ec5e316652c224de9e7854661da">App\Console\Commands\DuplicateCommand\handle</a></div><div class="ttdeci">handle()</div><div class="ttdef"><b>Definition:</b> <a href="DuplicateCommand_8php_source.html#l00031">DuplicateCommand.php:31</a></div></div>
 <div class="ttc" id="aclassApp_1_1Console_1_1Commands_1_1DuplicateCommand_html_a4d73c4f0225b78849767211dedfad3ec"><div class="ttname"><a href="classApp_1_1Console_1_1Commands_1_1DuplicateCommand.html#a4d73c4f0225b78849767211dedfad3ec">App\Console\Commands\DuplicateCommand\$signature</a></div><div class="ttdeci">$signature</div><div class="ttdef"><b>Definition:</b> <a href="DuplicateCommand_8php_source.html#l00017">DuplicateCommand.php:17</a></div></div>
 <div class="ttc" id="aclassApp_1_1Console_1_1Commands_1_1DuplicateCommand_html_a6cde1af868ff4e39c4a40278fc5158cc"><div class="ttname"><a href="classApp_1_1Console_1_1Commands_1_1DuplicateCommand.html#a6cde1af868ff4e39c4a40278fc5158cc">App\Console\Commands\DuplicateCommand\$description</a></div><div class="ttdeci">$description</div><div class="ttdef"><b>Definition:</b> <a href="DuplicateCommand_8php_source.html#l00024">DuplicateCommand.php:24</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1CommandRun_html"><div class="ttname"><a href="classApp_1_1Models_1_1CommandRun.html">App\Models\CommandRun</a></div><div class="ttdef"><b>Definition:</b> <a href="CommandRun_8php_source.html#l00016">CommandRun.php:17</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1CommandRun_html_a4cc6a753cf984b5bdffe12ffc95e0236"><div class="ttname"><a href="classApp_1_1Models_1_1CommandRun.html#a4cc6a753cf984b5bdffe12ffc95e0236">App\Models\CommandRun\start</a></div><div class="ttdeci">static start(string $command)</div><div class="ttdef"><b>Definition:</b> <a href="CommandRun_8php_source.html#l00045">CommandRun.php:45</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Crew_html"><div class="ttname"><a href="classApp_1_1Models_1_1Crew.html">App\Models\Crew</a></div><div class="ttdef"><b>Definition:</b> <a href="Crew_8php_source.html#l00010">Crew.php:11</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1CommandRun_html"><div class="ttname"><a href="classApp_1_1Models_1_1CommandRun.html">App\Models\CommandRun</a></div><div class="ttdef"><b>Definition:</b> <a href="CommandRun_8php_source.html#l00017">CommandRun.php:18</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1CommandRun_html_a4cc6a753cf984b5bdffe12ffc95e0236"><div class="ttname"><a href="classApp_1_1Models_1_1CommandRun.html#a4cc6a753cf984b5bdffe12ffc95e0236">App\Models\CommandRun\start</a></div><div class="ttdeci">static start(string $command)</div><div class="ttdef"><b>Definition:</b> <a href="CommandRun_8php_source.html#l00046">CommandRun.php:46</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Crew_html"><div class="ttname"><a href="classApp_1_1Models_1_1Crew.html">App\Models\Crew</a></div><div class="ttdef"><b>Definition:</b> <a href="Crew_8php_source.html#l00011">Crew.php:12</a></div></div>
 <div class="ttc" id="aclassApp_1_1Models_1_1Duplicate_html"><div class="ttname"><a href="classApp_1_1Models_1_1Duplicate.html">App\Models\Duplicate</a></div><div class="ttdef"><b>Definition:</b> <a href="Duplicate_8php_source.html#l00011">Duplicate.php:12</a></div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1Duplicate_html_a223ca9a0dd4d1489d52ed5b774052659"><div class="ttname"><a href="classApp_1_1Models_1_1Duplicate.html#a223ca9a0dd4d1489d52ed5b774052659">App\Models\Duplicate\compute</a></div><div class="ttdeci">static compute(Crew $crew)</div><div class="ttdef"><b>Definition:</b> <a href="Duplicate_8php_source.html#l00159">Duplicate.php:159</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1Duplicate_html_a223ca9a0dd4d1489d52ed5b774052659"><div class="ttname"><a href="classApp_1_1Models_1_1Duplicate.html#a223ca9a0dd4d1489d52ed5b774052659">App\Models\Duplicate\compute</a></div><div class="ttdeci">static compute(Crew $crew)</div><div class="ttdef"><b>Definition:</b> <a href="Duplicate_8php_source.html#l00050">Duplicate.php:50</a></div></div>
 <div class="ttc" id="anamespaceApp_1_1Console_1_1Commands_html"><div class="ttname"><a href="namespaceApp_1_1Console_1_1Commands.html">App\Console\Commands</a></div><div class="ttdef"><b>Definition:</b> <a href="DeleteOldZipFiles_8php_source.html#l00003">DeleteOldZipFiles.php:3</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -168,7 +169,7 @@ $(document).ready(function(){initNavTree('DuplicateCommand_8php_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5194e5fea318fda12687127c23f8aba1.html">app</a></li><li class="navelem"><a class="el" href="dir_71cf6ec54df04c78ffb35488f28d68d5.html">Console</a></li><li class="navelem"><a class="el" href="dir_c3a3c2162e5eb378df59f0d914d7ff95.html">Commands</a></li><li class="navelem"><a class="el" href="DuplicateCommand_8php.html">DuplicateCommand.php</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 22:09:06 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Jan 17 2025 13:55:33 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

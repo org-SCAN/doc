@@ -20,8 +20,19 @@ var searchData=
   ['person2_17',['person2',['../classApp_1_1Models_1_1Duplicate.html#a3c75bac9a17b8d880bf9381785adb565',1,'App::Models::Duplicate']]],
   ['personhasevent_18',['PersonHasEvent',['../classApp_1_1Rules_1_1PersonHasEvent.html',1,'App::Rules']]],
   ['personhasevent_2ephp_19',['PersonHasEvent.php',['../PersonHasEvent_8php.html',1,'']]],
-  ['persons_20',['persons',['../classApp_1_1Models_1_1Crew.html#a924b6ebc31a602c767ddba92610d18d8',1,'App\Models\Crew\persons()'],['../classApp_1_1Models_1_1Event.html#a7e98091df82e35ed14492820da88446a',1,'App\Models\Event\persons()']]],
-  ['policy_2eblade_2ephp_21',['policy.blade.php',['../policy_8blade_8php.html',1,'']]],
-  ['preventrequestsduringmaintenance_22',['PreventRequestsDuringMaintenance',['../classApp_1_1Http_1_1Middleware_1_1PreventRequestsDuringMaintenance.html',1,'App::Http::Middleware']]],
-  ['preventrequestsduringmaintenance_2ephp_23',['PreventRequestsDuringMaintenance.php',['../PreventRequestsDuringMaintenance_8php.html',1,'']]]
+  ['persons_20',['persons',['../classApp_1_1Models_1_1Event.html#a7e98091df82e35ed14492820da88446a',1,'App\Models\Event\persons()'],['../classApp_1_1Models_1_1Crew.html#a924b6ebc31a602c767ddba92610d18d8',1,'App\Models\Crew\persons()']]],
+  ['place_21',['Place',['../classApp_1_1Models_1_1Place.html',1,'App::Models']]],
+  ['place_2ephp_22',['Place.php',['../Place_8php.html',1,'']]],
+  ['placecontroller_23',['PlaceController',['../classApp_1_1Http_1_1Controllers_1_1PlaceController.html',1,'App::Http::Controllers']]],
+  ['placecontroller_2ephp_24',['PlaceController.php',['../PlaceController_8php.html',1,'']]],
+  ['placefactory_25',['PlaceFactory',['../classDatabase_1_1Factories_1_1PlaceFactory.html',1,'Database::Factories']]],
+  ['placefactory_2ephp_26',['PlaceFactory.php',['../PlaceFactory_8php.html',1,'']]],
+  ['placepolicy_27',['PlacePolicy',['../classApp_1_1Policies_1_1PlacePolicy.html',1,'App::Policies']]],
+  ['placepolicy_2ephp_28',['PlacePolicy.php',['../PlacePolicy_8php.html',1,'']]],
+  ['placeseeder_29',['PlaceSeeder',['../classDatabase_1_1Seeders_1_1PlaceSeeder.html',1,'Database::Seeders']]],
+  ['placeseeder_2ephp_30',['PlaceSeeder.php',['../PlaceSeeder_8php.html',1,'']]],
+  ['policy_2eblade_2ephp_31',['policy.blade.php',['../policy_8blade_8php.html',1,'']]],
+  ['preventrequestsduringmaintenance_32',['PreventRequestsDuringMaintenance',['../classApp_1_1Http_1_1Middleware_1_1PreventRequestsDuringMaintenance.html',1,'App::Http::Middleware']]],
+  ['preventrequestsduringmaintenance_2ephp_33',['PreventRequestsDuringMaintenance.php',['../PreventRequestsDuringMaintenance_8php.html',1,'']]],
+  ['primary_2dbutton_2eblade_2ephp_34',['primary-button.blade.php',['../primary-button_8blade_8php.html',1,'']]]
 ];

@@ -5,7 +5,7 @@ var classApp_1_1Policies_1_1GlobalPolicy =
     [ "createFromJson", "classApp_1_1Policies_1_1GlobalPolicy.html#a961faab98ee81efaa1501c06d0c88af5", null ],
     [ "delete", "classApp_1_1Policies_1_1GlobalPolicy.html#a03ac231d266742f0fb7b5f03cddff054", null ],
     [ "forceDelete", "classApp_1_1Policies_1_1GlobalPolicy.html#a31f4da2238df3a5e7ad2febd3c278dd9", null ],
-    [ "hasPermission", "classApp_1_1Policies_1_1GlobalPolicy.html#a33aa06a9b99953192bb1d9d7bb938bbf", null ],
+    [ "hasPermission", "classApp_1_1Policies_1_1GlobalPolicy.html#aa5bebd6fb5fdf767c08a675d46f6310f", null ],
     [ "restore", "classApp_1_1Policies_1_1GlobalPolicy.html#adcc12401965cb9eb755ff59f3a7749c2", null ],
     [ "update", "classApp_1_1Policies_1_1GlobalPolicy.html#aca5d2e696cc9e95b7bd54d7ca2886e5a", null ],
     [ "view", "classApp_1_1Policies_1_1GlobalPolicy.html#a1419248855b5d26b82ec272a67796d80", null ],

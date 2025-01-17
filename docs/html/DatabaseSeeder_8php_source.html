@@ -103,28 +103,30 @@ $(document).ready(function(){initNavTree('DatabaseSeeder_8php_source.html',''); 
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classDatabase_1_1Seeders_1_1DatabaseSeeder.html#a912019806f53d69ab59a1c2ba79e2f02">   14</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="classDatabase_1_1Seeders_1_1DatabaseSeeder.html#a912019806f53d69ab59a1c2ba79e2f02">run</a>()</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        $this-&gt;call(PermissionSeeder::class);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        $this-&gt;call(RoleSeeder::class);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        $this-&gt;call(CrewSeeder::class);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        $this-&gt;call(UserSeeder::class);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        $this-&gt;call(LanguageSeeder::class);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        $this-&gt;call(ListControlSeeder::class);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        $this-&gt;call(FieldSeeder::class);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        $this-&gt;call(ListCountrySeeder::class);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        $this-&gt;call(ListRoleSeeder::class);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        $this-&gt;call(ListRouteSeeder::class);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        $this-&gt;call(ListGenderSeeder::class);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        $this-&gt;call(ListRelationTypeSeeder::class);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        $this-&gt;call(ListRelationSeeder::class);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        $this-&gt;call(ListEventTypeSeeder::class);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        $this-&gt;call(ListSourceTypeSeeder::class);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">if</span> (env(<span class="stringliteral">&#39;APP_DEBUG&#39;</span>) &amp;&amp; env(<span class="stringliteral">&#39;APP_ENV&#39;</span>) == <span class="stringliteral">&#39;local&#39;</span>) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            $this-&gt;call(EventSeeder::class);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            $this-&gt;call(SourceSeeder::class);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            $this-&gt;call(RefugeeSeeder::class);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            $this-&gt;call(LinkSeeder::class);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        $this-&gt;call(LanguageSeeder::class);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        $this-&gt;call(RoleSeeder::class);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        $this-&gt;call(ListControlSeeder::class);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        $this-&gt;call(ListMatchingAlgorithmSeeder::class);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        $this-&gt;call(CrewSeeder::class);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        $this-&gt;call(UserSeeder::class);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        $this-&gt;call(FieldSeeder::class);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        $this-&gt;call(ListCountrySeeder::class);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        $this-&gt;call(ListRoleSeeder::class);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        $this-&gt;call(ListRouteSeeder::class);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        $this-&gt;call(ListGenderSeeder::class);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        $this-&gt;call(ListRelationTypeSeeder::class);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        $this-&gt;call(ListRelationSeeder::class);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        $this-&gt;call(ListEventTypeSeeder::class);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        $this-&gt;call(ListSourceTypeSeeder::class);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">if</span> (env(<span class="stringliteral">&#39;APP_DEBUG&#39;</span>) &amp;&amp; env(<span class="stringliteral">&#39;APP_ENV&#39;</span>) == <span class="stringliteral">&#39;local&#39;</span>) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            $this-&gt;call(EventSeeder::class);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            $this-&gt;call(SourceSeeder::class);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            $this-&gt;call(RefugeeSeeder::class);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            $this-&gt;call(LinkSeeder::class);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            $this-&gt;call(PlaceSeeder::class);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 <div class="ttc" id="aclassDatabase_1_1Seeders_1_1DatabaseSeeder_html"><div class="ttname"><a href="classDatabase_1_1Seeders_1_1DatabaseSeeder.html">Database\Seeders\DatabaseSeeder</a></div><div class="ttdef"><b>Definition:</b> <a href="DatabaseSeeder_8php_source.html#l00007">DatabaseSeeder.php:8</a></div></div>
 <div class="ttc" id="aclassDatabase_1_1Seeders_1_1DatabaseSeeder_html_a912019806f53d69ab59a1c2ba79e2f02"><div class="ttname"><a href="classDatabase_1_1Seeders_1_1DatabaseSeeder.html#a912019806f53d69ab59a1c2ba79e2f02">Database\Seeders\DatabaseSeeder\run</a></div><div class="ttdeci">run()</div><div class="ttdef"><b>Definition:</b> <a href="DatabaseSeeder_8php_source.html#l00014">DatabaseSeeder.php:14</a></div></div>
 <div class="ttc" id="anamespaceDatabase_1_1Seeders_html"><div class="ttname"><a href="namespaceDatabase_1_1Seeders.html">Database\Seeders</a></div><div class="ttdef"><b>Definition:</b> <a href="AssociatedListSeeder_8php_source.html#l00003">AssociatedListSeeder.php:3</a></div></div>
@@ -134,7 +136,7 @@ $(document).ready(function(){initNavTree('DatabaseSeeder_8php_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_803ee67260c130b45d29089798491ab2.html">database</a></li><li class="navelem"><a class="el" href="dir_400b8aeb66b4d708ff8f177ef246c61c.html">seeders</a></li><li class="navelem"><a class="el" href="DatabaseSeeder_8php.html">DatabaseSeeder.php</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 22:09:06 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Jan 17 2025 13:55:33 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

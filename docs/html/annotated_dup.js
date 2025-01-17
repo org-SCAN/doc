@@ -25,6 +25,8 @@ var annotated_dup =
           [ "MakeCommandSet", "classApp_1_1Console_1_1Commands_1_1MakeCommandSet.html", "classApp_1_1Console_1_1Commands_1_1MakeCommandSet" ],
           [ "MakeList", "classApp_1_1Console_1_1Commands_1_1MakeList.html", "classApp_1_1Console_1_1Commands_1_1MakeList" ],
           [ "MakeResourceTest", "classApp_1_1Console_1_1Commands_1_1MakeResourceTest.html", "classApp_1_1Console_1_1Commands_1_1MakeResourceTest" ],
+          [ "MakeSchemaCommand", "classApp_1_1Console_1_1Commands_1_1MakeSchemaCommand.html", "classApp_1_1Console_1_1Commands_1_1MakeSchemaCommand" ],
+          [ "MigrateCustomSchemaCommand", "classApp_1_1Console_1_1Commands_1_1MigrateCustomSchemaCommand.html", "classApp_1_1Console_1_1Commands_1_1MigrateCustomSchemaCommand" ],
           [ "UpdateList", "classApp_1_1Console_1_1Commands_1_1UpdateList.html", "classApp_1_1Console_1_1Commands_1_1UpdateList" ],
           [ "UpdatePermissions", "classApp_1_1Console_1_1Commands_1_1UpdatePermissions.html", "classApp_1_1Console_1_1Commands_1_1UpdatePermissions" ]
         ] ],
@@ -35,7 +37,6 @@ var annotated_dup =
       ] ],
       [ "Http", "namespaceApp_1_1Http.html", [
         [ "Controllers", "namespaceApp_1_1Http_1_1Controllers.html", [
-          [ "ApiLogController", "classApp_1_1Http_1_1Controllers_1_1ApiLogController.html", "classApp_1_1Http_1_1Controllers_1_1ApiLogController" ],
           [ "Controller", "classApp_1_1Http_1_1Controllers_1_1Controller.html", null ],
           [ "CrewController", "classApp_1_1Http_1_1Controllers_1_1CrewController.html", "classApp_1_1Http_1_1Controllers_1_1CrewController" ],
           [ "CytoscapeController", "classApp_1_1Http_1_1Controllers_1_1CytoscapeController.html", "classApp_1_1Http_1_1Controllers_1_1CytoscapeController" ],
@@ -46,31 +47,18 @@ var annotated_dup =
           [ "ListControlController", "classApp_1_1Http_1_1Controllers_1_1ListControlController.html", "classApp_1_1Http_1_1Controllers_1_1ListControlController" ],
           [ "ManageUsersController", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController.html", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController" ],
           [ "PermissionController", "classApp_1_1Http_1_1Controllers_1_1PermissionController.html", "classApp_1_1Http_1_1Controllers_1_1PermissionController" ],
+          [ "PlaceController", "classApp_1_1Http_1_1Controllers_1_1PlaceController.html", "classApp_1_1Http_1_1Controllers_1_1PlaceController" ],
           [ "RefugeeController", "classApp_1_1Http_1_1Controllers_1_1RefugeeController.html", "classApp_1_1Http_1_1Controllers_1_1RefugeeController" ],
           [ "RequestRole", "classApp_1_1Http_1_1Controllers_1_1RequestRole.html", "classApp_1_1Http_1_1Controllers_1_1RequestRole" ],
           [ "RoleController", "classApp_1_1Http_1_1Controllers_1_1RoleController.html", "classApp_1_1Http_1_1Controllers_1_1RoleController" ],
           [ "SourceController", "classApp_1_1Http_1_1Controllers_1_1SourceController.html", "classApp_1_1Http_1_1Controllers_1_1SourceController" ]
         ] ],
-        [ "Livewire", "namespaceApp_1_1Http_1_1Livewire.html", [
-          [ "Forms", "namespaceApp_1_1Http_1_1Livewire_1_1Forms.html", [
-            [ "Coordinates", "classApp_1_1Http_1_1Livewire_1_1Forms_1_1Coordinates.html", "classApp_1_1Http_1_1Livewire_1_1Forms_1_1Coordinates" ],
-            [ "Form", "classApp_1_1Http_1_1Livewire_1_1Forms_1_1Form.html", "classApp_1_1Http_1_1Livewire_1_1Forms_1_1Form" ],
-            [ "FormDoubleDropdown", "classApp_1_1Http_1_1Livewire_1_1Forms_1_1FormDoubleDropdown.html", "classApp_1_1Http_1_1Livewire_1_1Forms_1_1FormDoubleDropdown" ],
-            [ "Show", "classApp_1_1Http_1_1Livewire_1_1Forms_1_1Show.html", "classApp_1_1Http_1_1Livewire_1_1Forms_1_1Show" ]
-          ] ],
-          [ "ChangeCrew", "classApp_1_1Http_1_1Livewire_1_1ChangeCrew.html", "classApp_1_1Http_1_1Livewire_1_1ChangeCrew" ],
-          [ "CreateFormChooseField", "classApp_1_1Http_1_1Livewire_1_1CreateFormChooseField.html", "classApp_1_1Http_1_1Livewire_1_1CreateFormChooseField" ],
-          [ "CreateList", "classApp_1_1Http_1_1Livewire_1_1CreateList.html", "classApp_1_1Http_1_1Livewire_1_1CreateList" ],
-          [ "GdprActions", "classApp_1_1Http_1_1Livewire_1_1GdprActions.html", "classApp_1_1Http_1_1Livewire_1_1GdprActions" ],
-          [ "LinkSelectDropdown", "classApp_1_1Http_1_1Livewire_1_1LinkSelectDropdown.html", "classApp_1_1Http_1_1Livewire_1_1LinkSelectDropdown" ],
-          [ "RequestRole", "classApp_1_1Http_1_1Livewire_1_1RequestRole.html", "classApp_1_1Http_1_1Livewire_1_1RequestRole" ],
-          [ "SelectDropdown", "classApp_1_1Http_1_1Livewire_1_1SelectDropdown.html", "classApp_1_1Http_1_1Livewire_1_1SelectDropdown" ],
-          [ "ShowFields", "classApp_1_1Http_1_1Livewire_1_1ShowFields.html", "classApp_1_1Http_1_1Livewire_1_1ShowFields" ],
-          [ "ViewToken", "classApp_1_1Http_1_1Livewire_1_1ViewToken.html", "classApp_1_1Http_1_1Livewire_1_1ViewToken" ]
-        ] ],
         [ "Middleware", "namespaceApp_1_1Http_1_1Middleware.html", [
+          [ "ApiLogger", "classApp_1_1Http_1_1Middleware_1_1ApiLogger.html", "classApp_1_1Http_1_1Middleware_1_1ApiLogger" ],
           [ "Authenticate", "classApp_1_1Http_1_1Middleware_1_1Authenticate.html", "classApp_1_1Http_1_1Middleware_1_1Authenticate" ],
+          [ "AutoAssignRequestId", "classApp_1_1Http_1_1Middleware_1_1AutoAssignRequestId.html", "classApp_1_1Http_1_1Middleware_1_1AutoAssignRequestId" ],
           [ "EncryptCookies", "classApp_1_1Http_1_1Middleware_1_1EncryptCookies.html", "classApp_1_1Http_1_1Middleware_1_1EncryptCookies" ],
+          [ "Localization", "classApp_1_1Http_1_1Middleware_1_1Localization.html", "classApp_1_1Http_1_1Middleware_1_1Localization" ],
           [ "PreventRequestsDuringMaintenance", "classApp_1_1Http_1_1Middleware_1_1PreventRequestsDuringMaintenance.html", "classApp_1_1Http_1_1Middleware_1_1PreventRequestsDuringMaintenance" ],
           [ "RedirectIfAuthenticated", "classApp_1_1Http_1_1Middleware_1_1RedirectIfAuthenticated.html", "classApp_1_1Http_1_1Middleware_1_1RedirectIfAuthenticated" ],
           [ "TrimStrings", "classApp_1_1Http_1_1Middleware_1_1TrimStrings.html", "classApp_1_1Http_1_1Middleware_1_1TrimStrings" ],
@@ -80,6 +68,8 @@ var annotated_dup =
         ] ],
         [ "Requests", "namespaceApp_1_1Http_1_1Requests.html", [
           [ "addUserToCrewRequest", "classApp_1_1Http_1_1Requests_1_1addUserToCrewRequest.html", "classApp_1_1Http_1_1Requests_1_1addUserToCrewRequest" ],
+          [ "ChangeTeamRequest", "classApp_1_1Http_1_1Requests_1_1ChangeTeamRequest.html", "classApp_1_1Http_1_1Requests_1_1ChangeTeamRequest" ],
+          [ "ChooseDuplicateAlgorithmRequest", "classApp_1_1Http_1_1Requests_1_1ChooseDuplicateAlgorithmRequest.html", "classApp_1_1Http_1_1Requests_1_1ChooseDuplicateAlgorithmRequest" ],
           [ "FileLinkRequest", "classApp_1_1Http_1_1Requests_1_1FileLinkRequest.html", "classApp_1_1Http_1_1Requests_1_1FileLinkRequest" ],
           [ "FileRefugeeRequest", "classApp_1_1Http_1_1Requests_1_1FileRefugeeRequest.html", "classApp_1_1Http_1_1Requests_1_1FileRefugeeRequest" ],
           [ "JsonFileRefugeeRequest", "classApp_1_1Http_1_1Requests_1_1JsonFileRefugeeRequest.html", "classApp_1_1Http_1_1Requests_1_1JsonFileRefugeeRequest" ],
@@ -92,6 +82,7 @@ var annotated_dup =
           [ "StoreListControlFieldsRequest", "classApp_1_1Http_1_1Requests_1_1StoreListControlFieldsRequest.html", "classApp_1_1Http_1_1Requests_1_1StoreListControlFieldsRequest" ],
           [ "StoreListControlRequest", "classApp_1_1Http_1_1Requests_1_1StoreListControlRequest.html", "classApp_1_1Http_1_1Requests_1_1StoreListControlRequest" ],
           [ "StorePermissionRequest", "classApp_1_1Http_1_1Requests_1_1StorePermissionRequest.html", "classApp_1_1Http_1_1Requests_1_1StorePermissionRequest" ],
+          [ "StorePlaceRequest", "classApp_1_1Http_1_1Requests_1_1StorePlaceRequest.html", "classApp_1_1Http_1_1Requests_1_1StorePlaceRequest" ],
           [ "StoreRefugeeApiRequest", "classApp_1_1Http_1_1Requests_1_1StoreRefugeeApiRequest.html", "classApp_1_1Http_1_1Requests_1_1StoreRefugeeApiRequest" ],
           [ "StoreRefugeeRequest", "classApp_1_1Http_1_1Requests_1_1StoreRefugeeRequest.html", "classApp_1_1Http_1_1Requests_1_1StoreRefugeeRequest" ],
           [ "StoreRequestRoleRequest", "classApp_1_1Http_1_1Requests_1_1StoreRequestRoleRequest.html", "classApp_1_1Http_1_1Requests_1_1StoreRequestRoleRequest" ],
@@ -100,12 +91,15 @@ var annotated_dup =
           [ "StoreUpdateListRequest", "classApp_1_1Http_1_1Requests_1_1StoreUpdateListRequest.html", "classApp_1_1Http_1_1Requests_1_1StoreUpdateListRequest" ],
           [ "StoreUserRequest", "classApp_1_1Http_1_1Requests_1_1StoreUserRequest.html", "classApp_1_1Http_1_1Requests_1_1StoreUserRequest" ],
           [ "UpdateCrewRequest", "classApp_1_1Http_1_1Requests_1_1UpdateCrewRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateCrewRequest" ],
+          [ "UpdateDuplicatesRequest", "classApp_1_1Http_1_1Requests_1_1UpdateDuplicatesRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateDuplicatesRequest" ],
           [ "UpdateEventRequest", "classApp_1_1Http_1_1Requests_1_1UpdateEventRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateEventRequest" ],
           [ "UpdateFieldRequest", "classApp_1_1Http_1_1Requests_1_1UpdateFieldRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateFieldRequest" ],
+          [ "UpdateLanguageRequest", "classApp_1_1Http_1_1Requests_1_1UpdateLanguageRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateLanguageRequest" ],
           [ "UpdateLinkRequest", "classApp_1_1Http_1_1Requests_1_1UpdateLinkRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateLinkRequest" ],
           [ "UpdateListControlRequest", "classApp_1_1Http_1_1Requests_1_1UpdateListControlRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateListControlRequest" ],
           [ "UpdateListElemRequest", "classApp_1_1Http_1_1Requests_1_1UpdateListElemRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateListElemRequest" ],
           [ "UpdatePermissionRequest", "classApp_1_1Http_1_1Requests_1_1UpdatePermissionRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdatePermissionRequest" ],
+          [ "UpdatePlaceRequest", "classApp_1_1Http_1_1Requests_1_1UpdatePlaceRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdatePlaceRequest" ],
           [ "UpdateRefugeeRequest", "classApp_1_1Http_1_1Requests_1_1UpdateRefugeeRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateRefugeeRequest" ],
           [ "UpdateRoleRequest", "classApp_1_1Http_1_1Requests_1_1UpdateRoleRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateRoleRequest" ],
           [ "UpdateSourceRequest", "classApp_1_1Http_1_1Requests_1_1UpdateSourceRequest.html", "classApp_1_1Http_1_1Requests_1_1UpdateSourceRequest" ],
@@ -119,8 +113,33 @@ var annotated_dup =
       [ "Interface", "namespaceApp_1_1Interface.html", [
         [ "DataTypeModel", "interfaceApp_1_1Interface_1_1DataTypeModel.html", "interfaceApp_1_1Interface_1_1DataTypeModel" ]
       ] ],
+      [ "Jobs", "namespaceApp_1_1Jobs.html", [
+        [ "DuplicateComputeJob", "classApp_1_1Jobs_1_1DuplicateComputeJob.html", "classApp_1_1Jobs_1_1DuplicateComputeJob" ]
+      ] ],
+      [ "Livewire", "namespaceApp_1_1Livewire.html", [
+        [ "Forms", "namespaceApp_1_1Livewire_1_1Forms.html", [
+          [ "Area", "classApp_1_1Livewire_1_1Forms_1_1Area.html", "classApp_1_1Livewire_1_1Forms_1_1Area" ],
+          [ "Coordinates", "classApp_1_1Livewire_1_1Forms_1_1Coordinates.html", "classApp_1_1Livewire_1_1Forms_1_1Coordinates" ],
+          [ "Form", "classApp_1_1Livewire_1_1Forms_1_1Form.html", "classApp_1_1Livewire_1_1Forms_1_1Form" ],
+          [ "FormDoubleDropdown", "classApp_1_1Livewire_1_1Forms_1_1FormDoubleDropdown.html", "classApp_1_1Livewire_1_1Forms_1_1FormDoubleDropdown" ],
+          [ "Show", "classApp_1_1Livewire_1_1Forms_1_1Show.html", "classApp_1_1Livewire_1_1Forms_1_1Show" ]
+        ] ],
+        [ "ChangeCrew", "classApp_1_1Livewire_1_1ChangeCrew.html", "classApp_1_1Livewire_1_1ChangeCrew" ],
+        [ "ChangeLanguage", "classApp_1_1Livewire_1_1ChangeLanguage.html", "classApp_1_1Livewire_1_1ChangeLanguage" ],
+        [ "CreateFormChooseField", "classApp_1_1Livewire_1_1CreateFormChooseField.html", "classApp_1_1Livewire_1_1CreateFormChooseField" ],
+        [ "CreateList", "classApp_1_1Livewire_1_1CreateList.html", "classApp_1_1Livewire_1_1CreateList" ],
+        [ "GdprActions", "classApp_1_1Livewire_1_1GdprActions.html", "classApp_1_1Livewire_1_1GdprActions" ],
+        [ "LinkSelectDropdown", "classApp_1_1Livewire_1_1LinkSelectDropdown.html", "classApp_1_1Livewire_1_1LinkSelectDropdown" ],
+        [ "RequestRole", "classApp_1_1Livewire_1_1RequestRole.html", "classApp_1_1Livewire_1_1RequestRole" ],
+        [ "SelectDropdown", "classApp_1_1Livewire_1_1SelectDropdown.html", "classApp_1_1Livewire_1_1SelectDropdown" ],
+        [ "ShowFields", "classApp_1_1Livewire_1_1ShowFields.html", "classApp_1_1Livewire_1_1ShowFields" ],
+        [ "ViewToken", "classApp_1_1Livewire_1_1ViewToken.html", "classApp_1_1Livewire_1_1ViewToken" ]
+      ] ],
+      [ "Logging", "namespaceApp_1_1Logging.html", [
+        [ "CustomizeFormatter", "classApp_1_1Logging_1_1CustomizeFormatter.html", "classApp_1_1Logging_1_1CustomizeFormatter" ],
+        [ "LogContext", "classApp_1_1Logging_1_1LogContext.html", "classApp_1_1Logging_1_1LogContext" ]
+      ] ],
       [ "Models", "namespaceApp_1_1Models.html", [
-        [ "ApiLog", "classApp_1_1Models_1_1ApiLog.html", "classApp_1_1Models_1_1ApiLog" ],
         [ "AssociatedList", "classApp_1_1Models_1_1AssociatedList.html", "classApp_1_1Models_1_1AssociatedList" ],
         [ "CommandRun", "classApp_1_1Models_1_1CommandRun.html", "classApp_1_1Models_1_1CommandRun" ],
         [ "Crew", "classApp_1_1Models_1_1Crew.html", "classApp_1_1Models_1_1Crew" ],
@@ -130,23 +149,29 @@ var annotated_dup =
         [ "Field", "classApp_1_1Models_1_1Field.html", "classApp_1_1Models_1_1Field" ],
         [ "FieldRefugee", "classApp_1_1Models_1_1FieldRefugee.html", "classApp_1_1Models_1_1FieldRefugee" ],
         [ "Language", "classApp_1_1Models_1_1Language.html", "classApp_1_1Models_1_1Language" ],
+        [ "LevenshteinAlgorithm", "classApp_1_1Models_1_1LevenshteinAlgorithm.html", "classApp_1_1Models_1_1LevenshteinAlgorithm" ],
         [ "Link", "classApp_1_1Models_1_1Link.html", "classApp_1_1Models_1_1Link" ],
         [ "ListControl", "classApp_1_1Models_1_1ListControl.html", "classApp_1_1Models_1_1ListControl" ],
         [ "ListCountry", "classApp_1_1Models_1_1ListCountry.html", null ],
         [ "ListDataType", "classApp_1_1Models_1_1ListDataType.html", "classApp_1_1Models_1_1ListDataType" ],
         [ "ListEventType", "classApp_1_1Models_1_1ListEventType.html", null ],
         [ "ListGender", "classApp_1_1Models_1_1ListGender.html", null ],
+        [ "ListMatchingAlgorithm", "classApp_1_1Models_1_1ListMatchingAlgorithm.html", "classApp_1_1Models_1_1ListMatchingAlgorithm" ],
         [ "ListRelation", "classApp_1_1Models_1_1ListRelation.html", "classApp_1_1Models_1_1ListRelation" ],
         [ "ListRelationType", "classApp_1_1Models_1_1ListRelationType.html", "classApp_1_1Models_1_1ListRelationType" ],
         [ "ListRole", "classApp_1_1Models_1_1ListRole.html", null ],
         [ "ListRoute", "classApp_1_1Models_1_1ListRoute.html", null ],
         [ "ListSourceType", "classApp_1_1Models_1_1ListSourceType.html", null ],
         [ "ListStructure", "classApp_1_1Models_1_1ListStructure.html", "classApp_1_1Models_1_1ListStructure" ],
+        [ "MatchingAlgorithm", "classApp_1_1Models_1_1MatchingAlgorithm.html", "classApp_1_1Models_1_1MatchingAlgorithm" ],
+        [ "MetaphoneAlgorithm", "classApp_1_1Models_1_1MetaphoneAlgorithm.html", "classApp_1_1Models_1_1MetaphoneAlgorithm" ],
         [ "Permission", "classApp_1_1Models_1_1Permission.html", "classApp_1_1Models_1_1Permission" ],
         [ "PermissionRole", "classApp_1_1Models_1_1PermissionRole.html", "classApp_1_1Models_1_1PermissionRole" ],
+        [ "Place", "classApp_1_1Models_1_1Place.html", "classApp_1_1Models_1_1Place" ],
         [ "Refugee", "classApp_1_1Models_1_1Refugee.html", "classApp_1_1Models_1_1Refugee" ],
         [ "Role", "classApp_1_1Models_1_1Role.html", "classApp_1_1Models_1_1Role" ],
         [ "RoleRequest", "classApp_1_1Models_1_1RoleRequest.html", "classApp_1_1Models_1_1RoleRequest" ],
+        [ "Schema", "classApp_1_1Models_1_1Schema.html", "classApp_1_1Models_1_1Schema" ],
         [ "Source", "classApp_1_1Models_1_1Source.html", "classApp_1_1Models_1_1Source" ],
         [ "Translation", "classApp_1_1Models_1_1Translation.html", "classApp_1_1Models_1_1Translation" ],
         [ "User", "classApp_1_1Models_1_1User.html", "classApp_1_1Models_1_1User" ]
@@ -155,7 +180,6 @@ var annotated_dup =
         [ "InviteUserNotification", "classApp_1_1Notifications_1_1InviteUserNotification.html", "classApp_1_1Notifications_1_1InviteUserNotification" ]
       ] ],
       [ "Policies", "namespaceApp_1_1Policies.html", [
-        [ "ApiLogPolicy", "classApp_1_1Policies_1_1ApiLogPolicy.html", "classApp_1_1Policies_1_1ApiLogPolicy" ],
         [ "CrewPolicy", "classApp_1_1Policies_1_1CrewPolicy.html", "classApp_1_1Policies_1_1CrewPolicy" ],
         [ "CytoscapePolicy", "classApp_1_1Policies_1_1CytoscapePolicy.html", "classApp_1_1Policies_1_1CytoscapePolicy" ],
         [ "DuplicatePolicy", "classApp_1_1Policies_1_1DuplicatePolicy.html", "classApp_1_1Policies_1_1DuplicatePolicy" ],
@@ -165,6 +189,7 @@ var annotated_dup =
         [ "LinkPolicy", "classApp_1_1Policies_1_1LinkPolicy.html", "classApp_1_1Policies_1_1LinkPolicy" ],
         [ "ListControlPolicy", "classApp_1_1Policies_1_1ListControlPolicy.html", "classApp_1_1Policies_1_1ListControlPolicy" ],
         [ "PermissionPolicy", "classApp_1_1Policies_1_1PermissionPolicy.html", "classApp_1_1Policies_1_1PermissionPolicy" ],
+        [ "PlacePolicy", "classApp_1_1Policies_1_1PlacePolicy.html", "classApp_1_1Policies_1_1PlacePolicy" ],
         [ "RefugeePolicy", "classApp_1_1Policies_1_1RefugeePolicy.html", "classApp_1_1Policies_1_1RefugeePolicy" ],
         [ "RolePolicy", "classApp_1_1Policies_1_1RolePolicy.html", "classApp_1_1Policies_1_1RolePolicy" ],
         [ "SourcePolicy", "classApp_1_1Policies_1_1SourcePolicy.html", "classApp_1_1Policies_1_1SourcePolicy" ],
@@ -185,6 +210,10 @@ var annotated_dup =
         [ "PersonHasEvent", "classApp_1_1Rules_1_1PersonHasEvent.html", "classApp_1_1Rules_1_1PersonHasEvent" ],
         [ "RelationDoesNotAlreadyExist", "classApp_1_1Rules_1_1RelationDoesNotAlreadyExist.html", "classApp_1_1Rules_1_1RelationDoesNotAlreadyExist" ]
       ] ],
+      [ "Services", "namespaceApp_1_1Services.html", [
+        [ "LogViewer", "classApp_1_1Services_1_1LogViewer.html", "classApp_1_1Services_1_1LogViewer" ],
+        [ "ZipService", "classApp_1_1Services_1_1ZipService.html", "classApp_1_1Services_1_1ZipService" ]
+      ] ],
       [ "View", null, [
         [ "Components", "namespaceApp_1_1View_1_1Components.html", [
           [ "AppLayout", "classApp_1_1View_1_1Components_1_1AppLayout.html", "classApp_1_1View_1_1Components_1_1AppLayout" ],
@@ -194,7 +223,6 @@ var annotated_dup =
     ] ],
     [ "Database", null, [
       [ "Factories", "namespaceDatabase_1_1Factories.html", [
-        [ "ApiLogFactory", "classDatabase_1_1Factories_1_1ApiLogFactory.html", "classDatabase_1_1Factories_1_1ApiLogFactory" ],
         [ "CommandRunFactory", "classDatabase_1_1Factories_1_1CommandRunFactory.html", "classDatabase_1_1Factories_1_1CommandRunFactory" ],
         [ "CrewFactory", "classDatabase_1_1Factories_1_1CrewFactory.html", "classDatabase_1_1Factories_1_1CrewFactory" ],
         [ "EventFactory", "classDatabase_1_1Factories_1_1EventFactory.html", "classDatabase_1_1Factories_1_1EventFactory" ],
@@ -204,10 +232,10 @@ var annotated_dup =
         [ "ListControlFactory", "classDatabase_1_1Factories_1_1ListControlFactory.html", "classDatabase_1_1Factories_1_1ListControlFactory" ],
         [ "ListDataTypeFactory", "classDatabase_1_1Factories_1_1ListDataTypeFactory.html", "classDatabase_1_1Factories_1_1ListDataTypeFactory" ],
         [ "PermissionFactory", "classDatabase_1_1Factories_1_1PermissionFactory.html", "classDatabase_1_1Factories_1_1PermissionFactory" ],
+        [ "PlaceFactory", "classDatabase_1_1Factories_1_1PlaceFactory.html", "classDatabase_1_1Factories_1_1PlaceFactory" ],
         [ "RefugeeFactory", "classDatabase_1_1Factories_1_1RefugeeFactory.html", "classDatabase_1_1Factories_1_1RefugeeFactory" ],
         [ "RoleFactory", "classDatabase_1_1Factories_1_1RoleFactory.html", "classDatabase_1_1Factories_1_1RoleFactory" ],
         [ "SourceFactory", "classDatabase_1_1Factories_1_1SourceFactory.html", "classDatabase_1_1Factories_1_1SourceFactory" ],
-        [ "TeamFactory", "classDatabase_1_1Factories_1_1TeamFactory.html", "classDatabase_1_1Factories_1_1TeamFactory" ],
         [ "UserFactory", "classDatabase_1_1Factories_1_1UserFactory.html", "classDatabase_1_1Factories_1_1UserFactory" ]
       ] ],
       [ "Seeders", "namespaceDatabase_1_1Seeders.html", [
@@ -224,12 +252,14 @@ var annotated_dup =
         [ "ListDataTypeSeeder", "classDatabase_1_1Seeders_1_1ListDataTypeSeeder.html", "classDatabase_1_1Seeders_1_1ListDataTypeSeeder" ],
         [ "ListEventTypeSeeder", "classDatabase_1_1Seeders_1_1ListEventTypeSeeder.html", "classDatabase_1_1Seeders_1_1ListEventTypeSeeder" ],
         [ "ListGenderSeeder", "classDatabase_1_1Seeders_1_1ListGenderSeeder.html", "classDatabase_1_1Seeders_1_1ListGenderSeeder" ],
+        [ "ListMatchingAlgorithmSeeder", "classDatabase_1_1Seeders_1_1ListMatchingAlgorithmSeeder.html", "classDatabase_1_1Seeders_1_1ListMatchingAlgorithmSeeder" ],
         [ "ListRelationSeeder", "classDatabase_1_1Seeders_1_1ListRelationSeeder.html", "classDatabase_1_1Seeders_1_1ListRelationSeeder" ],
         [ "ListRelationTypeSeeder", "classDatabase_1_1Seeders_1_1ListRelationTypeSeeder.html", "classDatabase_1_1Seeders_1_1ListRelationTypeSeeder" ],
         [ "ListRoleSeeder", "classDatabase_1_1Seeders_1_1ListRoleSeeder.html", "classDatabase_1_1Seeders_1_1ListRoleSeeder" ],
         [ "ListRouteSeeder", "classDatabase_1_1Seeders_1_1ListRouteSeeder.html", "classDatabase_1_1Seeders_1_1ListRouteSeeder" ],
         [ "ListSourceTypeSeeder", "classDatabase_1_1Seeders_1_1ListSourceTypeSeeder.html", "classDatabase_1_1Seeders_1_1ListSourceTypeSeeder" ],
         [ "PermissionSeeder", "classDatabase_1_1Seeders_1_1PermissionSeeder.html", "classDatabase_1_1Seeders_1_1PermissionSeeder" ],
+        [ "PlaceSeeder", "classDatabase_1_1Seeders_1_1PlaceSeeder.html", "classDatabase_1_1Seeders_1_1PlaceSeeder" ],
         [ "RefugeeSeeder", "classDatabase_1_1Seeders_1_1RefugeeSeeder.html", "classDatabase_1_1Seeders_1_1RefugeeSeeder" ],
         [ "RoleSeeder", "classDatabase_1_1Seeders_1_1RoleSeeder.html", "classDatabase_1_1Seeders_1_1RoleSeeder" ],
         [ "SourceSeeder", "classDatabase_1_1Seeders_1_1SourceSeeder.html", "classDatabase_1_1Seeders_1_1SourceSeeder" ],

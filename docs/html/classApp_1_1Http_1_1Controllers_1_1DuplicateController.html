@@ -127,10 +127,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0666acde6d68248a81ecefe6fe925414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56887f8b63140026be677147e4c2074a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Http_1_1Controllers_1_1DuplicateController.html#a56887f8b63140026be677147e4c2074a">resolve</a> (<a class="el" href="classApp_1_1Models_1_1Duplicate.html">Duplicate</a> $duplicate)</td></tr>
 <tr class="separator:a56887f8b63140026be677147e4c2074a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4aec2dbae434d8206c873c1a88e04f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Http_1_1Controllers_1_1DuplicateController.html#a9c4aec2dbae434d8206c873c1a88e04f">multiple_resolve</a> (<a class="el" href="classApp_1_1Http_1_1Requests_1_1UpdateDuplicatesRequest.html">UpdateDuplicatesRequest</a> $request)</td></tr>
+<tr class="separator:a9c4aec2dbae434d8206c873c1a88e04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9dd0db4b6619620b96433a20c486981"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Http_1_1Controllers_1_1DuplicateController.html#ab9dd0db4b6619620b96433a20c486981">choose_algorithm</a> (<a class="el" href="classApp_1_1Http_1_1Requests_1_1ChooseDuplicateAlgorithmRequest.html">ChooseDuplicateAlgorithmRequest</a> $request)</td></tr>
+<tr class="separator:ab9dd0db4b6619620b96433a20c486981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00013">13</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00018">18</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a00e7853be305fd35d87452193ae7dab0" name="a00e7853be305fd35d87452193ae7dab0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00e7853be305fd35d87452193ae7dab0">&#9670;&#160;</a></span>__construct()</h2>
@@ -147,11 +151,39 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00016">16</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00021">21</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab9dd0db4b6619620b96433a20c486981" name="ab9dd0db4b6619620b96433a20c486981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9dd0db4b6619620b96433a20c486981">&#9670;&#160;</a></span>choose_algorithm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">App\Http\Controllers\DuplicateController::choose_algorithm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classApp_1_1Http_1_1Requests_1_1ChooseDuplicateAlgorithmRequest.html">ChooseDuplicateAlgorithmRequest</a>&#160;</td>
+          <td class="paramname"><em>$request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >This function is used to choose the matching algorithm of a crew</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">ChooseDuplicateAlgorithmRequest</td><td class="paramname">$request</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RedirectResponse </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00176">176</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+
+</div>
+</div>
 <a id="a0666acde6d68248a81ecefe6fe925414" name="a0666acde6d68248a81ecefe6fe925414"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0666acde6d68248a81ecefe6fe925414">&#9670;&#160;</a></span>compute()</h2>
 
@@ -168,7 +200,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >This function is used to force run the duplicate command </p>
 
-<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00118">118</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00127">127</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
 
 </div>
 </div>
@@ -189,7 +221,7 @@ Public Member Functions</h2></td></tr>
 <p >Show the form for creating a new resource.</p>
 <dl class="section return"><dt>Returns</dt><dd>Response </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00058">58</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00067">67</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
 
 </div>
 </div>
@@ -217,7 +249,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Response </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00110">110</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00119">119</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
 
 </div>
 </div>
@@ -245,7 +277,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Response </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00088">88</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00097">97</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
 
 </div>
 </div>
@@ -266,7 +298,37 @@ Public Member Functions</h2></td></tr>
 <p >Display a listing of the resource.</p>
 <dl class="section return"><dt>Returns</dt><dd>Response </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00026">26</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00031">31</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+
+<p class="reference">References <a class="el" href="ListMatchingAlgorithm_8php_source.html#l00036">App\Models\ListMatchingAlgorithm\getDefault()</a>.</p>
+
+</div>
+</div>
+<a id="a9c4aec2dbae434d8206c873c1a88e04f" name="a9c4aec2dbae434d8206c873c1a88e04f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4aec2dbae434d8206c873c1a88e04f">&#9670;&#160;</a></span>multiple_resolve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">App\Http\Controllers\DuplicateController::multiple_resolve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classApp_1_1Http_1_1Requests_1_1UpdateDuplicatesRequest.html">UpdateDuplicatesRequest</a>&#160;</td>
+          <td class="paramname"><em>$request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >This function is used to mark multiple duplicates as resolved</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">UpdateDuplicatesRequest</td><td class="paramname">$request</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>RedirectResponse </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00155">155</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
 
 </div>
 </div>
@@ -293,7 +355,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00131">131</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00140">140</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
 
 </div>
 </div>
@@ -321,7 +383,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Response </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00078">78</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00087">87</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
 
 </div>
 </div>
@@ -349,7 +411,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Response </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00068">68</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00077">77</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
 
 </div>
 </div>
@@ -388,7 +450,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Response </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00099">99</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DuplicateController_8php_source.html#l00108">108</a> of file <a class="el" href="DuplicateController_8php_source.html">DuplicateController.php</a>.</p>
 
 </div>
 </div>
@@ -401,7 +463,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>App</b></li><li class="navelem"><a class="el" href="namespaceApp_1_1Http.html">Http</a></li><li class="navelem"><a class="el" href="namespaceApp_1_1Http_1_1Controllers.html">Controllers</a></li><li class="navelem"><a class="el" href="classApp_1_1Http_1_1Controllers_1_1DuplicateController.html">DuplicateController</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 22:09:07 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Jan 17 2025 13:55:34 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

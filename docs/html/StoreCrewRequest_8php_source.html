@@ -108,10 +108,11 @@ $(document).ready(function(){initNavTree('StoreCrewRequest_8php_source.html','')
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classApp_1_1Http_1_1Requests_1_1StoreCrewRequest.html#a699e1d3145af0a924d748ce9d969404b">   24</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="classApp_1_1Http_1_1Requests_1_1StoreCrewRequest.html#a699e1d3145af0a924d748ce9d969404b">rules</a>()</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">return</span> [</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="stringliteral">&quot;name&quot;</span> =&gt; <span class="stringliteral">&quot;string|required|unique:crews,name&quot;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        ];</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="stringliteral">&quot;name&quot;</span> =&gt; <span class="stringliteral">&quot;string|required|unique:crews,name&quot;</span>,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="stringliteral">&quot;duplicate_algorithm_id&quot;</span> =&gt; <span class="stringliteral">&quot;string|required|exists:list_matching_algorithms,id&quot;</span>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        ];</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
 <div class="ttc" id="aclassApp_1_1Http_1_1Requests_1_1StoreCrewRequest_html"><div class="ttname"><a href="classApp_1_1Http_1_1Requests_1_1StoreCrewRequest.html">App\Http\Requests\StoreCrewRequest</a></div><div class="ttdef"><b>Definition:</b> <a href="StoreCrewRequest_8php_source.html#l00007">StoreCrewRequest.php:8</a></div></div>
 <div class="ttc" id="aclassApp_1_1Http_1_1Requests_1_1StoreCrewRequest_html_a63af32154dfc411979a2e28bee451a1e"><div class="ttname"><a href="classApp_1_1Http_1_1Requests_1_1StoreCrewRequest.html#a63af32154dfc411979a2e28bee451a1e">App\Http\Requests\StoreCrewRequest\authorize</a></div><div class="ttdeci">authorize()</div><div class="ttdef"><b>Definition:</b> <a href="StoreCrewRequest_8php_source.html#l00014">StoreCrewRequest.php:14</a></div></div>
 <div class="ttc" id="aclassApp_1_1Http_1_1Requests_1_1StoreCrewRequest_html_a699e1d3145af0a924d748ce9d969404b"><div class="ttname"><a href="classApp_1_1Http_1_1Requests_1_1StoreCrewRequest.html#a699e1d3145af0a924d748ce9d969404b">App\Http\Requests\StoreCrewRequest\rules</a></div><div class="ttdeci">rules()</div><div class="ttdef"><b>Definition:</b> <a href="StoreCrewRequest_8php_source.html#l00024">StoreCrewRequest.php:24</a></div></div>
@@ -122,7 +123,7 @@ $(document).ready(function(){initNavTree('StoreCrewRequest_8php_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5194e5fea318fda12687127c23f8aba1.html">app</a></li><li class="navelem"><a class="el" href="dir_b9c8cd5da349efd320f611b10ccbd6dc.html">Http</a></li><li class="navelem"><a class="el" href="dir_ffee2d5941ffc982163946e47561c176.html">Requests</a></li><li class="navelem"><a class="el" href="StoreCrewRequest_8php.html">StoreCrewRequest.php</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 22:09:06 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Jan 17 2025 13:55:33 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

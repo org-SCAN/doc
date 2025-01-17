@@ -1,7 +1,8 @@
 var classApp_1_1Http_1_1Controllers_1_1ManageUsersController =
 [
     [ "__construct", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController.html#a8dc51f2246fe30d4a684b58e8eace788", null ],
-    [ "ChangeTeam", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController.html#aa7d30a0fc796059632eaf204b93a1c87", null ],
+    [ "ChangeLanguage", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController.html#ae55a45d1358f9b6aa507e581a730552a", null ],
+    [ "ChangeTeam", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController.html#a149c5debe7309815fff8978d16576d4b", null ],
     [ "create", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController.html#aa291889c9b1236a959ce6f1152853ce9", null ],
     [ "destroy", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController.html#a2ef0e88fa5c2bd044cbc66e28269c43c", null ],
     [ "edit", "classApp_1_1Http_1_1Controllers_1_1ManageUsersController.html#a17ed832a59efc506a693a90d2f80e490", null ],

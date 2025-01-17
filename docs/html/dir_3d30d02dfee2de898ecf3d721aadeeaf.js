@@ -1,6 +1,5 @@
 var dir_3d30d02dfee2de898ecf3d721aadeeaf =
 [
-    [ "ApiLogPolicy.php", "ApiLogPolicy_8php.html", "ApiLogPolicy_8php" ],
     [ "CrewPolicy.php", "CrewPolicy_8php.html", "CrewPolicy_8php" ],
     [ "CytoscapePolicy.php", "CytoscapePolicy_8php.html", "CytoscapePolicy_8php" ],
     [ "DuplicatePolicy.php", "DuplicatePolicy_8php.html", "DuplicatePolicy_8php" ],
@@ -10,6 +9,7 @@ var dir_3d30d02dfee2de898ecf3d721aadeeaf =
     [ "LinkPolicy.php", "LinkPolicy_8php.html", "LinkPolicy_8php" ],
     [ "ListControlPolicy.php", "ListControlPolicy_8php.html", "ListControlPolicy_8php" ],
     [ "PermissionPolicy.php", "PermissionPolicy_8php.html", "PermissionPolicy_8php" ],
+    [ "PlacePolicy.php", "PlacePolicy_8php.html", "PlacePolicy_8php" ],
     [ "RefugeePolicy.php", "RefugeePolicy_8php.html", "RefugeePolicy_8php" ],
     [ "RolePolicy.php", "RolePolicy_8php.html", "RolePolicy_8php" ],
     [ "SourcePolicy.php", "SourcePolicy_8php.html", "SourcePolicy_8php" ],

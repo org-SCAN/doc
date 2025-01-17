@@ -1,6 +1,5 @@
 var dir_21690dfb6b6f4ee3861534e99f7a4e15 =
 [
-    [ "ApiLogController.php", "ApiLogController_8php.html", "ApiLogController_8php" ],
     [ "Controller.php", "Controller_8php.html", "Controller_8php" ],
     [ "CrewController.php", "CrewController_8php.html", "CrewController_8php" ],
     [ "CytoscapeController.php", "CytoscapeController_8php.html", "CytoscapeController_8php" ],
@@ -11,8 +10,9 @@ var dir_21690dfb6b6f4ee3861534e99f7a4e15 =
     [ "ListControlController.php", "ListControlController_8php.html", "ListControlController_8php" ],
     [ "ManageUsersController.php", "ManageUsersController_8php.html", "ManageUsersController_8php" ],
     [ "PermissionController.php", "PermissionController_8php.html", "PermissionController_8php" ],
+    [ "PlaceController.php", "PlaceController_8php.html", "PlaceController_8php" ],
     [ "RefugeeController.php", "RefugeeController_8php.html", "RefugeeController_8php" ],
-    [ "RequestRole.php", "Controllers_2RequestRole_8php.html", "Controllers_2RequestRole_8php" ],
+    [ "RequestRole.php", "Http_2Controllers_2RequestRole_8php.html", "Http_2Controllers_2RequestRole_8php" ],
     [ "RoleController.php", "RoleController_8php.html", "RoleController_8php" ],
     [ "SourceController.php", "SourceController_8php.html", "SourceController_8php" ]
 ];

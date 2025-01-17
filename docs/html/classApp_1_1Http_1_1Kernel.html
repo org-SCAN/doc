@@ -113,7 +113,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Http_2Kernel_8php_source.html#l00007">7</a> of file <a class="el" href="Http_2Kernel_8php_source.html">Kernel.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Http_2Kernel_8php_source.html#l00032">32</a> of file <a class="el" href="Http_2Kernel_8php_source.html">Kernel.php</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a86a97ee57a2141da9d08bf9878df7491" name="a86a97ee57a2141da9d08bf9878df7491"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86a97ee57a2141da9d08bf9878df7491">&#9670;&#160;</a></span>$middleware</h2>
@@ -136,15 +136,16 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">        </div>
-<div class="line">        \App\Http\Middleware\TrustProxies::class,</div>
-<div class="line">        \Fruitcake\Cors\HandleCors::class,</div>
-<div class="line">        \App\Http\Middleware\PreventRequestsDuringMaintenance::class,</div>
-<div class="line">        \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,</div>
-<div class="line">        \App\Http\Middleware\TrimStrings::class,</div>
-<div class="line">        \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,</div>
+<div class="line">        TrustProxies::class,</div>
+<div class="line">        HandleCors::class,</div>
+<div class="line">        PreventRequestsDuringMaintenance::class,</div>
+<div class="line">        ValidatePostSize::class,</div>
+<div class="line">        TrimStrings::class,</div>
+<div class="line">        ConvertEmptyStringsToNull::class,</div>
+<div class="line">        AutoAssignRequestId::class,</div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="Http_2Kernel_8php_source.html#l00016">16</a> of file <a class="el" href="Http_2Kernel_8php_source.html">Kernel.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Http_2Kernel_8php_source.html#l00041">41</a> of file <a class="el" href="Http_2Kernel_8php_source.html">Kernel.php</a>.</p>
 
 </div>
 </div>
@@ -169,22 +170,24 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">        <span class="stringliteral">&#39;web&#39;</span> =&gt; [</div>
-<div class="line">            \App\Http\Middleware\EncryptCookies::class,</div>
-<div class="line">            \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,</div>
-<div class="line">            \Illuminate\Session\Middleware\StartSession::class,</div>
-<div class="line">            \Laravel\Jetstream\Http\Middleware\AuthenticateSession::class,</div>
-<div class="line">            \Illuminate\View\Middleware\ShareErrorsFromSession::class,</div>
-<div class="line">            \App\Http\Middleware\VerifyCsrfToken::class,</div>
-<div class="line">            \Illuminate\Routing\Middleware\SubstituteBindings::class,</div>
+<div class="line">            EncryptCookies::class,</div>
+<div class="line">            AddQueuedCookiesToResponse::class,</div>
+<div class="line">            StartSession::class,</div>
+<div class="line">            AuthenticateSession::class,</div>
+<div class="line">            ShareErrorsFromSession::class,</div>
+<div class="line">            VerifyCsrfToken::class,</div>
+<div class="line">            SubstituteBindings::class,</div>
+<div class="line">            Localization::class,</div>
 <div class="line">        ],</div>
 <div class="line"> </div>
 <div class="line">        <span class="stringliteral">&#39;api&#39;</span> =&gt; [</div>
 <div class="line">            <span class="stringliteral">&#39;throttle:api&#39;</span>,</div>
-<div class="line">            \Illuminate\Routing\Middleware\SubstituteBindings::class,</div>
+<div class="line">            SubstituteBindings::class,</div>
+<div class="line">            ApiLogger::class</div>
 <div class="line">        ],</div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="Http_2Kernel_8php_source.html#l00031">31</a> of file <a class="el" href="Http_2Kernel_8php_source.html">Kernel.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Http_2Kernel_8php_source.html#l00057">57</a> of file <a class="el" href="Http_2Kernel_8php_source.html">Kernel.php</a>.</p>
 
 </div>
 </div>
@@ -208,18 +211,18 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
-<div class="line">        <span class="stringliteral">&#39;auth&#39;</span> =&gt; \App\Http\Middleware\Authenticate::class,</div>
-<div class="line">        <span class="stringliteral">&#39;auth.basic&#39;</span> =&gt; \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,</div>
-<div class="line">        <span class="stringliteral">&#39;cache.headers&#39;</span> =&gt; \Illuminate\Http\Middleware\SetCacheHeaders::class,</div>
-<div class="line">        <span class="stringliteral">&#39;can&#39;</span> =&gt; \Illuminate\Auth\Middleware\Authorize::class,</div>
-<div class="line">        <span class="stringliteral">&#39;guest&#39;</span> =&gt; \App\Http\Middleware\RedirectIfAuthenticated::class,</div>
-<div class="line">        <span class="stringliteral">&#39;password.confirm&#39;</span> =&gt; \Illuminate\Auth\Middleware\RequirePassword::class,</div>
-<div class="line">        <span class="stringliteral">&#39;signed&#39;</span> =&gt; \Illuminate\Routing\Middleware\ValidateSignature::class,</div>
-<div class="line">        <span class="stringliteral">&#39;throttle&#39;</span> =&gt; \Illuminate\Routing\Middleware\ThrottleRequests::class,</div>
-<div class="line">        <span class="stringliteral">&#39;verified&#39;</span> =&gt; \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,</div>
+<div class="line">        <span class="stringliteral">&#39;auth&#39;</span> =&gt; Authenticate::class,</div>
+<div class="line">        <span class="stringliteral">&#39;auth.basic&#39;</span> =&gt; AuthenticateWithBasicAuth::class,</div>
+<div class="line">        <span class="stringliteral">&#39;cache.headers&#39;</span> =&gt; SetCacheHeaders::class,</div>
+<div class="line">        <span class="stringliteral">&#39;can&#39;</span> =&gt; Authorize::class,</div>
+<div class="line">        <span class="stringliteral">&#39;guest&#39;</span> =&gt; RedirectIfAuthenticated::class,</div>
+<div class="line">        <span class="stringliteral">&#39;password.confirm&#39;</span> =&gt; RequirePassword::class,</div>
+<div class="line">        <span class="stringliteral">&#39;signed&#39;</span> =&gt; ValidateSignature::class,</div>
+<div class="line">        <span class="stringliteral">&#39;throttle&#39;</span> =&gt; ThrottleRequests::class,</div>
+<div class="line">        <span class="stringliteral">&#39;verified&#39;</span> =&gt; EnsureEmailIsVerified::class,</div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="Http_2Kernel_8php_source.html#l00055">55</a> of file <a class="el" href="Http_2Kernel_8php_source.html">Kernel.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Http_2Kernel_8php_source.html#l00083">83</a> of file <a class="el" href="Http_2Kernel_8php_source.html">Kernel.php</a>.</p>
 
 </div>
 </div>
@@ -232,7 +235,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>App</b></li><li class="navelem"><a class="el" href="namespaceApp_1_1Http.html">Http</a></li><li class="navelem"><a class="el" href="classApp_1_1Http_1_1Kernel.html">Kernel</a></li>
-    <li class="footer">Generated on Wed Nov 27 2024 22:09:07 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Fri Jan 17 2025 13:55:34 for SCAN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -14,9 +14,7 @@ var classApp_1_1Models_1_1Refugee =
     [ "handleApiRequest", "classApp_1_1Models_1_1Refugee.html#a5ab15367f38060d3b99efc44d2c1394d", null ],
     [ "hasEvent", "classApp_1_1Models_1_1Refugee.html#a51edcbc230c3b93ab4676613f37ea43e", null ],
     [ "toRelation", "classApp_1_1Models_1_1Refugee.html#a0f23956bdc07b4a685be34e13ec1f9bf", null ],
-    [ "user", "classApp_1_1Models_1_1Refugee.html#a55e559fbe5204ab32276486703840b9d", null ],
     [ "$guarded", "classApp_1_1Models_1_1Refugee.html#afad02335e572d127d98e8b429e649259", null ],
     [ "$incrementing", "classApp_1_1Models_1_1Refugee.html#a7c08ee70c36bc6b37fc3d5386548e8f5", null ],
-    [ "$keyType", "classApp_1_1Models_1_1Refugee.html#aa1945472ec96a407391139c1ea6e336e", null ],
-    [ "route_base", "classApp_1_1Models_1_1Refugee.html#af66a3be40e51d22f0a53bac93a6cce7c", null ]
+    [ "$keyType", "classApp_1_1Models_1_1Refugee.html#aa1945472ec96a407391139c1ea6e336e", null ]
 ];
