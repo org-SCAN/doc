@@ -31,7 +31,6 @@ var dir_43465b0ce53d0a9105a6d26f83061e7f =
     [ "Refugee.php", "Refugee_8php.html", "Refugee_8php" ],
     [ "Role.php", "Role_8php.html", "Role_8php" ],
     [ "RoleRequest.php", "RoleRequest_8php.html", "RoleRequest_8php" ],
-    [ "Schema.php", "Schema_8php.html", "Schema_8php" ],
     [ "Source.php", "Source_8php.html", "Source_8php" ],
     [ "Translation.php", "Translation_8php.html", "Translation_8php" ],
     [ "User.php", "User_8php.html", "User_8php" ]

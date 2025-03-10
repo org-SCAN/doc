@@ -80,8 +80,6 @@ var hierarchy =
       [ "App\\Console\\Commands\\DuplicateCommand", "classApp_1_1Console_1_1Commands_1_1DuplicateCommand.html", null ],
       [ "App\\Console\\Commands\\MakeList", "classApp_1_1Console_1_1Commands_1_1MakeList.html", null ],
       [ "App\\Console\\Commands\\MakeResourceTest", "classApp_1_1Console_1_1Commands_1_1MakeResourceTest.html", null ],
-      [ "App\\Console\\Commands\\MakeSchemaCommand", "classApp_1_1Console_1_1Commands_1_1MakeSchemaCommand.html", null ],
-      [ "App\\Console\\Commands\\MigrateCustomSchemaCommand", "classApp_1_1Console_1_1Commands_1_1MigrateCustomSchemaCommand.html", null ],
       [ "App\\Console\\Commands\\UpdateList", "classApp_1_1Console_1_1Commands_1_1UpdateList.html", null ],
       [ "App\\Console\\Commands\\UpdatePermissions", "classApp_1_1Console_1_1Commands_1_1UpdatePermissions.html", null ]
     ] ],
@@ -221,7 +219,6 @@ var hierarchy =
       [ "App\\Models\\Refugee", "classApp_1_1Models_1_1Refugee.html", null ],
       [ "App\\Models\\Role", "classApp_1_1Models_1_1Role.html", null ],
       [ "App\\Models\\RoleRequest", "classApp_1_1Models_1_1RoleRequest.html", null ],
-      [ "App\\Models\\Schema", "classApp_1_1Models_1_1Schema.html", null ],
       [ "App\\Models\\Translation", "classApp_1_1Models_1_1Translation.html", null ]
     ] ],
     [ "Notification", null, [

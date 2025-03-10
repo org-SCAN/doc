@@ -40,7 +40,7 @@ var searchData=
   ['associatedlistseeder_37',['AssociatedListSeeder',['../classDatabase_1_1Seeders_1_1AssociatedListSeeder.html',1,'Database::Seeders']]],
   ['associatedlistseeder_2ephp_38',['AssociatedListSeeder.php',['../AssociatedListSeeder_8php.html',1,'']]],
   ['associatedstructurefields_39',['associatedStructureFields',['../classApp_1_1Models_1_1ListControl.html#ae9bdb602a743d7390a496e1eb292b4f0',1,'App::Models::ListControl']]],
-  ['auth_2ephp_40',['auth.php',['../resources_2lang_2en_2auth_8php.html',1,'(Global Namespace)'],['../config_2auth_8php.html',1,'(Global Namespace)']]],
+  ['auth_2ephp_40',['auth.php',['../config_2auth_8php.html',1,'(Global Namespace)'],['../resources_2lang_2en_2auth_8php.html',1,'(Global Namespace)']]],
   ['authenticate_41',['Authenticate',['../classApp_1_1Http_1_1Middleware_1_1Authenticate.html',1,'App::Http::Middleware']]],
   ['authenticate_2ephp_42',['Authenticate.php',['../Authenticate_8php.html',1,'']]],
   ['authentication_2dcard_2dlogo_2eblade_2ephp_43',['authentication-card-logo.blade.php',['../authentication-card-logo_8blade_8php.html',1,'']]],

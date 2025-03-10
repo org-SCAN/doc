@@ -26,11 +26,7 @@ var NAVTREE =
 [
   [ "SCAN", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ]
-      ] ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -55,14 +51,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "401_8blade_8php.html",
-"ManageUsersController_8php.html",
-"change__language_8blade_8php_source.html",
-"classApp_1_1Http_1_1Middleware_1_1Localization.html#a2d75c7aba25c5495f0a61040297da4b2",
-"classApp_1_1Models_1_1Crew.html",
-"classApp_1_1Policies_1_1CytoscapePolicy.html#adc10f178a70b0b877c79fcba130eb294",
-"create-form-choose-field_8php_source.html",
-"form-select-dropdown_8blade_8php.html",
-"resources_2lang_2en_2cytoscape_2index_8php.html#a64a3c24c154c25eb61fc554825d9a085"
+"MatchingAlgorithm_8php.html",
+"checkbox_8php.html#ad6be4bb002dc5ce119eba2b7524ce063",
+"classApp_1_1Http_1_1Requests_1_1ChooseDuplicateAlgorithmRequest.html",
+"classApp_1_1Models_1_1Duplicate.html#a462a0a7636a036771addb77b6bd677ca",
+"classApp_1_1Policies_1_1GlobalPolicy.html#adcc12401965cb9eb755ff59f3a7749c2",
+"cytoscape_2index_8blade_8php.html",
+"functions_func.html",
+"resources_2lang_2en_2roles_2index_8php.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

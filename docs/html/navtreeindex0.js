@@ -248,6 +248,6 @@ var NAVTREEINDEX0 =
 "MakeList_8php_source.html":[2,0,0,0,1,0,3],
 "MakeResourceTest_8php.html":[2,0,0,0,1,0,4],
 "MakeResourceTest_8php_source.html":[2,0,0,0,1,0,4],
-"MakeSchemaCommand_8php.html":[2,0,0,0,1,0,5],
-"MakeSchemaCommand_8php_source.html":[2,0,0,0,1,0,5]
+"ManageUsersController_8php.html":[2,0,0,0,3,0,8],
+"ManageUsersController_8php_source.html":[2,0,0,0,3,0,8]
 };

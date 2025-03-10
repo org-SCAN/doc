@@ -25,8 +25,6 @@ var annotated_dup =
           [ "MakeCommandSet", "classApp_1_1Console_1_1Commands_1_1MakeCommandSet.html", "classApp_1_1Console_1_1Commands_1_1MakeCommandSet" ],
           [ "MakeList", "classApp_1_1Console_1_1Commands_1_1MakeList.html", "classApp_1_1Console_1_1Commands_1_1MakeList" ],
           [ "MakeResourceTest", "classApp_1_1Console_1_1Commands_1_1MakeResourceTest.html", "classApp_1_1Console_1_1Commands_1_1MakeResourceTest" ],
-          [ "MakeSchemaCommand", "classApp_1_1Console_1_1Commands_1_1MakeSchemaCommand.html", "classApp_1_1Console_1_1Commands_1_1MakeSchemaCommand" ],
-          [ "MigrateCustomSchemaCommand", "classApp_1_1Console_1_1Commands_1_1MigrateCustomSchemaCommand.html", "classApp_1_1Console_1_1Commands_1_1MigrateCustomSchemaCommand" ],
           [ "UpdateList", "classApp_1_1Console_1_1Commands_1_1UpdateList.html", "classApp_1_1Console_1_1Commands_1_1UpdateList" ],
           [ "UpdatePermissions", "classApp_1_1Console_1_1Commands_1_1UpdatePermissions.html", "classApp_1_1Console_1_1Commands_1_1UpdatePermissions" ]
         ] ],
@@ -171,7 +169,6 @@ var annotated_dup =
         [ "Refugee", "classApp_1_1Models_1_1Refugee.html", "classApp_1_1Models_1_1Refugee" ],
         [ "Role", "classApp_1_1Models_1_1Role.html", "classApp_1_1Models_1_1Role" ],
         [ "RoleRequest", "classApp_1_1Models_1_1RoleRequest.html", "classApp_1_1Models_1_1RoleRequest" ],
-        [ "Schema", "classApp_1_1Models_1_1Schema.html", "classApp_1_1Models_1_1Schema" ],
         [ "Source", "classApp_1_1Models_1_1Source.html", "classApp_1_1Models_1_1Source" ],
         [ "Translation", "classApp_1_1Models_1_1Translation.html", "classApp_1_1Models_1_1Translation" ],
         [ "User", "classApp_1_1Models_1_1User.html", "classApp_1_1Models_1_1User" ]
