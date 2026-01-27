@@ -131,7 +131,7 @@ For entering short text (one line).
   },
   "type": "text",
   "mandatory": true,
-  "personalized": false,
+  "personalized": true,
   "placeholder": {
     "fr": "Enter a value",
     "en": "Enter a value",
@@ -157,7 +157,7 @@ For entering long text (multiple lines).
   },
   "type": "textarea",
   "mandatory": false,
-  "personalized": false,
+  "personalized": true,
   "placeholder": {
     "fr": "Add comments...",
     "en": "Add comments...",
@@ -187,7 +187,7 @@ For selecting **multiple options** from a list. Displays options in a dropdown l
   },
   "type": "dropdown",
   "mandatory": true,
-  "personalized": false,
+  "personalized": true,
   "placeholder": {
     "fr": "Select a category",
     "en": "Select a category",
@@ -251,7 +251,7 @@ For selecting **a single option** via visual icons. Single selection only.
   },
   "type": "icons",
   "mandatory": true,
-  "personalized": false,
+  "personalized": true,
   "placeholder": {
     "fr": "Select a type",
     "en": "Select a type",
@@ -324,6 +324,7 @@ For selecting **a single option** from a dropdown list. Single selection only, w
   },
   "type": "simpledropdown",
   "mandatory": false,
+  "personalized": true,
   "options": [
     {
       "label": {
@@ -402,7 +403,7 @@ Some fields have special behaviors when using specific keys with `"personalized"
   "fields": [
     {
       "key": "types",
-      "personalized": false,
+      "personalized": true,
       "mandatory": true,
       "options": [
         {
@@ -456,7 +457,7 @@ Some fields have special behaviors when using specific keys with `"personalized"
       },
       "type": "text",
       "mandatory": true,
-      "personalized": false,
+      "personalized": true,
       "placeholder": {
         "fr": "Enter a value",
         "en": "Enter a value",
@@ -520,7 +521,7 @@ Some fields have special behaviors when using specific keys with `"personalized"
       },
       "type": "textarea",
       "mandatory": false,
-      "personalized": false,
+      "personalized": true,
       "placeholder": {
         "fr": "Add comments...",
         "en": "Add comments...",
