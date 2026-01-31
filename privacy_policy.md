@@ -50,3 +50,26 @@ Aucune donnée n’est vendue ni utilisée à des fins commerciales.
 
 L’application est utilisée par des utilisateurs autorisés.  
 Les données sont gérées conformément aux procédures internes de l’organisation utilisatrice.
+
+---
+
+## Suppression des données – DIVI
+
+L’application **DIVI** ne dispose pas de compte utilisateur et ne stocke aucune donnée sur des serveurs distants.
+
+### Comment supprimer les données ?
+
+Toutes les données collectées par l’application sont stockées **localement sur l’appareil** de l’utilisateur.
+
+Les utilisateurs peuvent supprimer leurs données de l’une des manières suivantes :
+- En supprimant les données de l’application depuis les paramètres Android
+- En désinstallant l’application
+
+Ces actions entraînent la suppression immédiate de l’ensemble des données stockées localement.
+
+### Données concernées
+- Photos prises via l’application  
+- Données de géolocalisation associées  
+- Informations saisies par l’utilisateur  
+
+Aucune donnée n’est conservée après la suppression locale ou la désinstallation de l’application.
