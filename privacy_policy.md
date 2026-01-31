@@ -1,75 +1,76 @@
-# Politique de confidentialité – DIVI
+# Privacy Policy – DIVI
 
-**Dernière mise à jour :** 31.01.2026
+**Last updated:** January 31, 2026
 
-L’application **DIVI** est une application mobile de collecte de données, développée dans un cadre académique et utilisée à des fins humanitaires.  
-Elle est destinée à un usage interne par des organisations humanitaires, notamment dans des contextes de crise.
-
----
-
-## Données collectées
-
-L’application peut collecter les types de données suivants :
-
-- Photos prises via l’appareil photo du téléphone  
-- Données de géolocalisation associées aux photos  
-- Informations saisies par l’utilisateur (champs configurables)
-
-Ces données sont collectées uniquement dans le cadre d’activités humanitaires.
+The **DIVI** application is a mobile data collection application developed within an academic context and used for humanitarian purposes.  
+It is intended for internal use by humanitarian organizations, particularly in crisis situations.
 
 ---
 
-## Utilisation des données
+## Data Collected
 
-Les données collectées sont utilisées pour :
+The application may collect the following types of data:
 
-- Documenter des cas sur le terrain  
-- Faciliter l’identification et les enquêtes  
-- Centraliser et structurer les informations
+- Photos taken using the device’s camera  
+- Geolocation data associated with photos  
+- Information entered by the user (configurable fields)
 
----
-
-## Stockage et sécurité
-
-- Les données sont stockées localement sur l’appareil de manière temporaire.  
-- Elles peuvent être exportées manuellement par l’utilisateur (e-mail ou USB).  
-- L’accès à l’application est protégé par le code de l’appareil.  
-
-Aucune donnée n’est transmise automatiquement à des serveurs tiers.
+This data is collected exclusively in the context of humanitarian activities.
 
 ---
 
-## Partage des données
+## Use of Data
 
-Les données ne sont partagées qu’avec les outils et services utilisés dans le cadre des missions humanitaires.  
-Aucune donnée n’est vendue ni utilisée à des fins commerciales.
+The collected data is used to:
 
----
-
-## Droits des utilisateurs
-
-L’application est utilisée par des utilisateurs autorisés.  
-Les données sont gérées conformément aux procédures internes de l’organisation utilisatrice.
+- Document cases in the field  
+- Support identification processes and investigations  
+- Centralize and structure information
 
 ---
 
-## Suppression des données – DIVI
+## Data Storage and Security
 
-L’application **DIVI** ne dispose pas de compte utilisateur et ne stocke aucune donnée sur des serveurs distants.
+- Data is stored locally on the user’s device on a temporary basis.  
+- Data can be manually exported by the user (email or USB).  
+- Access to the application is protected by the device’s lock code.
 
-### Comment supprimer les données ?
+No data is automatically transmitted to third-party servers.
 
-Toutes les données collectées par l’application sont stockées **localement sur l’appareil** de l’utilisateur.
+---
 
-Les utilisateurs peuvent supprimer leurs données de l’une des manières suivantes :
-- En supprimant les données de l’application depuis les paramètres Android
-- En désinstallant l’application
+## Data Sharing
 
-Ces actions entraînent la suppression immédiate de l’ensemble des données stockées localement.
+Data is only shared with tools and services used as part of humanitarian missions.  
+No data is sold or used for commercial purposes.
 
-### Données concernées
-- Photos prises via l’application  
-- Données de géolocalisation associées  
-- Informations saisies par l’utilisateur  
+---
 
-Aucune donnée n’est conservée après la suppression locale ou la désinstallation de l’application.
+## User Rights
+
+The application is used by authorized users only.  
+Data is managed in accordance with the internal procedures of the organization using the application.
+
+---
+
+## Data Deletion – DIVI
+
+The **DIVI** application does not include user accounts and does not store any data on remote servers.
+
+### How to delete data
+
+All data collected by the application is stored **locally on the user’s device**.
+
+Users can delete their data in one of the following ways:
+- By clearing the application’s data from the Android system settings  
+- By uninstalling the application
+
+These actions result in the immediate deletion of all locally stored data.
+
+### Data concerned
+- Photos taken via the application  
+- Associated geolocation data  
+- User-entered information  
+
+No data is retained after local deletion or uninstallation of the application.
+
